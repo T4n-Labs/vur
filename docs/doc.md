@@ -2,7 +2,10 @@
 
 Dokumentasi ini menjelaskan **cara menggunakan VUR** dan **cara membuat template paket** untuk VUR menggunakan `xbps-src`. Ditujukan untuk pengguna Void Linux, developer, dan maintainer paket.
 
----
+## Daftar ISI
+- [Pengenalan]()
+- [Build Style]()
+  - [CMAKE]()
 
 ## Prasyarat
 
