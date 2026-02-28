@@ -1,58 +1,24 @@
-# VUR (Void User Repository)
+# 🇮🇩 INDONESIA / [🇬🇧 ENGLISH](./README-EN.md)
 
-**VUR (Void User Repository)** adalah repository berbasis komunitas yang berisi template package untuk **Void Linux**,.
+## PENGENALAN
 
-Repository ini bertujuan untuk mempermudah pengguna dan developer dalam:
-- Membuat package sendiri
-- Mendistribusikan software tambahan
+**VUR (Void User Repository)** adalah repository berbasis komunitas untuk **Void Linux** yang menyediakan template paket tambahan di luar repository resmi.
 
-## Struktur Repository
+VUR berfungsi sebagai tempat berbagi paket yang belum tersedia secara default, dibangun menggunakan sistem `xbps-src` milik Void.
 
-Repository ini dibagi menjadi beberapa kategori utama:
+### KARAKTERISTIK
 
-### 📁 core
-Template package untuk **system / komponen inti**.  
-Digunakan untuk package yang berhubungan langsung dengan sistem atau dependensi utama.
+* Berbasis template `xbps-src`
+* Dikelola oleh komunitas
+* Tidak didukung secara resmi oleh Void Linux
+* Perlu audit sebelum build/install
 
-Contoh penggunaan:
-- Library inti
-- Tool sistem
-- Komponen low-level
+### TUJUAN
 
-### 📁 extra
-Template package untuk **software tambahan**.  
-Digunakan untuk aplikasi user-space yang tidak termasuk sistem inti.
+* Memperluas ekosistem Void
+* Menyediakan software niche / eksperimental
+* Mendukung kolaborasi komunitas
 
-Contoh penggunaan:
-- CLI tools
-- Aplikasi desktop
-- Utility tambahan
+> Gunakan dengan bijak. Selalu review template sebelum membangun paket.
 
-### 📁 multilib
-Template package untuk **32-bit (multilib)**.  
-Digunakan untuk software 32-bit yang dijalankan di sistem 64-bit.
-
-Contoh penggunaan:
-- Game 32-bit
-- Library legacy
-- Software lama yang masih dibutuhkan
-
-
-## Tujuan VUR
-
-- Menyediakan standar template package untuk Void Linux
-- Mempermudah kontribusi komunitas
-- Menjadi pusat distribusi package non-resmi
-- Mendukung ekosistem Void Linux secara terbuka
-
-## Lisensi
-
-Lisensi mengikuti masing-masing package dan template yang digunakan.
-
-## Catatan
-
-> VUR adalah project berbasis komunitas dan **bukan repository resmi Void Linux**.
-
-Gunakan dengan bijak dan selalu cek isi template sebelum digunakan.
-
-Happy Building 🐧🔥
+#### DOKUMENTASI : [doc.md](./zdokumentasi/index.md)
