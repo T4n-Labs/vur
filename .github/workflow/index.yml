@@ -1,0 +1,25 @@
+name: Generate VUR Index
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Make scripts executable
+        run: chmod +x tools/*.sh
+
+      - name: Generate index
+        run: ./tools/generate_index.sh
+
+      - name: Commit index
+        run: |
+          git config user.name "VUR Bot"
+          git config user.email "bot@vur"
+          git add index.json
+          git diff --quiet || git commit -m "update index"
+          git push
