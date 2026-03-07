@@ -1,0 +1,38 @@
+# template file for 'portproton'
+pkgname=portproton
+version=1.5.2
+revision=1
+depends="bash wget icoutils yad bubblewrap zstd cabextract gzip tar
+				 xz openssl desktop-file-utils curl dbus freetype xdg-utils
+				 gdk-pixbuf noto-fonts-ttf nss xrandr lsof mesa-demos ImageMagick
+				 Vulkan-Tools libgcc vulkan-loader
+"
+short_desc="Software for playing Microsoft Windows games and launchers"
+maintainer="Kira <kira0void@proton.me>"
+license="MIT"
+homepage="https://linux-gaming.ru/"
+distfiles="https://github.com/Castro-Fidel/PortProton_ALT/archive/refs/tags/v${version}.tar.gz"
+checksum=17926ec48ccd462bc8153b2edf696710624221c27c5f67dfe1142f72987cfd5b
+_flatpakname=ru.linux_gaming.PortProton
+
+
+do_install() {
+	vbin ${pkgname}
+	vinstall ${_flatpakname}.desktop 644 /usr/share/applications/
+	vinstall ${_flatpakname}.svg 644 /usr/share/icons/hicolor/scalable/apps/
+	vinstall ${_flatpakname}.metainfo.xml 644 /usr/share/metainfo/
+  vlicense LICENSE
+}
+
+portproton-32bit_package() {
+	build_style=meta
+	short_desc+=" (32-bit dependencies)"
+	depends="portproton alsa-plugins-32bit libX11-32bit
+	         freetype-32bit libglvnd-32bit libgpg-error-32bit
+					 nss-32bit openssl-32bit vulkan-loader-32bit
+	"
+	repository="multilib"
+	pkg_install() {
+		echo "Installing 32-bit dependencies..."
+	}
+}
