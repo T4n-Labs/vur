@@ -1,0 +1,15 @@
+[
+  {"name":"linux-zen","desc":"Zen - Linux kernel and modules (${version%.*} series)"}
+,
+  {"name":"android-studio","desc":"The official Android IDE"}
+,
+  {"name":"brave-browser","desc":"Web browser"}
+,
+  {"name":"ms-teams","desc":"Unofficial Microsoft Teams client (Electron wrapper)"}
+,
+  {"name":"obsidian","desc":"Knowledge base and note-taking program"}
+,
+  {"name":"zen-browser","desc":"Minimalistic web browser"}
+,
+  {"name":"portproton","desc":"Software for playing Microsoft Windows games and launchers"}
+]

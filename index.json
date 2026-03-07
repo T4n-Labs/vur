@@ -1,3 +1,15 @@
 [
-
+  {"name":"linux-zen","category":"core"}
+,
+  {"name":"android-studio","category":"extra"}
+,
+  {"name":"brave-browser","category":"extra"}
+,
+  {"name":"ms-teams","category":"extra"}
+,
+  {"name":"obsidian","category":"extra"}
+,
+  {"name":"zen-browser","category":"extra"}
+,
+  {"name":"portproton","category":"multilib"}
 ]

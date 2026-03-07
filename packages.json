@@ -1,0 +1,57 @@
+[
+  {
+    "name": "linux-zen",
+    "version": "6.13.0",
+    "category": "core",
+    "description": "Zen - Linux kernel and modules (${version%.*} series)",
+    "homepage": "https://www.kernel.org",
+    "maintainer": "JuanMa <numblinux@gmail.com>"
+  },
+  {
+    "name": "android-studio",
+    "version": "2.2.2",
+    "category": "extra",
+    "description": "The official Android IDE",
+    "homepage": "http://tools.android.com/",
+    "maintainer": "fork from Jordyn Carattini <onlinecloud1@gmail.com>"
+  },
+  {
+    "name": "brave-browser",
+    "version": "1.78.102",
+    "category": "extra",
+    "description": "Web browser",
+    "homepage": "https://www.brave.com/",
+    "maintainer": "jacob Pedersen <jake@jpedmedia.com>"
+  },
+  {
+    "name": "ms-teams",
+    "version": "2.7.3",
+    "category": "extra",
+    "description": "Unofficial Microsoft Teams client (Electron wrapper)",
+    "homepage": "https://github.com/IsmaelMartinez/teams-for-linux",
+    "maintainer": "Gh0sT4n <luthgeog@email.com>"
+  },
+  {
+    "name": "obsidian",
+    "version": "1.8.10",
+    "category": "extra",
+    "description": "Knowledge base and note-taking program",
+    "homepage": "https://obsidian.md/",
+    "maintainer": ""
+  },
+  {
+    "name": "zen-browser",
+    "version": "1.7b",
+    "category": "extra",
+    "description": "Minimalistic web browser",
+    "homepage": "https://www.zen-browser.app/",
+    "maintainer": "SalahDin Rezk <salah2112004@gmail.com>"
+  },
+  {
+    "name": "portproton",
+    "version": "1.5.2",
+    "category": "multilib",
+    "description": "Software for playing Microsoft Windows games and launchers",
+    "homepage": "https://linux-gaming.ru/",
+    "maintainer": "Kira <kira0void@proton.me>"
+  }]
