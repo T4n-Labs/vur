@@ -3,7 +3,7 @@
     "name": "linux-zen",
     "version": "6.13.0",
     "category": "core",
-    "description": "Zen - Linux kernel and modules (${version%.*} series)",
+    "description": "Zen - Linux kernel and modules ( series)",
     "homepage": "https://www.kernel.org",
     "maintainer": "JuanMa <numblinux@gmail.com>"
   },

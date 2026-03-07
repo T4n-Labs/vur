@@ -1,5 +1,5 @@
 [
-  {"name":"linux-zen","desc":"Zen - Linux kernel and modules (${version%.*} series)"}
+  {"name":"linux-zen","desc":"Zen - Linux kernel and modules ( series)"}
 ,
   {"name":"android-studio","desc":"The official Android IDE"}
 ,
