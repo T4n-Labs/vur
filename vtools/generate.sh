@@ -24,7 +24,7 @@ for category in core extra multilib; do
 
       pkgname=$(grep "^pkgname=" "$template" | cut -d= -f2)
       version=$(grep "^version=" "$template" | cut -d= -f2)
-      desc=$(grep "^short_desc=" "$template" | cut -d= -f2- | tr -d '"')
+      desc=$(grep "^short_desc=" "$template" | cut -d= -f2- | tr -d '"' | sed 's/\${.*}//g')
       homepage=$(grep "^homepage=" "$template" | cut -d= -f2 | tr -d '"')
       maintainer=$(grep "^maintainer=" "$template" | cut -d= -f2- | tr -d '"')
 
