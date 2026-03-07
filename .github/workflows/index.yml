@@ -23,6 +23,6 @@ jobs:
         run: |
           git config user.name "VUR Bot"
           git config user.email "bot@vur.local"
-          git add index.json
-          git diff --quiet || git commit -m "update index"
+          git add *.json
+          git diff --quiet || git commit -m "update vur index"
           git push

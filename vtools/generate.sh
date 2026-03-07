@@ -1,34 +1,73 @@
 #!/bin/bash
 
-echo "[" > index.json
-first=1
+set -e
 
-for dir in $(bash tools/scan.sh); do
+INDEX="index.json"
+PACKAGES="packages.json"
+SEARCH="search.json"
+CATEGORIES="categories.json"
 
-    template="$dir/template"
+echo "Generating VUR index..."
 
-    pkgname=$(grep "^pkgname=" "$template" | cut -d= -f2)
-    version=$(grep "^version=" "$template" | cut -d= -f2)
-    desc=$(grep "^short_desc=" "$template" | cut -d= -f2- | sed 's/"//g')
+echo "[" > $INDEX
+echo "[" > $PACKAGES
+echo "[" > $SEARCH
 
-    category=$(echo $dir | cut -d/ -f1)
+first=true
 
-    if [ $first -eq 0 ]; then
-        echo "," >> index.json
+for category in core extra multilib; do
+  for pkg in $category/*; do
+
+    template="$pkg/template"
+
+    if [ -f "$template" ]; then
+
+      pkgname=$(grep "^pkgname=" "$template" | cut -d= -f2)
+      version=$(grep "^version=" "$template" | cut -d= -f2)
+      desc=$(grep "^short_desc=" "$template" | cut -d= -f2- | tr -d '"')
+      homepage=$(grep "^homepage=" "$template" | cut -d= -f2 | tr -d '"')
+      maintainer=$(grep "^maintainer=" "$template" | cut -d= -f2- | tr -d '"')
+
+      if [ "$first" = true ]; then
+        first=false
+      else
+        echo "," >> $INDEX
+        echo "," >> $PACKAGES
+        echo "," >> $SEARCH
+      fi
+
+      # index.json
+      echo "  {\"name\":\"$pkgname\",\"category\":\"$category\"}" >> $INDEX
+
+      # packages.json
+      echo "  {" >> $PACKAGES
+      echo "    \"name\": \"$pkgname\"," >> $PACKAGES
+      echo "    \"version\": \"$version\"," >> $PACKAGES
+      echo "    \"category\": \"$category\"," >> $PACKAGES
+      echo "    \"description\": \"$desc\"," >> $PACKAGES
+      echo "    \"homepage\": \"$homepage\"," >> $PACKAGES
+      echo "    \"maintainer\": \"$maintainer\"" >> $PACKAGES
+      echo -n "  }" >> $PACKAGES
+
+      # search.json
+      echo "  {\"name\":\"$pkgname\",\"desc\":\"$desc\"}" >> $SEARCH
+
     fi
 
-    echo "  {" >> index.json
-    echo "    \"name\": \"$pkgname\"," >> index.json
-    echo "    \"version\": \"$version\"," >> index.json
-    echo "    \"category\": \"$category\"," >> index.json
-    echo "    \"description\": \"$desc\"" >> index.json
-    echo -n "  }" >> index.json
-
-    first=0
-
+  done
 done
 
-echo "" >> index.json
-echo "]" >> index.json
+echo "]" >> $INDEX
+echo "]" >> $PACKAGES
+echo "]" >> $SEARCH
 
-# Script For Generate JSON/Metadata VUR
+# categories.json
+cat <<EOF > $CATEGORIES
+[
+  {"name":"core"},
+  {"name":"extra"},
+  {"name":"multilib"}
+]
+EOF
+
+echo "Index generation complete."
