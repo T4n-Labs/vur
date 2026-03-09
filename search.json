@@ -5,6 +5,12 @@
 ,
   {"name":"brave-browser","desc":"Web browser"}
 ,
+  {"name":"cosmic-desktop","desc":"Meta Package that install all components of COSMIC Desktop and the needed dependencies"}
+,
+  {"name":"cosmic-desktop-full","desc":"Full Cosmic Desktop"}
+,
+  {"name":"cosmic-desktop-minimal","desc":"Meta Package that install all components of COSMIC Desktop and the needed dependencies"}
+,
   {"name":"ms-teams","desc":"Unofficial Microsoft Teams client"}
 ,
   {"name":"obsidian","desc":"Knowledge base and note-taking program"}

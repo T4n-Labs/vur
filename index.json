@@ -5,6 +5,12 @@
 ,
   {"name":"brave-browser","category":"extra"}
 ,
+  {"name":"cosmic-desktop","category":"extra"}
+,
+  {"name":"cosmic-desktop-full","category":"extra"}
+,
+  {"name":"cosmic-desktop-minimal","category":"extra"}
+,
   {"name":"ms-teams","category":"extra"}
 ,
   {"name":"obsidian","category":"extra"}
