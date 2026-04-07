@@ -23,6 +23,9 @@ for category in core extra multilib; do
     if [ -f "$template" ]; then
 
       pkgname=$(grep "^pkgname=" "$template" | cut -d= -f2)
+      pkgname=$(basename "$pkg")
+      path="$category/$pkgname"
+
       version=$(grep "^version=" "$template" | cut -d= -f2)
       desc=$(grep "^short_desc=" "$template" | cut -d= -f2- | tr -d '"' | sed 's/\${[^}]*}//g' | sed 's/([^)]*)//g' | xargs)
       homepage=$(grep "^homepage=" "$template" | cut -d= -f2 | tr -d '"')
@@ -37,21 +40,20 @@ for category in core extra multilib; do
       fi
 
       # index.json
-      echo "  {\"name\":\"$pkgname\",\"category\":\"$category\"}" >> $INDEX
+      echo "  {\"name\":\"$pkgname\",\"category\":\"$category\",\"path\":\"$path\"}" >> $INDEX
 
       # packages.json
       echo "  {" >> $PACKAGES
       echo "    \"name\": \"$pkgname\"," >> $PACKAGES
-      echo "    \"version\": \"$version\"," >> $PACKAGES
       echo "    \"category\": \"$category\"," >> $PACKAGES
-      echo "    \"description\": \"$desc\"," >> $PACKAGES
+      echo "    \"path\": \"$path\"," >> $PACKAGES
+      echo "    \"version\": \"$version\"," >> $PACKAGES
       echo "    \"homepage\": \"$homepage\"," >> $PACKAGES
       echo "    \"maintainer\": \"$maintainer\"" >> $PACKAGES
       echo -n "  }" >> $PACKAGES
 
       # search.json
-      echo "  {\"name\":\"$pkgname\",\"desc\":\"$desc\"}" >> $SEARCH
-
+      echo "  {\"name\":\"$pkgname\",\"desc\":\"$desc\",\"path\":\"$path\"}" >> $SEARCH
     fi
 
   done

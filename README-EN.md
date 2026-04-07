@@ -21,4 +21,4 @@ VUR serves as a place to share packages that are not available by default, built
 
 > Use responsibly. Always review templates before building packages.
 
-#### ❗ANNAOUNCMENT❗ : Documentation For English Coming Soon
+#### DOKUMENTASI : [doc.md](./vdokumentasi/3NGLISH/index.md)
