@@ -1,21 +1,21 @@
 [
-  {"name":"linux-zen","desc":"Zen - Linux kernel and modules"}
+  {"name":"linux-zen","desc":"Zen - Linux kernel and modules","path":"core/linux-zen"}
 ,
-  {"name":"android-studio","desc":"The official Android IDE"}
+  {"name":"android-studio","desc":"The official Android IDE","path":"extra/android-studio"}
 ,
-  {"name":"brave-browser","desc":"Web browser"}
+  {"name":"brave-browser","desc":"Web browser","path":"extra/brave-browser"}
 ,
-  {"name":"cosmic-desktop","desc":"Meta Package that install all components of COSMIC Desktop and the needed dependencies"}
+  {"name":"cosmic-desktop","desc":"Meta Package that install all components of COSMIC Desktop and the needed dependencies","path":"extra/cosmic-desktop"}
 ,
-  {"name":"cosmic-desktop-full","desc":"Full Cosmic Desktop"}
+  {"name":"cosmic-desktop-full","desc":"Full Cosmic Desktop","path":"extra/cosmic-desktop-full"}
 ,
-  {"name":"cosmic-desktop-minimal","desc":"Meta Package that install all components of COSMIC Desktop and the needed dependencies"}
+  {"name":"cosmice-desktop-minimal","desc":"Meta Package that install all components of COSMIC Desktop and the needed dependencies","path":"extra/cosmice-desktop-minimal"}
 ,
-  {"name":"ms-teams","desc":"Unofficial Microsoft Teams client"}
+  {"name":"ms-teams","desc":"Unofficial Microsoft Teams client","path":"extra/ms-teams"}
 ,
-  {"name":"obsidian","desc":"Knowledge base and note-taking program"}
+  {"name":"obsidian","desc":"Knowledge base and note-taking program","path":"extra/obsidian"}
 ,
-  {"name":"zen-browser","desc":"Minimalistic web browser"}
+  {"name":"zen-browser","desc":"Minimalistic web browser","path":"extra/zen-browser"}
 ,
-  {"name":"portproton","desc":"Software for playing Microsoft Windows games and launchers"}
+  {"name":"portproton","desc":"Software for playing Microsoft Windows games and launchers","path":"multilib/portproton"}
 ]

@@ -1,21 +1,21 @@
 [
-  {"name":"linux-zen","category":"core"}
+  {"name":"linux-zen","category":"core","path":"core/linux-zen"}
 ,
-  {"name":"android-studio","category":"extra"}
+  {"name":"android-studio","category":"extra","path":"extra/android-studio"}
 ,
-  {"name":"brave-browser","category":"extra"}
+  {"name":"brave-browser","category":"extra","path":"extra/brave-browser"}
 ,
-  {"name":"cosmic-desktop","category":"extra"}
+  {"name":"cosmic-desktop","category":"extra","path":"extra/cosmic-desktop"}
 ,
-  {"name":"cosmic-desktop-full","category":"extra"}
+  {"name":"cosmic-desktop-full","category":"extra","path":"extra/cosmic-desktop-full"}
 ,
-  {"name":"cosmic-desktop-minimal","category":"extra"}
+  {"name":"cosmice-desktop-minimal","category":"extra","path":"extra/cosmice-desktop-minimal"}
 ,
-  {"name":"ms-teams","category":"extra"}
+  {"name":"ms-teams","category":"extra","path":"extra/ms-teams"}
 ,
-  {"name":"obsidian","category":"extra"}
+  {"name":"obsidian","category":"extra","path":"extra/obsidian"}
 ,
-  {"name":"zen-browser","category":"extra"}
+  {"name":"zen-browser","category":"extra","path":"extra/zen-browser"}
 ,
-  {"name":"portproton","category":"multilib"}
+  {"name":"portproton","category":"multilib","path":"multilib/portproton"}
 ]
