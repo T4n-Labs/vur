@@ -3,6 +3,8 @@
 ,
   {"name":"zsh","category":"core","path":"core/zsh"}
 ,
+  {"name":"PrismLauncher-Patched","category":"extra","path":"extra/PrismLauncher-Patched"}
+,
   {"name":"android-studio","category":"extra","path":"extra/android-studio"}
 ,
   {"name":"brave-browser","category":"extra","path":"extra/brave-browser"}

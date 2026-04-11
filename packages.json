@@ -16,6 +16,14 @@
     "maintainer": "Leah Neukirchen <leah@vuxu.org>"
   },
   {
+    "name": "PrismLauncher-Patched",
+    "category": "extra",
+    "path": "extra/PrismLauncher-Patched",
+    "version": "10.0.5",
+    "homepage": "https://prismlauncher.org/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>"
+  },
+  {
     "name": "android-studio",
     "category": "extra",
     "path": "extra/android-studio",

@@ -3,6 +3,8 @@
 ,
   {"name":"zsh","desc":"Z SHell","path":"core/zsh"}
 ,
+  {"name":"PrismLauncher-Patched","desc":"Custom launcher for Minecraft","path":"extra/PrismLauncher-Patched"}
+,
   {"name":"android-studio","desc":"Official Android IDE","path":"extra/android-studio"}
 ,
   {"name":"brave-browser","desc":"Web browser","path":"extra/brave-browser"}
