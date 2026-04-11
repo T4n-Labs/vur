@@ -1,9 +1,13 @@
 [
   {"name":"linux-zen","desc":"Zen - Linux kernel and modules","path":"core/linux-zen"}
 ,
-  {"name":"android-studio","desc":"The official Android IDE","path":"extra/android-studio"}
+  {"name":"zsh","desc":"Z SHell","path":"core/zsh"}
+,
+  {"name":"android-studio","desc":"Official Android IDE","path":"extra/android-studio"}
 ,
   {"name":"brave-browser","desc":"Web browser","path":"extra/brave-browser"}
+,
+  {"name":"calamares","desc":"Distribution-independent installer framework","path":"extra/calamares"}
 ,
   {"name":"cosmic-desktop","desc":"Meta Package that install all components of COSMIC Desktop and the needed dependencies","path":"extra/cosmic-desktop"}
 ,
@@ -11,11 +15,27 @@
 ,
   {"name":"cosmice-desktop-minimal","desc":"Meta Package that install all components of COSMIC Desktop and the needed dependencies","path":"extra/cosmice-desktop-minimal"}
 ,
+  {"name":"discord","desc":"Chat and VOIP application","path":"extra/discord"}
+,
+  {"name":"heroic-game-launcher","desc":"A games launcher for GOG, Amazon and Epic Games.","path":"extra/heroic-game-launcher"}
+,
+  {"name":"ly","desc":"A lightweight TUI display manager for Linux and BSD.","path":"extra/ly"}
+,
   {"name":"ms-teams","desc":"Unofficial Microsoft Teams client","path":"extra/ms-teams"}
 ,
-  {"name":"obsidian","desc":"Knowledge base and note-taking program","path":"extra/obsidian"}
+  {"name":"obsidian","desc":"Private and flexible writing app that adapts to the way you think.","path":"extra/obsidian"}
 ,
-  {"name":"zen-browser","desc":"Minimalistic web browser","path":"extra/zen-browser"}
+  {"name":"proton-authenticator","desc":"An open source and end-to-end encrypted 2FA app. Securely sync and backup your 2FA codes easily.","path":"extra/proton-authenticator"}
+,
+  {"name":"proton-vpn-gtk-app","desc":"Official ProtonVPN Linux app","path":"extra/proton-vpn-gtk-app"}
+,
+  {"name":"spotify","desc":"Proprietary music streaming client","path":"extra/spotify"}
+,
+  {"name":"vscodium","desc":"Free/Libre Open Source Software Binaries of VSCode","path":"extra/vscodium"}
+,
+  {"name":"zen-browser","desc":"Performance oriented Firefox-based web browser","path":"extra/zen-browser"}
+,
+  {"name":"zig","desc":"Programming language designed for robustness, optimality, and clarity","path":"extra/zig"}
 ,
   {"name":"portproton","desc":"Software for playing Microsoft Windows games and launchers","path":"multilib/portproton"}
 ]

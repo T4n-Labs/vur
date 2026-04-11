@@ -8,12 +8,20 @@
     "maintainer": "JuanMa <numblinux@gmail.com>"
   },
   {
+    "name": "zsh",
+    "category": "core",
+    "path": "core/zsh",
+    "version": "5.9",
+    "homepage": "https://www.zsh.org",
+    "maintainer": "Leah Neukirchen <leah@vuxu.org>"
+  },
+  {
     "name": "android-studio",
     "category": "extra",
     "path": "extra/android-studio",
-    "version": "2.2.2",
-    "homepage": "http://tools.android.com/",
-    "maintainer": "fork from Jordyn Carattini <onlinecloud1@gmail.com>"
+    "version": "2025.3.2.6",
+    "homepage": "https://developer.android.com/studio/",
+    "maintainer": "Bnyro <bnyro@tutanota.com>"
   },
   {
     "name": "brave-browser",
@@ -22,6 +30,14 @@
     "version": "1.78.102",
     "homepage": "https://www.brave.com/",
     "maintainer": "jacob Pedersen <jake@jpedmedia.com>"
+  },
+  {
+    "name": "calamares",
+    "category": "extra",
+    "path": "extra/calamares",
+    "version": "3.4.2",
+    "homepage": "https://calamares.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>"
   },
   {
     "name": "cosmic-desktop",
@@ -48,6 +64,30 @@
     "maintainer": "Bella Wagner <belladev109@proton.me>"
   },
   {
+    "name": "discord",
+    "category": "extra",
+    "path": "extra/discord",
+    "version": "0.0.132",
+    "homepage": "https://discord.com",
+    "maintainer": "Orphaned <orphan@voidlinux.org>"
+  },
+  {
+    "name": "heroic-game-launcher",
+    "category": "extra",
+    "path": "extra/heroic-game-launcher",
+    "version": "2.20.1",
+    "homepage": "https://heroicgameslauncher.com/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>"
+  },
+  {
+    "name": "ly",
+    "category": "extra",
+    "path": "extra/ly",
+    "version": "1.3.2",
+    "homepage": "https://codeberg.org/fairyglade/ly",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>"
+  },
+  {
     "name": "ms-teams",
     "category": "extra",
     "path": "extra/ms-teams",
@@ -59,17 +99,57 @@
     "name": "obsidian",
     "category": "extra",
     "path": "extra/obsidian",
-    "version": "1.8.10",
-    "homepage": "https://obsidian.md/",
-    "maintainer": ""
+    "version": "1.12.7",
+    "homepage": "https://obsidian.md",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>"
+  },
+  {
+    "name": "proton-authenticator",
+    "category": "extra",
+    "path": "extra/proton-authenticator",
+    "version": "1.1.4",
+    "homepage": "https://proton.me/authenticator",
+    "maintainer": "Naz <ndpm13@ch-naeseem.com>"
+  },
+  {
+    "name": "proton-vpn-gtk-app",
+    "category": "extra",
+    "path": "extra/proton-vpn-gtk-app",
+    "version": "4.15.2",
+    "homepage": "https://protonvpn.com/download-linux",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>"
+  },
+  {
+    "name": "spotify",
+    "category": "extra",
+    "path": "extra/spotify",
+    "version": "1.2.84",
+    "homepage": "https://www.spotify.com",
+    "maintainer": "Stefan Mühlinghaus <jazzman@alphabreed.com>"
+  },
+  {
+    "name": "vscodium",
+    "category": "extra",
+    "path": "extra/vscodium",
+    "version": "1.112.01907",
+    "homepage": "https://vscodium.com/",
+    "maintainer": "Naz <ndpm13@ch-naeseem.com>"
   },
   {
     "name": "zen-browser",
     "category": "extra",
     "path": "extra/zen-browser",
-    "version": "1.7b",
-    "homepage": "https://www.zen-browser.app/",
-    "maintainer": "SalahDin Rezk <salah2112004@gmail.com>"
+    "version": "1.19.8b",
+    "homepage": "https://zen-browser.app/",
+    "maintainer": "Naz <ndpm13@ch-naeseem.com>"
+  },
+  {
+    "name": "zig",
+    "category": "extra",
+    "path": "extra/zig",
+    "version": "0.15.2",
+    "homepage": "https://ziglang.org",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>"
   },
   {
     "name": "portproton",

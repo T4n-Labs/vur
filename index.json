@@ -1,9 +1,13 @@
 [
   {"name":"linux-zen","category":"core","path":"core/linux-zen"}
 ,
+  {"name":"zsh","category":"core","path":"core/zsh"}
+,
   {"name":"android-studio","category":"extra","path":"extra/android-studio"}
 ,
   {"name":"brave-browser","category":"extra","path":"extra/brave-browser"}
+,
+  {"name":"calamares","category":"extra","path":"extra/calamares"}
 ,
   {"name":"cosmic-desktop","category":"extra","path":"extra/cosmic-desktop"}
 ,
@@ -11,11 +15,27 @@
 ,
   {"name":"cosmice-desktop-minimal","category":"extra","path":"extra/cosmice-desktop-minimal"}
 ,
+  {"name":"discord","category":"extra","path":"extra/discord"}
+,
+  {"name":"heroic-game-launcher","category":"extra","path":"extra/heroic-game-launcher"}
+,
+  {"name":"ly","category":"extra","path":"extra/ly"}
+,
   {"name":"ms-teams","category":"extra","path":"extra/ms-teams"}
 ,
   {"name":"obsidian","category":"extra","path":"extra/obsidian"}
 ,
+  {"name":"proton-authenticator","category":"extra","path":"extra/proton-authenticator"}
+,
+  {"name":"proton-vpn-gtk-app","category":"extra","path":"extra/proton-vpn-gtk-app"}
+,
+  {"name":"spotify","category":"extra","path":"extra/spotify"}
+,
+  {"name":"vscodium","category":"extra","path":"extra/vscodium"}
+,
   {"name":"zen-browser","category":"extra","path":"extra/zen-browser"}
+,
+  {"name":"zig","category":"extra","path":"extra/zig"}
 ,
   {"name":"portproton","category":"multilib","path":"multilib/portproton"}
 ]
