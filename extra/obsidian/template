@@ -1,48 +1,27 @@
 # Template file for 'obsidian'
 pkgname=obsidian
-version=1.8.10
+version=1.12.7
 revision=1
-short_desc="Knowledge base and note-taking program"
-archs="x86_64"
-depends="zlib hicolor-icon-theme fuse"
-license="custom:Proprietary"
-homepage="https://obsidian.md/"
-distfiles="https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/obsidian-${version}.tar.gz"
-checksum=c59a22e19f4930cfc510f7ef8c15c46a0de94ffb891fd76f169f2a1e74c534a1
-repository=nonfree
-nopie=yes
+only_for_archs="x86_64"
+hostmakedepends="tar xz"
+short_desc="Private and flexible writing app that adapts to the way you think."
+maintainer="Naz <ndpm13@ch-naseem.com>"
+license="Proprietary"
+homepage="https://obsidian.md"
+distfiles="https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/obsidian_${version}_amd64.deb"
+checksum=3644e3ef19bcd23db4d17f7c73311b5245429391a2a48b361da93375f59712b0
 nostrip=yes
 
+do_extract() {
+  mkdir -p ${DESTDIR}
+  ar x ${XBPS_SRCDISTDIR}/${pkgname}-${version}/obsidian_${version}_amd64.deb
+  tar xf data.tar.xz -C ${DESTDIR}
+}
+
 do_install() {
-    local package_location="usr/lib/$pkgname" item
-    vmkdir usr/share/pixmaps
-    vcopy resources/icon.png /usr/share/pixmaps/obsidian.png
-    vinstall ${FILESDIR}/${pkgname}.desktop 644 usr/share/applications
-    vmkdir ${package_location}
-    chmod +x obsidian
-    for item in \
-        chrome-sandbox \
-        chrome_100_percent.pak \
-        chrome_200_percent.pak \
-        chrome_crashpad_handler \
-        icudtl.dat \
-        libEGL.so \
-        libffmpeg.so \
-        libGLESv2.so \
-        libvk_swiftshader.so \
-        libvulkan.so.1 \
-        LICENSE.electron.txt \
-        LICENSES.chromium.html \
-        locales \
-        obsidian \
-        resources \
-        resources.pak \
-        snapshot_blob.bin \
-        v8_context_snapshot.bin \
-        vk_swiftshader_icd.json
-    do
-        vcopy "${item}" "${package_location}"
-    done
-    vmkdir usr/bin
-    ln -sfr $DESTDIR/${package_location}/obsidian $DESTDIR/usr/bin/obsidian
+	vmkdir usr/bin
+  ln -sf /opt/Obsidian/obsidian ${DESTDIR}/usr/bin/obsidian
+
+  # Cleanup up
+  rm -rf ${DESTDIR}/etc
 }
