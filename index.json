@@ -31,6 +31,8 @@
 ,
   {"name":"proton-vpn-gtk-app","category":"extra","path":"extra/proton-vpn-gtk-app"}
 ,
+  {"name":"quran-companion","category":"extra","path":"extra/quran-companion"}
+,
   {"name":"spotify","category":"extra","path":"extra/spotify"}
 ,
   {"name":"vscodium","category":"extra","path":"extra/vscodium"}
