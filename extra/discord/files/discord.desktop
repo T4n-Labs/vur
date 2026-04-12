@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Discord
+Comment=Chat for communities
+Exec=discord
+Icon=discord
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;
+StartupWMClass=Discord
