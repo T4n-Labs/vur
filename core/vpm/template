@@ -1,0 +1,26 @@
+# Template file for 'vpm'
+pkgname=vpm
+version=0.0.1
+revision=1
+build_style=meta
+short_desc="Wrapper for xbps package manager (VPM)"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
+license="MIT"
+homepage="https://github.com/T4n-Labs/VPM"
+distfiles="https://github.com/T4n-Labs/VPM/archive/refs/tags/${version}.tar.gz"
+checksum=2a4a186536b66f259591da0170332228fb8cd8346f05cfc2b3c6521e05d50959
+
+depends="xbps"
+
+do_install() {
+    vinstall vpm 755 usr/bin
+
+    vinstall lib/core.sh 644 usr/lib/vpm/lib
+    vinstall lib/ui.sh   644 usr/lib/vpm/lib
+
+    for cmd in install remove search update upgrade; do
+        vinstall commands/${cmd}.sh 755 usr/lib/vpm/commands
+    done
+
+    vinstall config 644 etc/vpm.conf
+}
