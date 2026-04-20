@@ -1,6 +1,8 @@
 [
   {"name":"linux-zen","category":"core","path":"core/linux-zen"}
 ,
+  {"name":"vpm","category":"core","path":"core/vpm"}
+,
   {"name":"zsh","category":"core","path":"core/zsh"}
 ,
   {"name":"PrismLauncher-Patched","category":"extra","path":"extra/PrismLauncher-Patched"}

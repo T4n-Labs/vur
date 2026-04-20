@@ -8,6 +8,14 @@
     "maintainer": "JuanMa <numblinux@gmail.com>"
   },
   {
+    "name": "vpm",
+    "category": "core",
+    "path": "core/vpm",
+    "version": "0.0.1",
+    "homepage": "https://github.com/T4n-Labs/VPM",
+    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
     "name": "zsh",
     "category": "core",
     "path": "core/zsh",

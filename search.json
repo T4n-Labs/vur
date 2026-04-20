@@ -1,6 +1,8 @@
 [
   {"name":"linux-zen","desc":"Zen - Linux kernel and modules","path":"core/linux-zen"}
 ,
+  {"name":"vpm","desc":"Wrapper for xbps package manager","path":"core/vpm"}
+,
   {"name":"zsh","desc":"Z SHell","path":"core/zsh"}
 ,
   {"name":"PrismLauncher-Patched","desc":"Custom launcher for Minecraft","path":"extra/PrismLauncher-Patched"}
