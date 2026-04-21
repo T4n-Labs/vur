@@ -1,0 +1,20 @@
+# Template file for 'xvr-lang'
+pkgname=xvr
+version=0.6.16
+revision=1
+short_desc="Experimental programming language and interpreter"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
+license="MIT"
+homepage="https://xvrlang.github.io/website/"
+distfiles="https://github.com/xvrlang/xvr/archive/refs/tags/${version}.tar.gz"
+checksum=04f3717e3a4ded3489869af78a36c31b61d900fccc1dfd6b5195a40467a16b98
+
+do_install() {
+	vbin xvr
+
+	vmkdir usr/lib/xvr
+	vcopy ./lib/* usr/lib/xvr
+
+	vlicense LICENSE
+	vdoc README.md
+}
