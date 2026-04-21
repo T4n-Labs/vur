@@ -75,7 +75,7 @@
     "name": "discord",
     "category": "extra",
     "path": "extra/discord",
-    "version": "0.0.132",
+    "version": "0.0.134",
     "homepage": "https://discord.com",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
   },
