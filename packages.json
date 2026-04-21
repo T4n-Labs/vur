@@ -8,14 +8,6 @@
     "maintainer": "JuanMa <numblinux@gmail.com>"
   },
   {
-    "name": "vpm",
-    "category": "core",
-    "path": "core/vpm",
-    "version": "0.0.1",
-    "homepage": "https://github.com/T4n-Labs/VPM",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
-  },
-  {
     "name": "zsh",
     "category": "core",
     "path": "core/zsh",
@@ -24,9 +16,9 @@
     "maintainer": "Leah Neukirchen <leah@vuxu.org>"
   },
   {
-    "name": "PrismLauncher-Patched",
+    "name": "PrismLauncher",
     "category": "extra",
-    "path": "extra/PrismLauncher-Patched",
+    "path": "extra/PrismLauncher",
     "version": "10.0.5",
     "homepage": "https://prismlauncher.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -72,9 +64,9 @@
     "maintainer": "Bella Viola Wagner <belladev109@proton.me>"
   },
   {
-    "name": "cosmice-desktop-minimal",
+    "name": "cosmic-desktop-minimal",
     "category": "extra",
-    "path": "extra/cosmice-desktop-minimal",
+    "path": "extra/cosmic-desktop-minimal",
     "version": "1.0.8",
     "homepage": "https://github.com/pop-os/cosmic-epoch",
     "maintainer": "Bella Wagner <belladev109@proton.me>"
@@ -94,6 +86,14 @@
     "version": "2.20.1",
     "homepage": "https://heroicgameslauncher.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
+  },
+  {
+    "name": "luna-sh",
+    "category": "extra",
+    "path": "extra/luna-sh",
+    "version": "",
+    "homepage": "https://codeberg.org/slowy07/Luna-sh",
+    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "ly",
@@ -118,6 +118,14 @@
     "version": "1.12.7",
     "homepage": "https://obsidian.md",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
+  },
+  {
+    "name": "portproton",
+    "category": "extra",
+    "path": "extra/portproton",
+    "version": "1.5.2",
+    "homepage": "https://linux-gaming.ru/",
+    "maintainer": "Kira <kira0void@proton.me>"
   },
   {
     "name": "proton-authenticator",
@@ -152,12 +160,36 @@
     "maintainer": "Stefan Mühlinghaus <jazzman@alphabreed.com>"
   },
   {
+    "name": "vpm",
+    "category": "extra",
+    "path": "extra/vpm",
+    "version": "0.0.1",
+    "homepage": "https://github.com/T4n-Labs/VPM",
+    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
     "name": "vscodium",
     "category": "extra",
     "path": "extra/vscodium",
     "version": "1.112.01907",
     "homepage": "https://vscodium.com/",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>"
+  },
+  {
+    "name": "wfetch",
+    "category": "extra",
+    "path": "extra/wfetch",
+    "version": "",
+    "homepage": "https://codeberg.org/slowy07/wfetch",
+    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "xvr",
+    "category": "extra",
+    "path": "extra/xvr",
+    "version": "0.6.16",
+    "homepage": "https://xvrlang.github.io/website/",
+    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "zen-browser",
@@ -176,10 +208,18 @@
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
   },
   {
-    "name": "portproton",
+    "name": "gcc-multilib",
     "category": "multilib",
-    "path": "multilib/portproton",
-    "version": "1.5.2",
-    "homepage": "https://linux-gaming.ru/",
-    "maintainer": "Kira <kira0void@proton.me>"
+    "path": "multilib/gcc-multilib",
+    "version": "14.2.1+20250405",
+    "homepage": "http://gcc.gnu.org",
+    "maintainer": "Orphaned <orphan@voidlinux.org>"
+  },
+  {
+    "name": "wine",
+    "category": "multilib",
+    "path": "multilib/wine",
+    "version": "11.5",
+    "homepage": "http://www.winehq.org/",
+    "maintainer": "Helmut Pozimski <helmut@pozimski.eu>"
   }]
