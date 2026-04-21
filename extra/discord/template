@@ -1,6 +1,6 @@
 # Template file for 'discord'
 pkgname=discord
-version=0.0.132
+version=0.0.134
 revision=1
 archs="x86_64"
 depends="alsa-lib dbus-glib gtk+3 libnotify nss libXtst libcxx libatomic xdg-utils webrtc-audio-processing libXScrnSaver xdg-desktop-portal xdg-desktop-portal-gtk"
