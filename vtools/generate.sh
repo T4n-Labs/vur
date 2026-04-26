@@ -48,6 +48,7 @@ for category in core extra multilib; do
       echo "    \"category\": \"$category\"," >> $PACKAGES
       echo "    \"path\": \"$path\"," >> $PACKAGES
       echo "    \"version\": \"$version\"," >> $PACKAGES
+      echo "    \"description\": \"$desc\"," >> $PACKAGES
       echo "    \"homepage\": \"$homepage\"," >> $PACKAGES
       echo "    \"maintainer\": \"$maintainer\"" >> $PACKAGES
       echo -n "  }" >> $PACKAGES
