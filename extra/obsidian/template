@@ -1,4 +1,5 @@
 # Template file for 'obsidian'
+# ON GOING
 pkgname=obsidian
 version=1.12.7
 revision=1
@@ -8,20 +9,16 @@ short_desc="Private and flexible writing app that adapts to the way you think."
 maintainer="Naz <ndpm13@ch-naseem.com>"
 license="Proprietary"
 homepage="https://obsidian.md"
-distfiles="https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/obsidian_${version}_amd64.deb"
-checksum=3644e3ef19bcd23db4d17f7c73311b5245429391a2a48b361da93375f59712b0
+distfiles="https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/obsidian-${version}.tar.gz"
+checksum=fcbe08b111d9c1fdb09b9c08952b06e1c829c62163eba2584c4b4ec859be079d
 nostrip=yes
 
-do_extract() {
-  mkdir -p ${DESTDIR}
-  ar x ${XBPS_SRCDISTDIR}/${pkgname}-${version}/obsidian_${version}_amd64.deb
-  tar xf data.tar.xz -C ${DESTDIR}
-}
-
 do_install() {
-	vmkdir usr/bin
-  ln -sf /opt/Obsidian/obsidian ${DESTDIR}/usr/bin/obsidian
+    vmkdir usr/bin
+    vmkdir opt/Obsidian
 
-  # Cleanup up
-  rm -rf ${DESTDIR}/etc
+    tar -xzf ${XBPS_SRCDISTDIR}/${pkgname}-${version}.tar.gz \
+        -C ${DESTDIR}/opt/Obsidian --strip-components=1
+
+    ln -sf /opt/Obsidian/obsidian ${DESTDIR}/usr/bin/obsidian
 }

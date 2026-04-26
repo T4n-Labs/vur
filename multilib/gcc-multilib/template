@@ -1,4 +1,5 @@
 # Template file for 'gcc-multilib'
+# This template is old
 archs="x86_64"
 _triplet="x86_64-unknown-linux-gnu"
 

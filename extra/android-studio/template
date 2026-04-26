@@ -1,4 +1,5 @@
 # Template file for 'android-studio'
+# This Template is old
 pkgname=android-studio
 version=2025.3.2.6
 revision=1

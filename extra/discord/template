@@ -1,4 +1,5 @@
 # Template file for 'discord'
+# This template is old
 pkgname=discord
 version=0.0.134
 revision=1
@@ -6,7 +7,7 @@ archs="x86_64"
 depends="alsa-lib dbus-glib gtk+3 libnotify nss libXtst libcxx libatomic xdg-utils webrtc-audio-processing libXScrnSaver xdg-desktop-portal xdg-desktop-portal-gtk"
 short_desc="Chat and VOIP application"
 maintainer="Gh0sT4n <darskevoid@gmail.com>"
-license="custom:Proprietary"
+license="Proprietary"
 homepage="https://discord.com"
 distfiles="https://dl.discordapp.net/apps/linux/${version}/discord-${version}.tar.gz"
 checksum=SKIP

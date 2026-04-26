@@ -1,4 +1,5 @@
 # Template file for 'heroic-games-launcher'
+# This template is old
 pkgname=heroic-games-launcher
 version=2.20.1
 revision=1

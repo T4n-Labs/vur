@@ -1,4 +1,5 @@
 # Template file for 'proton-vpn-gtk-app'
+# This template is old
 pkgname=proton-vpn-gtk-app
 version=4.15.2
 revision=1

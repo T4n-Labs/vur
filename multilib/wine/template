@@ -1,4 +1,5 @@
 # Template file for 'wine'
+# This template is old
 pkgname=wine
 version=11.5
 revision=1
