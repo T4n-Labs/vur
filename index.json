@@ -1,6 +1,8 @@
 [
   {"name":"linux-zen","category":"core","path":"core/linux-zen"}
 ,
+  {"name":"luna-sh","category":"core","path":"core/luna-sh"}
+,
   {"name":"zsh","category":"core","path":"core/zsh"}
 ,
   {"name":"PrismLauncher","category":"extra","path":"extra/PrismLauncher"}
@@ -11,21 +13,11 @@
 ,
   {"name":"calamares","category":"extra","path":"extra/calamares"}
 ,
-  {"name":"cosmic-desktop","category":"extra","path":"extra/cosmic-desktop"}
-,
-  {"name":"cosmic-desktop-full","category":"extra","path":"extra/cosmic-desktop-full"}
-,
-  {"name":"cosmic-desktop-minimal","category":"extra","path":"extra/cosmic-desktop-minimal"}
-,
   {"name":"discord","category":"extra","path":"extra/discord"}
 ,
   {"name":"heroic-game-launcher","category":"extra","path":"extra/heroic-game-launcher"}
 ,
-  {"name":"luna-sh","category":"extra","path":"extra/luna-sh"}
-,
   {"name":"ly","category":"extra","path":"extra/ly"}
-,
-  {"name":"ms-teams","category":"extra","path":"extra/ms-teams"}
 ,
   {"name":"obsidian","category":"extra","path":"extra/obsidian"}
 ,
@@ -36,8 +28,6 @@
   {"name":"proton-vpn-gtk-app","category":"extra","path":"extra/proton-vpn-gtk-app"}
 ,
   {"name":"quran-companion","category":"extra","path":"extra/quran-companion"}
-,
-  {"name":"spotify","category":"extra","path":"extra/spotify"}
 ,
   {"name":"vpm","category":"extra","path":"extra/vpm"}
 ,

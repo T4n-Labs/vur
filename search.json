@@ -1,6 +1,8 @@
 [
   {"name":"linux-zen","desc":"Zen - Linux kernel and modules","path":"core/linux-zen"}
 ,
+  {"name":"luna-sh","desc":"Modern, lightweight, extensible command-line shell written in zig","path":"core/luna-sh"}
+,
   {"name":"zsh","desc":"Z SHell","path":"core/zsh"}
 ,
   {"name":"PrismLauncher","desc":"Custom launcher for Minecraft","path":"extra/PrismLauncher"}
@@ -11,21 +13,11 @@
 ,
   {"name":"calamares","desc":"Distribution-independent installer framework","path":"extra/calamares"}
 ,
-  {"name":"cosmic-desktop","desc":"Meta Package that install all components of COSMIC Desktop and the needed dependencies","path":"extra/cosmic-desktop"}
-,
-  {"name":"cosmic-desktop-full","desc":"Full Cosmic Desktop","path":"extra/cosmic-desktop-full"}
-,
-  {"name":"cosmic-desktop-minimal","desc":"Meta Package that install all components of COSMIC Desktop and the needed dependencies","path":"extra/cosmic-desktop-minimal"}
-,
   {"name":"discord","desc":"Chat and VOIP application","path":"extra/discord"}
 ,
   {"name":"heroic-game-launcher","desc":"A games launcher for GOG, Amazon and Epic Games.","path":"extra/heroic-game-launcher"}
 ,
-  {"name":"luna-sh","desc":"Modern, lightweight, extensible command-line shell written in zig","path":"extra/luna-sh"}
-,
   {"name":"ly","desc":"A lightweight TUI display manager for Linux and BSD.","path":"extra/ly"}
-,
-  {"name":"ms-teams","desc":"Unofficial Microsoft Teams client","path":"extra/ms-teams"}
 ,
   {"name":"obsidian","desc":"Private and flexible writing app that adapts to the way you think.","path":"extra/obsidian"}
 ,
@@ -35,17 +27,15 @@
 ,
   {"name":"proton-vpn-gtk-app","desc":"Official ProtonVPN Linux app","path":"extra/proton-vpn-gtk-app"}
 ,
-  {"name":"quran-companion","desc":"Free and open-source desktop Quran reader and player","path":"extra/quran-companion"}
-,
-  {"name":"spotify","desc":"Proprietary music streaming client","path":"extra/spotify"}
+  {"name":"quran-companion","desc":"FOOS Desktop Quran Reader and Player","path":"extra/quran-companion"}
 ,
   {"name":"vpm","desc":"Wrapper for xbps package manager","path":"extra/vpm"}
 ,
-  {"name":"vscodium","desc":"Free/Libre Open Source Software Binaries of VSCode","path":"extra/vscodium"}
+  {"name":"vscodium","desc":"FOSS Binaries of VSCode","path":"extra/vscodium"}
 ,
-  {"name":"wfetch","desc":"inspiration from neofetch or rxfetch but written with zig","path":"extra/wfetch"}
+  {"name":"wfetch","desc":"CLI System Information Tool written with zig","path":"extra/wfetch"}
 ,
-  {"name":"xvr","desc":"Experimental programming language and interpreter","path":"extra/xvr"}
+  {"name":"xvr","desc":"The XVR Programming Language Compiler","path":"extra/xvr"}
 ,
   {"name":"zen-browser","desc":"Performance oriented Firefox-based web browser","path":"extra/zen-browser"}
 ,
