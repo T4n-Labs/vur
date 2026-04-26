@@ -10,6 +10,7 @@ configure_args="
  -DCMAKE_BUILD_TYPE=Release
  -DLLVM_DIR=${_llvm_prefix}/lib/cmake/llvm
  -DLLVM_CONFIG=${_llvm_prefix}/bin/llvm-config
+ -DBUILD_TESTING=OFF
 "
 
 makedepends="
@@ -28,9 +29,12 @@ distfiles="https://github.com/xvrlang/xvr/archive/refs/tags/${version}.tar.gz"
 checksum=04f3717e3a4ded3489869af78a36c31b61d900fccc1dfd6b5195a40467a16b98
 
 post_install() {
-	# Fix binary permission after cmake install
-	chmod +x ${DESTDIR}/usr/bin/xvr
+    # Hapus cmake test files yang salah lokasi
+    rm -rf ${DESTDIR}/usr/bin/test
 
-	# Install license
-	vlicense LICENSE
+    # Fix binary permission
+    chmod +x ${DESTDIR}/usr/bin/xvr
+
+    # Install license
+    vlicense LICENSE
 }
