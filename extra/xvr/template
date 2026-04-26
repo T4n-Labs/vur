@@ -1,5 +1,5 @@
 # Template file for 'xvr-lang'
-pkgname=xvr-lang
+pkgname=xvr
 version=0.6.16
 revision=1
 build_style=cmake
