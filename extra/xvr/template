@@ -19,6 +19,7 @@ makedepends="
  clang${_llvm_major}
  gcc
  libxml2-devel
+ libcurl-devel
 "
 
 short_desc="The XVR Programming Language Compiler"
