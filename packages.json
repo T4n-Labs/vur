@@ -75,7 +75,7 @@
     "name": "heroic-game-launcher",
     "category": "extra",
     "path": "extra/heroic-game-launcher",
-    "version": "2.20.1",
+    "version": "2.21.0",
     "description": "A games launcher for GOG, Amazon and Epic Games.",
     "homepage": "https://heroicgameslauncher.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
