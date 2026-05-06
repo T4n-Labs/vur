@@ -72,9 +72,9 @@
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
-    "name": "heroic-game-launcher",
+    "name": "heroic-games-launcher",
     "category": "extra",
-    "path": "extra/heroic-game-launcher",
+    "path": "extra/heroic-games-launcher",
     "version": "2.21.0",
     "description": "A games launcher for GOG, Amazon and Epic Games.",
     "homepage": "https://heroicgameslauncher.com/",

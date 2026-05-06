@@ -15,7 +15,7 @@
 ,
   {"name":"discord","desc":"Chat and VOIP application","path":"extra/discord"}
 ,
-  {"name":"heroic-game-launcher","desc":"A games launcher for GOG, Amazon and Epic Games.","path":"extra/heroic-game-launcher"}
+  {"name":"heroic-games-launcher","desc":"A games launcher for GOG, Amazon and Epic Games.","path":"extra/heroic-games-launcher"}
 ,
   {"name":"ly","desc":"A lightweight TUI display manager for Linux and BSD.","path":"extra/ly"}
 ,
