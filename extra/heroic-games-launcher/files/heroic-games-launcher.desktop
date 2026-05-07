@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Heroic Games Launcher
 Exec=heroic %U
-Icon=com.heroicgameslauncher
+Icon=heroic-games-launcher
 Type=Application
 Categories=Game;
 MimeType=x-scheme-handler/heroic;
