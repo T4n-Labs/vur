@@ -26,12 +26,10 @@ do_build() {
 }
 
 do_install() {
-	vcopy dist/linux-unpacked /usr/lib/heroic
+    vcopy dist/linux-unpacked /usr/lib/heroic
+    vmkdir usr/bin
+    ln -sf /usr/lib/heroic/heroic ${DESTDIR}/usr/bin/heroic
 
-	vmkdir usr/bin
-	ln -sf /usr/lib/heroic/heroic ${DESTDIR}/usr/bin/heroic
-	
-	sed -i 's/heroic-run/heroic/' flatpak/com.heroicgameslauncher.hgl.desktop
-	vinstall flatpak/com.heroicgameslauncher.hgl.desktop 644 usr/share/applications
-	vinstall flatpak/com.heroicgameslauncher.hgl.png 644 usr/share/pixmaps
+    vinstall ${FILESDIR}/heroic-games-launcher.desktop 644 usr/share/applications
+    vinstall ${FILESDIR}/heroic-games-launcher.png 644 usr/share/icons/hicolor/256x256/apps
 }
