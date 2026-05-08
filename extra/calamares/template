@@ -1,5 +1,4 @@
 # Template file for 'calamares'
-# This template is old
 pkgname=calamares
 version=3.4.2
 revision=1
