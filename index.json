@@ -1,25 +1,165 @@
 [
+  {"name":"NetworkManager-dinit","category":"core","path":"core/NetworkManager-dinit"}
+,
+  {"name":"dbus-dinit","category":"core","path":"core/dbus-dinit"}
+,
+  {"name":"dgop","category":"core","path":"core/dgop"}
+,
+  {"name":"dhcpcd-dinit","category":"core","path":"core/dhcpcd-dinit"}
+,
+  {"name":"dinit","category":"core","path":"core/dinit"}
+,
+  {"name":"dsearch","category":"core","path":"core/dsearch"}
+,
+  {"name":"elogind-dinit","category":"core","path":"core/elogind-dinit"}
+,
+  {"name":"libglib-testing","category":"core","path":"core/libglib-testing"}
+,
+  {"name":"libglib-testing-devel","category":"core","path":"core/libglib-testing-devel"}
+,
+  {"name":"libgsystemservice","category":"core","path":"core/libgsystemservice"}
+,
+  {"name":"libgsystemservice-devel","category":"core","path":"core/libgsystemservice-devel"}
+,
+  {"name":"libvirt-dinit","category":"core","path":"core/libvirt-dinit"}
+,
+  {"name":"lightdm-dinit","category":"core","path":"core/lightdm-dinit"}
+,
   {"name":"linux-zen","category":"core","path":"core/linux-zen"}
 ,
   {"name":"luna-sh","category":"core","path":"core/luna-sh"}
+,
+  {"name":"ly-dinit","category":"core","path":"core/ly-dinit"}
+,
+  {"name":"malcontent","category":"core","path":"core/malcontent"}
+,
+  {"name":"malcontent-devel","category":"core","path":"core/malcontent-devel"}
+,
+  {"name":"mission-center","category":"core","path":"core/mission-center"}
+,
+  {"name":"nmenu","category":"core","path":"core/nmenu"}
+,
+  {"name":"noid-base-files","category":"core","path":"core/noid-base-files"}
+,
+  {"name":"noid-base-system","category":"core","path":"core/noid-base-system"}
+,
+  {"name":"noid-base-system-dinit","category":"core","path":"core/noid-base-system-dinit"}
+,
+  {"name":"noid-dinit","category":"core","path":"core/noid-dinit"}
+,
+  {"name":"openssh-dinit","category":"core","path":"core/openssh-dinit"}
+,
+  {"name":"polkit-dinit","category":"core","path":"core/polkit-dinit"}
+,
+  {"name":"sddm-dinit","category":"core","path":"core/sddm-dinit"}
+,
+  {"name":"wpa_supplicant-dinit","category":"core","path":"core/wpa_supplicant-dinit"}
+,
+  {"name":"xlibre-repo","category":"core","path":"core/xlibre-repo"}
 ,
   {"name":"zsh","category":"core","path":"core/zsh"}
 ,
   {"name":"PrismLauncher","category":"extra","path":"extra/PrismLauncher"}
 ,
+  {"name":"Zed-IDE","category":"extra","path":"extra/Zed-IDE"}
+,
   {"name":"android-studio","category":"extra","path":"extra/android-studio"}
 ,
-  {"name":"brave-browser","category":"extra","path":"extra/brave-browser"}
+  {"name":"azahar","category":"extra","path":"extra/azahar"}
+,
+  {"name":"azaharplus","category":"extra","path":"extra/azaharplus"}
+,
+  {"name":"barve-browser","category":"extra","path":"extra/barve-browser"}
+,
+  {"name":"bazaar","category":"extra","path":"extra/bazaar"}
+,
+  {"name":"bitwarden-desktop","category":"extra","path":"extra/bitwarden-desktop"}
+,
+  {"name":"brave-browser-origin","category":"extra","path":"extra/brave-browser-origin"}
 ,
   {"name":"calamares","category":"extra","path":"extra/calamares"}
 ,
+  {"name":"chrony-dinit","category":"extra","path":"extra/chrony-dinit"}
+,
+  {"name":"cinny-desktop","category":"extra","path":"extra/cinny-desktop"}
+,
+  {"name":"clipcat","category":"extra","path":"extra/clipcat"}
+,
+  {"name":"cryptomator","category":"extra","path":"extra/cryptomator"}
+,
+  {"name":"dioxus-cli","category":"extra","path":"extra/dioxus-cli"}
+,
   {"name":"discord","category":"extra","path":"extra/discord"}
+,
+  {"name":"dms-shell","category":"extra","path":"extra/dms-shell"}
+,
+  {"name":"drawio-desktop","category":"extra","path":"extra/drawio-desktop"}
+,
+  {"name":"emacs-lucid","category":"extra","path":"extra/emacs-lucid"}
+,
+  {"name":"faugus-launcher","category":"extra","path":"extra/faugus-launcher"}
+,
+  {"name":"feishin","category":"extra","path":"extra/feishin"}
+,
+  {"name":"ferdium","category":"extra","path":"extra/ferdium"}
+,
+  {"name":"flat-remix-icon-theme","category":"extra","path":"extra/flat-remix-icon-theme"}
+,
+  {"name":"floorp","category":"extra","path":"extra/floorp"}
+,
+  {"name":"fluffychat","category":"extra","path":"extra/fluffychat"}
+,
+  {"name":"freetube","category":"extra","path":"extra/freetube"}
+,
+  {"name":"grayjay","category":"extra","path":"extra/grayjay"}
+,
+  {"name":"gruvbox-bibata-cursor-theme","category":"extra","path":"extra/gruvbox-bibata-cursor-theme"}
+,
+  {"name":"gruvbox-gtk-theme","category":"extra","path":"extra/gruvbox-gtk-theme"}
+,
+  {"name":"gruvbox-icons-theme","category":"extra","path":"extra/gruvbox-icons-theme"}
+,
+  {"name":"gruvbox-material-theme","category":"extra","path":"extra/gruvbox-material-theme"}
 ,
   {"name":"heroic-games-launcher","category":"extra","path":"extra/heroic-games-launcher"}
 ,
+  {"name":"hyprland-repo","category":"extra","path":"extra/hyprland-repo"}
+,
+  {"name":"kaidan","category":"extra","path":"extra/kaidan"}
+,
+  {"name":"librewolf","category":"extra","path":"extra/librewolf"}
+,
+  {"name":"lutgen-cli","category":"extra","path":"extra/lutgen-cli"}
+,
+  {"name":"lutgen-rs","category":"extra","path":"extra/lutgen-rs"}
+,
+  {"name":"lutgen-studio","category":"extra","path":"extra/lutgen-studio"}
+,
   {"name":"ly","category":"extra","path":"extra/ly"}
 ,
+  {"name":"megasync","category":"extra","path":"extra/megasync"}
+,
+  {"name":"msttcorefonts","category":"extra","path":"extra/msttcorefonts"}
+,
+  {"name":"ndpm","category":"extra","path":"extra/ndpm"}
+,
+  {"name":"nerd-fonts-cascadiacode","category":"extra","path":"extra/nerd-fonts-cascadiacode"}
+,
+  {"name":"noctalia-qs","category":"extra","path":"extra/noctalia-qs"}
+,
+  {"name":"noctalia-shell","category":"extra","path":"extra/noctalia-shell"}
+,
+  {"name":"noid-artwork","category":"extra","path":"extra/noid-artwork"}
+,
+  {"name":"noid-welcome","category":"extra","path":"extra/noid-welcome"}
+,
+  {"name":"nwm","category":"extra","path":"extra/nwm"}
+,
+  {"name":"nyancat","category":"extra","path":"extra/nyancat"}
+,
   {"name":"obsidian","category":"extra","path":"extra/obsidian"}
+,
+  {"name":"onlyoffice","category":"extra","path":"extra/onlyoffice"}
 ,
   {"name":"portproton","category":"extra","path":"extra/portproton"}
 ,
@@ -27,15 +167,49 @@
 ,
   {"name":"proton-vpn-gtk-app","category":"extra","path":"extra/proton-vpn-gtk-app"}
 ,
+  {"name":"python3-proton-core","category":"extra","path":"extra/python3-proton-core"}
+,
+  {"name":"python3-proton-vpn-api-core","category":"extra","path":"extra/python3-proton-vpn-api-core"}
+,
+  {"name":"python3-proton-vpn-local-agent","category":"extra","path":"extra/python3-proton-vpn-local-agent"}
+,
+  {"name":"qt6gtk2","category":"extra","path":"extra/qt6gtk2"}
+,
   {"name":"quran-companion","category":"extra","path":"extra/quran-companion"}
 ,
-  {"name":"vpm","category":"extra","path":"extra/vpm"}
+  {"name":"rustdesk","category":"extra","path":"extra/rustdesk"}
+,
+  {"name":"sbm-rs","category":"extra","path":"extra/sbm-rs"}
+,
+  {"name":"slack-desktop","category":"extra","path":"extra/slack-desktop"}
+,
+  {"name":"spotify","category":"extra","path":"extra/spotify"}
+,
+  {"name":"sway-scroll","category":"extra","path":"extra/sway-scroll"}
+,
+  {"name":"tenacity","category":"extra","path":"extra/tenacity"}
+,
+  {"name":"thorium-browser-avx2","category":"extra","path":"extra/thorium-browser-avx2"}
+,
+  {"name":"tpm","category":"extra","path":"extra/tpm"}
+,
+  {"name":"tutanota-desktop","category":"extra","path":"extra/tutanota-desktop"}
+,
+  {"name":"ueberzugpp","category":"extra","path":"extra/ueberzugpp"}
+,
+  {"name":"ungoogled-chromium","category":"extra","path":"extra/ungoogled-chromium"}
 ,
   {"name":"vscodium","category":"extra","path":"extra/vscodium"}
 ,
+  {"name":"webapp-manager","category":"extra","path":"extra/webapp-manager"}
+,
   {"name":"wfetch","category":"extra","path":"extra/wfetch"}
 ,
+  {"name":"xapp-symbolic-icons","category":"extra","path":"extra/xapp-symbolic-icons"}
+,
   {"name":"xvr","category":"extra","path":"extra/xvr"}
+,
+  {"name":"zap-rs","category":"extra","path":"extra/zap-rs"}
 ,
   {"name":"zen-browser","category":"extra","path":"extra/zen-browser"}
 ,
