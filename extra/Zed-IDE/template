@@ -1,0 +1,94 @@
+# Template file for 'zed'
+pkgname=zed
+version=1.1.7
+revision=1
+build_style=cargo
+make_build_args="--release --locked -p zed -p cli"
+hostmakedepends="
+ cargo
+ rust
+ pkg-config
+ perl
+ clang
+ gettext
+"
+makedepends="
+ alsa-lib-devel
+ fontconfig-devel
+ libgit2-devel
+ libxcb-devel
+ libxkbcommon-devel
+ openssl-devel
+ sqlite-devel
+ vulkan-loader-devel
+ wayland-devel
+ wayland-protocols
+ xcb-util-devel
+ xcb-util-keysyms-devel
+ xcb-util-wm-devel
+ zlib-devel
+"
+depends="
+ alsa-lib
+ fontconfig
+ libxcb
+ libxkbcommon
+ openssl
+ vulkan-loader
+ wayland
+"
+short_desc="High-performance, multiplayer code editor from the creators of Atom"
+maintainer="Your Name <your@email.com>"
+license="GPL-3.0-only, AGPL-3.0-only, Apache-2.0"
+homepage="https://zed.dev"
+changelog="https://github.com/zed-industries/zed/releases/tag/v${version}"
+distfiles="https://github.com/zed-industries/zed/archive/refs/tags/v${version}.tar.gz"
+checksum=8b84b3dbae140addef9070ef3d0ebbf6f42e8826383f890b50aff1b094bc59b7
+
+# Disable auto-update UI — users should use xbps instead
+export ZED_UPDATE_EXPLANATION="Please use xbps-install to update Zed."
+
+pre_build() {
+	# Set release channel (must have no trailing newline per linux.md)
+	printf "stable" > crates/zed/RELEASE_CHANNEL
+}
+
+do_build() {
+	cargo build --release --locked -p zed -p cli
+}
+
+do_install() {
+	local APP_ID="dev.zed.Zed"
+
+	# 1. Install CLI binary as 'zed' — user-facing entry point in $PATH
+	vbin target/release/cli zed
+
+	# 2. Install the main editor binary to libexec
+	#    Zed CLI looks for zed-editor at ../../libexec/zed-editor relative to itself
+	#    i.e. /usr/bin/zed -> /usr/libexec/zed-editor
+	vmkdir usr/libexec
+	vinstall target/release/zed 755 usr/libexec zed-editor
+
+	# 3. Install .desktop file
+	#    - Named after APP_ID (FreeDesktop standard)
+	#    - Populated via envsubst from the .in template
+	#    - Must be chmod 755 per linux.md
+	vmkdir usr/share/applications
+	APP_NAME="Zed" \
+	APP_ID="${APP_ID}" \
+	ICON="${APP_ID}" \
+	EXECUTABLE="zed" \
+		envsubst < crates/zed/resources/zed.desktop.in \
+		> ${DESTDIR}/usr/share/applications/${APP_ID}.desktop
+	chmod 755 ${DESTDIR}/usr/share/applications/${APP_ID}.desktop
+
+	# 4. Install application icon
+	vmkdir usr/share/icons/hicolor/512x512/apps
+	vinstall crates/zed/resources/app-icon.png 644 \
+		usr/share/icons/hicolor/512x512/apps ${APP_ID}.png
+
+	# 5. Install licenses
+	vlicense LICENSE-GPL
+	vlicense LICENSE-AGPL
+	vlicense LICENSE-APACHE
+}
