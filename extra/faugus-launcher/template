@@ -1,0 +1,27 @@
+# Template file for 'faugus-launcher'
+pkgname=faugus-launcher
+version=1.19.3
+revision=1
+build_style=meson
+hostmakedepends="meson ninja pkg-config python3"
+makedepends="libayatana-appindicator-devel libcanberra-devel"
+depends="
+ python3
+ python3-gobject
+ python3-requests
+ python3-Pillow
+ python3-vdf
+ python3-psutil
+ python3-pygame
+ ImageMagick
+ python3-icoextract
+ libayatana-appindicator
+ libcanberra
+ Vulkan-Tools
+"
+short_desc="Game launcher for Windows games via Wine/Proton/Bottles"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/Faugus/faugus-launcher"
+distfiles="https://github.com/Faugus/faugus-launcher/archive/refs/tags/${version}.tar.gz"
+checksum=a7cf76ef8d03978905850eb35f93265299a42b213f2f47eabecb5a23f74541da
