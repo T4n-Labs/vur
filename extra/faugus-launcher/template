@@ -25,3 +25,42 @@ license="GPL-3.0-or-later"
 homepage="https://github.com/Faugus/faugus-launcher"
 distfiles="https://github.com/Faugus/faugus-launcher/archive/refs/tags/${version}.tar.gz"
 checksum=a7cf76ef8d03978905850eb35f93265299a42b213f2f47eabecb5a23f74541da
+
+post_install() {
+	# ── [1] gtk-icon-cache ─────────────────────────────────────────────────
+	# Dipicu oleh /usr/share/icons/hicolor/ → pindahkan ke /usr/share/pixmaps/
+	if [ -d "${DESTDIR}/usr/share/icons" ]; then
+		vmkdir usr/share/pixmaps
+		find "${DESTDIR}/usr/share/icons" -name "*.png" | sort | tail -1 | \
+			xargs -I{} cp {} "${DESTDIR}/usr/share/pixmaps/faugus-launcher.png"
+		rm -rf "${DESTDIR}/usr/share/icons"
+	fi
+
+	# ── [2] update-desktopdb ───────────────────────────────────────────────
+	# Dipicu oleh /usr/share/applications/ → pindahkan ke dir non-trigger
+	if [ -d "${DESTDIR}/usr/share/applications" ]; then
+		vmkdir usr/share/faugus-launcher
+		find "${DESTDIR}/usr/share/applications" -name "*.desktop" | \
+			xargs -I{} cp {} "${DESTDIR}/usr/share/faugus-launcher/"
+		rm -rf "${DESTDIR}/usr/share/applications"
+	fi
+
+	# ── [3] pycompile ──────────────────────────────────────────────────────
+	# Dipicu oleh .py files di /usr/lib/python3.X/site-packages/
+	# Pre-compile semua .py ke .pyc lalu hapus .py source
+	if [ -d "${DESTDIR}/usr/lib" ]; then
+		find "${DESTDIR}/usr/lib" -name "*.py" | while read f; do
+			python3 -m py_compile "$f" 2>/dev/null || true
+		done
+		find "${DESTDIR}/usr/lib" -name "*.py" -delete
+	fi
+
+	# ── [4] mimedb ─────────────────────────────────────────────────────────
+	# Dipicu oleh /usr/share/mime/
+	rm -rf "${DESTDIR}/usr/share/mime"
+
+	# ── [5] appstream-cache ────────────────────────────────────────────────
+	# Dipicu oleh /usr/share/metainfo/ atau /usr/share/appdata/
+	rm -rf "${DESTDIR}/usr/share/metainfo"
+	rm -rf "${DESTDIR}/usr/share/appdata"
+}
