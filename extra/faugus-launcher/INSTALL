@@ -1,0 +1,12 @@
+case "$ACTION" in
+post)
+	# Update GTK icon cache untuk hicolor
+	if [ -x /usr/bin/gtk-update-icon-cache ]; then
+		/usr/bin/gtk-update-icon-cache -f -t /usr/share/icons/hicolor >/dev/null 2>&1 || :
+	fi
+	# Update desktop database agar .desktop terdaftar di launcher
+	if [ -x /usr/bin/update-desktop-database ]; then
+		/usr/bin/update-desktop-database -q /usr/share/applications >/dev/null 2>&1 || :
+	fi
+	;;
+esac

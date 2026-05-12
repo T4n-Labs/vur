@@ -28,10 +28,7 @@ checksum=a7cf76ef8d03978905850eb35f93265299a42b213f2f47eabecb5a23f74541da
 python_version=ignore
 
 pre_build() {
-	# Hook host 04-create-xbps-metadata-scripts mencari trigger files di
-	# $XBPS_SRCPKGDIR/xbps-triggers/files. Repo minimal tidak punya ini.
-	# Karena XBPS_DISTDIR di-mount ke chroot, kita bisa buat symlink
-	# ke common/triggers dari dalam template — tidak perlu ubah utilitas.
+	# Fix trigger files untuk hook host
 	if [ ! -e "${XBPS_DISTDIR}/srcpkgs/xbps-triggers/files" ]; then
 		mkdir -p "${XBPS_DISTDIR}/srcpkgs/xbps-triggers"
 		ln -sf ../../common/triggers "${XBPS_DISTDIR}/srcpkgs/xbps-triggers/files"
@@ -39,8 +36,7 @@ pre_build() {
 }
 
 post_install() {
-	# Hindari pycompile trigger: pindahkan modul Python ke lokasi non-standard.
-	# .pth mengarahkan Python interpreter ke lokasi baru saat runtime.
+	# ── Python module: pindahkan agar tidak memicu pycompile ──────────────
 	local pyver=$(python3 -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')")
 	local sitepkg="${DESTDIR}/usr/lib/python${pyver}/site-packages"
 	local destlib="${DESTDIR}/usr/lib/faugus-launcher/python"
@@ -50,4 +46,9 @@ post_install() {
 		mv "${sitepkg}/faugus" "${destlib}/faugus"
 		echo "/usr/lib/faugus-launcher/python" > "${sitepkg}/faugus-launcher.pth"
 	fi
+
+	# ── Hapus mime/metainfo/appdata yang tidak perlu ───────────────────────
+	rm -rf "${DESTDIR}/usr/share/mime"
+	rm -rf "${DESTDIR}/usr/share/metainfo"
+	rm -rf "${DESTDIR}/usr/share/appdata"
 }
