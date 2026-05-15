@@ -61,8 +61,6 @@
 ,
   {"name":"PrismLauncher","category":"extra","path":"extra/PrismLauncher"}
 ,
-  {"name":"Zed-IDE","category":"extra","path":"extra/Zed-IDE"}
-,
   {"name":"android-studio","category":"extra","path":"extra/android-studio"}
 ,
   {"name":"azahar","category":"extra","path":"extra/azahar"}
@@ -210,6 +208,8 @@
   {"name":"xvr","category":"extra","path":"extra/xvr"}
 ,
   {"name":"zap-rs","category":"extra","path":"extra/zap-rs"}
+,
+  {"name":"zed","category":"extra","path":"extra/zed"}
 ,
   {"name":"zen-browser","category":"extra","path":"extra/zen-browser"}
 ,

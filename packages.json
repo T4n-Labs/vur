@@ -279,15 +279,6 @@
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
   },
   {
-    "name": "Zed-IDE",
-    "category": "extra",
-    "path": "extra/Zed-IDE",
-    "version": "1.1.7",
-    "description": "High-performance, multiplayer code editor from the creators of Atom",
-    "homepage": "https://zed.dev",
-    "maintainer": "Gh0sT4n <darsevoid@gmail.com>"
-  },
-  {
     "name": "android-studio",
     "category": "extra",
     "path": "extra/android-studio",
@@ -952,6 +943,15 @@
     "description": "Rust-based AppImage package manager inspired by Zap",
     "homepage": "https://git.ch-naseem.com/ndpm13/zap-rs",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
+  },
+  {
+    "name": "zed",
+    "category": "extra",
+    "path": "extra/zed",
+    "version": "1.1.7",
+    "description": "High-performance, multiplayer code editor",
+    "homepage": "https://zed.dev",
+    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "zen-browser",

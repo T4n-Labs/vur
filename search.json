@@ -61,8 +61,6 @@
 ,
   {"name":"PrismLauncher","desc":"Custom launcher for Minecraft","path":"extra/PrismLauncher"}
 ,
-  {"name":"Zed-IDE","desc":"High-performance, multiplayer code editor from the creators of Atom","path":"extra/Zed-IDE"}
-,
   {"name":"android-studio","desc":"Official Android IDE","path":"extra/android-studio"}
 ,
   {"name":"azahar","desc":"An open-source 3DS emulator project based on Citra.","path":"extra/azahar"}
@@ -210,6 +208,8 @@
   {"name":"xvr","desc":"The XVR Programming Language Compiler","path":"extra/xvr"}
 ,
   {"name":"zap-rs","desc":"Rust-based AppImage package manager inspired by Zap","path":"extra/zap-rs"}
+,
+  {"name":"zed","desc":"High-performance, multiplayer code editor","path":"extra/zed"}
 ,
   {"name":"zen-browser","desc":"Performance oriented Firefox-based web browser","path":"extra/zen-browser"}
 ,
