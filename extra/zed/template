@@ -1,0 +1,199 @@
+# Template file for 'zed'
+pkgname=zed
+version=1.1.7
+revision=1
+
+# =============================================================================
+# ARCHITECTURE SUPPORT
+# =============================================================================
+# Zed upstream only supports 64-bit architectures. 32-bit platforms are
+# explicitly not supported by the Zed team.
+# See: https://zed.dev/docs/linux
+# =============================================================================
+archs="x86_64 aarch64"
+
+build_style=cargo
+make_build_args="--package zed --package cli"
+
+# -----------------------------------------------------------------------------
+# DEPENDENCIES
+# -----------------------------------------------------------------------------
+hostmakedepends="pkg-config python3 python3-setuptools clang cmake protobuf
+ gettext which git cargo"
+
+makedepends="alsa-lib-devel fontconfig-devel glib-devel
+ libxcb-devel libxkbcommon-devel libzstd-devel
+ openssl-devel wayland-devel vulkan-loader sqlite-devel zlib-devel
+ libX11-devel Vulkan-Headers Vulkan-ValidationLayers protobuf-devel
+ dbus-devel libpng-devel elfutils-devel"
+
+# NOTE: libgit2 tidak di-list di makedepends/depends karena libgit2-sys v0.18.3
+# membutuhkan libgit2 >= 1.9.2, yang belum tersedia di repo Void Linux.
+# libgit2-sys akan build dan statically link versi vendored-nya sendiri.
+depends="alsa-lib curl fontconfig glib libxcb libX11
+ libxkbcommon libxkbcommon-x11 sqlite vulkan-loader wayland zlib zstd
+ nodejs openbsd-netcat"
+
+short_desc="High-performance, multiplayer code editor"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
+license="GPL-3.0-or-later, AGPL-3.0-or-later, Apache-2.0"
+homepage="https://zed.dev"
+changelog="https://github.com/zed-industries/zed/releases"
+distfiles="https://github.com/zed-industries/zed/archive/refs/tags/v${version}.tar.gz"
+checksum=8b84b3dbae140addef9070ef3d0ebbf6f42e8826383f890b50aff1b094bc59b7
+
+# -----------------------------------------------------------------------------
+# CROSS-COMPILATION NOTE
+# -----------------------------------------------------------------------------
+# Zed contains native C/C++ dependencies (libgit2, openssl, sqlite, zstd)
+# linked via Rust crates. Cross-compilation may fail if the target sysroot
+# lacks the required -devel packages. If cross-compilation fails, uncomment:
+# nocross=yes
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# 32-BIT PLATFORM GUARD
+# -----------------------------------------------------------------------------
+# Provide a clear error message when building for unsupported 32-bit targets.
+if [ "$XBPS_TARGET_WORDSIZE" = "32" ]; then
+	broken="Zed does not support 32-bit platforms (upstream limitation)"
+fi
+
+# -----------------------------------------------------------------------------
+# GLOBAL ENVIRONMENT
+# -----------------------------------------------------------------------------
+# Disable Zed's built-in auto-updater and redirect users to xbps.
+export ZED_UPDATE_EXPLANATION="Updates are handled by xbps. Do not use 'zed --update'."
+
+# xbps-src cargo build_style sets LIBSQLITE3_SYS_USE_PKG_CONFIG dan
+# ZSTD_SYS_USE_PKG_CONFIG — kita ikuti karena versi system-nya sudah cocok.
+export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
+export ZSTD_SYS_USE_PKG_CONFIG=1
+
+# Version string shown in Zed's About dialog.
+export RELEASE_VERSION="${version}"
+
+# Protobuf compiler configuration (required for gRPC communication).
+export PROTOC=/usr/bin/protoc
+export PROTOC_INCLUDE=/usr/include
+
+# =============================================================================
+# MEMORY USAGE CONTROL
+# =============================================================================
+# xbps-src cargo build_style default: codegen-units=1 + fat LTO + opt-level=3
+# Kombinasi ini menyebabkan OOM kill saat mengompilasi crate besar seperti
+# `project` (ratusan ribu baris, puluhan deps). Crate ini dimuat sepenuhnya
+# ke RAM dalam satu unit → spike RAM sangat besar.
+#
+# Fix: ganti ke thin LTO + lebih banyak codegen unit untuk memecah beban RAM.
+# Trade-off: binary sedikit lebih besar, namun tetap fully optimized.
+# =============================================================================
+export CARGO_PROFILE_RELEASE_LTO=thin
+export CARGO_PROFILE_RELEASE_CODEGEN_UNITS=4
+
+# -----------------------------------------------------------------------------
+# CONFIGURE PHASE
+# -----------------------------------------------------------------------------
+do_configure() {
+	# xbps-src cargo build_style (common/build-style/cargo.sh) secara otomatis
+	# men-set LIBGIT2_NO_VENDOR=1 untuk SEMUA paket cargo. Kita harus explicitly
+	# unset di sini karena libgit2-sys v0.18.3 membutuhkan libgit2 >= 1.9.2,
+	# sementara Void Linux repo belum menyediakan versi tersebut.
+	# Dengan unset, libgit2-sys akan build & statically link vendored copy-nya.
+	unset LIBGIT2_NO_VENDOR
+
+	# Generate FreeDesktop .desktop entry from upstream template.
+	# Requires 'envsubst' from gettext package.
+	export DO_STARTUP_NOTIFY="true"
+	export APP_ICON="zed"
+	export APP_NAME="Zed"
+	export APP_CLI="zed-editor"
+	export APP_ID="dev.zed.Zed"
+	export APP_ARGS="%U"
+	envsubst < "crates/zed/resources/zed.desktop.in" > dev.zed.Zed.desktop
+
+	# Set release channel to 'stable'.
+	# MUST NOT have a trailing newline or Zed will misparse it.
+	printf '%s' "stable" > crates/zed/RELEASE_CHANNEL
+
+	# Pre-fetch ALL cargo dependencies (including git-sourced ones like async-task)
+	# BEFORE do_build runs with --frozen. Without this step, cargo --frozen will
+	# fail on any git dependency because it cannot contact the network at build time.
+	cargo fetch --locked
+}
+
+# -----------------------------------------------------------------------------
+# BUILD PHASE
+# -----------------------------------------------------------------------------
+do_build() {
+	# Sama seperti do_configure: xbps-src mungkin re-inject LIBGIT2_NO_VENDOR
+	# sebelum fase build. Unset lagi untuk memastikan vendored build berjalan.
+	unset LIBGIT2_NO_VENDOR
+
+	# Reproducible build flags (strip build path from binaries).
+	export CFLAGS="${CFLAGS} -ffat-lto-objects"
+    export CXXFLAGS="${CXXFLAGS} -ffat-lto-objects"
+
+	# Hapus -C lto dan -C codegen-units dari RUSTFLAGS yang mungkin di-set
+	# oleh xbps-src, lalu terapkan nilai kita sendiri yang lebih hemat RAM.
+	# CARGO_PROFILE_RELEASE_LTO=thin dan CODEGEN_UNITS=4 sudah di-set global
+	# di atas; RUSTFLAGS di sini hanya untuk remap path (reproducible builds).
+	export RUSTFLAGS="${RUSTFLAGS} --remap-path-prefix ${PWD}=/"
+
+	# --frozen: assert Cargo.lock is up-to-date and use only pre-fetched deps.
+	# Git dependencies (e.g. async-task) must already be in the cargo cache,
+	# which is guaranteed by `cargo fetch --locked` in do_configure above.
+	# --target: output ke target/${RUST_TARGET}/release/ agar konsisten
+	# dengan path yang digunakan vbin/vinstall di do_install.
+	# Tanpa flag ini cargo output ke target/release/ dan vinstall gagal.
+	cargo build --release --locked --target ${RUST_TARGET} --package zed --package cli
+}
+
+# -----------------------------------------------------------------------------
+# INSTALL PHASE
+# -----------------------------------------------------------------------------
+do_install() {
+	# Install CLI launcher binary as 'zed-editor' in $PATH.
+	# Using 'zed-editor' avoids conflict with ZFS Event Daemon (/usr/bin/zed).
+	vbin target/${RUST_TARGET}/release/cli zed-editor
+
+	# Install the main editor binary to lib/zed/ (following upstream convention).
+	# The CLI launcher expects it at: ../lib/zed/zed-editor (relative to CLI).
+	vmkdir usr/lib/zed
+    vinstall target/${RUST_TARGET}/release/zed 755 usr/lib/zed/ zed-editor
+
+	# Install FreeDesktop desktop entry.
+	vinstall dev.zed.Zed.desktop 644 usr/share/applications/
+
+	# Install application icon.
+	vmkdir usr/share/icons/hicolor/512x512/apps
+	vinstall crates/zed/resources/app-icon.png 644 usr/share/icons/hicolor/512x512/apps/ zed.png
+
+	# Install license files.
+	# Zed is triple-licensed; install all available license files.
+	if [ -f "LICENSE-AGPL" ]; then
+		vlicense LICENSE-AGPL
+	fi
+	if [ -f "LICENSE-GPL" ]; then
+		vlicense LICENSE-GPL
+	fi
+	if [ -f "LICENSE-APACHE" ]; then
+		vlicense LICENSE-APACHE
+	fi
+	if [ -f "LICENSE" ]; then
+		vlicense LICENSE
+	fi
+
+	# Ensure correct permissions on installed files.
+	chmod -R o-w ${DESTDIR}/usr/lib/zed/
+}
+
+# -----------------------------------------------------------------------------
+# CHECK PHASE
+# -----------------------------------------------------------------------------
+# Zed's test suite requires a running Wayland/X11 display, Vulkan drivers,
+# and system keymap detection. These are not available in the xbps-src build
+# environment. Skipped per upstream packaging precedent.
+do_check() {
+	:
+}
