@@ -1,6 +1,6 @@
 # Template file for 'tpm'
 pkgname=tpm
-version=0.0.1
+version=0.1
 revision=1
 build_style=meta
 short_desc="A user-friendly package manager wrapper for XBPS"
@@ -8,7 +8,7 @@ maintainer="Gh0sT4n <darskevoid@gmail.com>"
 license="MIT"
 homepage="https://github.com/T4n-Labs/TPM"
 distfiles="https://github.com/T4n-Labs/TPM/archive/refs/tags/${version}.tar.gz"
-checksum=91017ff6c144e749cf57a4259de3e8125031c77c0b7260326385b53d6729a7c3
+checksum=b24de265573d1e2868244bad2dd9fb8138d8e689ca5fd54005749348caf51c50
 
 depends="xbps"
 
