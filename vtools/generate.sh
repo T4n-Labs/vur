@@ -28,7 +28,7 @@ for category in core extra multilib; do
 
       version=$(grep "^version=" "$template" | cut -d= -f2)
       desc=$(grep "^short_desc=" "$template" | cut -d= -f2- | tr -d '"' | sed 's/\${[^}]*}//g' | sed 's/([^)]*)//g' | xargs)
-      arch=$(grep "^archs=" "$template" | cut -d= -f2)
+      arch=$(grep "^archs=" "$template" | cut -d= -f2| tr -d '"')
       homepage=$(grep "^homepage=" "$template" | cut -d= -f2 | tr -d '"')
       maintainer=$(grep "^maintainer=" "$template" | cut -d= -f2- | tr -d '"')
 
