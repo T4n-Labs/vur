@@ -4,6 +4,7 @@
     "category": "core",
     "path": "core/NetworkManager-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -13,6 +14,7 @@
     "category": "core",
     "path": "core/dbus-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -22,6 +24,7 @@
     "category": "core",
     "path": "core/dgop",
     "version": "0.2.2",
+    "archs": "",
     "description": "API & CLI for System & Process Monitoring",
     "homepage": "https://github.com/AvengeMedia/dgop",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -31,6 +34,7 @@
     "category": "core",
     "path": "core/dhcpcd-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -40,6 +44,7 @@
     "category": "core",
     "path": "core/dinit",
     "version": "0.21.0",
+    "archs": "",
     "description": "Service manager and init system",
     "homepage": "https://davmac.org/projects/dinit/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -49,6 +54,7 @@
     "category": "core",
     "path": "core/dsearch",
     "version": "0.2.1",
+    "archs": "",
     "description": "Fast filesystem search service",
     "homepage": "https://github.com/AvengeMedia/danksearch",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -58,6 +64,7 @@
     "category": "core",
     "path": "core/elogind-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -67,6 +74,7 @@
     "category": "core",
     "path": "core/libglib-testing",
     "version": "0.2.0",
+    "archs": "",
     "description": "Lib providing test harnesses and mock classes complementing GLib classes",
     "homepage": "https://gitlab.gnome.org/pwithnall/libglib-testing",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -76,6 +84,7 @@
     "category": "core",
     "path": "core/libglib-testing-devel",
     "version": "0.2.0",
+    "archs": "",
     "description": "Lib providing test harnesses and mock classes complementing GLib classes",
     "homepage": "https://gitlab.gnome.org/pwithnall/libglib-testing",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -85,6 +94,7 @@
     "category": "core",
     "path": "core/libgsystemservice",
     "version": "0.3.0",
+    "archs": "",
     "description": "Common components needed for building services to be exposed on D-Bus",
     "homepage": "https://gitlab.gnome.org/pwithnall/libgsystemservice",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -94,6 +104,7 @@
     "category": "core",
     "path": "core/libgsystemservice-devel",
     "version": "0.3.0",
+    "archs": "",
     "description": "Common components needed for building services to be exposed on D-Bus",
     "homepage": "https://gitlab.gnome.org/pwithnall/libgsystemservice",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -103,6 +114,7 @@
     "category": "core",
     "path": "core/libvirt-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -112,6 +124,7 @@
     "category": "core",
     "path": "core/lightdm-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -121,6 +134,7 @@
     "category": "core",
     "path": "core/linux-zen",
     "version": "6.13.0",
+    "archs": "",
     "description": "Zen - Linux kernel and modules",
     "homepage": "https://www.kernel.org",
     "maintainer": "JuanMa <numblinux@gmail.com>"
@@ -130,6 +144,7 @@
     "category": "core",
     "path": "core/luna-sh",
     "version": "",
+    "archs": "",
     "description": "Modern, lightweight, extensible command-line shell written in zig",
     "homepage": "https://codeberg.org/slowy07/Luna-sh",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
@@ -139,6 +154,7 @@
     "category": "core",
     "path": "core/ly-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -148,6 +164,7 @@
     "category": "core",
     "path": "core/malcontent",
     "version": "0.14.0",
+    "archs": "",
     "description": "Parental controls library",
     "homepage": "https://gitlab.freedesktop.org/pwithnall/malcontent",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -157,6 +174,7 @@
     "category": "core",
     "path": "core/malcontent-devel",
     "version": "0.14.0",
+    "archs": "",
     "description": "Parental controls library",
     "homepage": "https://gitlab.freedesktop.org/pwithnall/malcontent",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -166,6 +184,7 @@
     "category": "core",
     "path": "core/mission-center",
     "version": "1.1.0",
+    "archs": "",
     "description": "Monitor your CPU, Memory, Disk, Network and GPU usage",
     "homepage": "https://missioncenter.io/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -175,6 +194,7 @@
     "category": "core",
     "path": "core/nmenu",
     "version": "5.4",
+    "archs": "",
     "description": "Generic menu for X",
     "homepage": "https://git.ch-naseem.com/ndpm13/dmenu/",
     "maintainer": "Leah Neukirchen <leah@vuxu.org>"
@@ -184,6 +204,7 @@
     "category": "core",
     "path": "core/noid-base-files",
     "version": "0.1",
+    "archs": "",
     "description": "Noid Linux base system files",
     "homepage": "https://git.ch-naseem.com/noid-linux",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -193,6 +214,7 @@
     "category": "core",
     "path": "core/noid-base-system",
     "version": "20260410",
+    "archs": "",
     "description": "Noid Linux base system meta package",
     "homepage": "https://git.ch-naseem.com/noid-linux",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -202,6 +224,7 @@
     "category": "core",
     "path": "core/noid-base-system-dinit",
     "version": "20260422",
+    "archs": "",
     "description": "Noid Linux base system meta package - Dinit",
     "homepage": "https://git.ch-naseem.com/noid-linux",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -211,6 +234,7 @@
     "category": "core",
     "path": "core/noid-dinit",
     "version": "0.1.0",
+    "archs": "",
     "description": "RC scripts and boot services for dinit",
     "homepage": "https://github.com/noid-linux/noid-dinit",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -220,6 +244,7 @@
     "category": "core",
     "path": "core/openssh-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -229,6 +254,7 @@
     "category": "core",
     "path": "core/polkit-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -238,6 +264,7 @@
     "category": "core",
     "path": "core/sddm-dinit",
     "version": "20260422",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -247,6 +274,7 @@
     "category": "core",
     "path": "core/wpa_supplicant-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -256,6 +284,7 @@
     "category": "core",
     "path": "core/xlibre-repo",
     "version": "1",
+    "archs": "",
     "description": "XLibre for VOID linux",
     "homepage": "https://github.com/xlibre-void/xlibre/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -265,6 +294,7 @@
     "category": "core",
     "path": "core/zsh",
     "version": "5.9",
+    "archs": "",
     "description": "Z SHell",
     "homepage": "https://www.zsh.org",
     "maintainer": "Leah Neukirchen <leah@vuxu.org>"
@@ -274,6 +304,7 @@
     "category": "extra",
     "path": "extra/PrismLauncher",
     "version": "11.0.2",
+    "archs": "",
     "description": "Custom launcher for Minecraft",
     "homepage": "https://prismlauncher.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -283,6 +314,7 @@
     "category": "extra",
     "path": "extra/android-studio",
     "version": "2025.3.4.6",
+    "archs": "",
     "description": "Official Android IDE",
     "homepage": "https://developer.android.com/studio/",
     "maintainer": "Bnyro <bnyro@tutanota.com>"
@@ -292,6 +324,7 @@
     "category": "extra",
     "path": "extra/azahar",
     "version": "2124.3",
+    "archs": "",
     "description": "An open-source 3DS emulator project based on Citra.",
     "homepage": "https://azahar-emu.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -301,17 +334,9 @@
     "category": "extra",
     "path": "extra/azaharplus",
     "version": "2124.3",
+    "archs": "",
     "description": "A fork of the Azahar 3DS emulator with extra features",
     "homepage": "https://github.com/AzaharPlus/AzaharPlus",
-    "maintainer": "Naz <ndpm13@ch-naseem.com>"
-  },
-  {
-    "name": "barve-browser",
-    "category": "extra",
-    "path": "extra/barve-browser",
-    "version": "1.90.121",
-    "description": "Web browser that blocks ads and trackers by default",
-    "homepage": "https://brave.com",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
   },
   {
@@ -319,6 +344,7 @@
     "category": "extra",
     "path": "extra/bazaar",
     "version": "0.7.15",
+    "archs": "",
     "description": "FlatHub-first app store for GNOME",
     "homepage": "https://usebazaar.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -328,15 +354,27 @@
     "category": "extra",
     "path": "extra/bitwarden-desktop",
     "version": "2026.3.1",
+    "archs": "",
     "description": "Bitwarden desktop client",
     "homepage": "https://bitwarden.com/",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>"
+  },
+  {
+    "name": "brave-browser",
+    "category": "extra",
+    "path": "extra/brave-browser",
+    "version": "1.90.121",
+    "archs": "",
+    "description": "Web browser that blocks ads and trackers by default",
+    "homepage": "https://brave.com",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>"
   },
   {
     "name": "brave-browser-origin",
     "category": "extra",
     "path": "extra/brave-browser-origin",
     "version": "1.91.145",
+    "archs": "",
     "description": "Minimalist browser from the makers of Brave",
     "homepage": "https://brave.com",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -346,6 +384,7 @@
     "category": "extra",
     "path": "extra/calamares",
     "version": "3.4.2",
+    "archs": "",
     "description": "Distribution-independent installer framework",
     "homepage": "https://calamares.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -355,6 +394,7 @@
     "category": "extra",
     "path": "extra/chrony-dinit",
     "version": "20260410",
+    "archs": "",
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -364,6 +404,7 @@
     "category": "extra",
     "path": "extra/cinny-desktop",
     "version": "4.11.2",
+    "archs": "",
     "description": "Yet another matrix client for desktop",
     "homepage": "https://cinny.in/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -373,6 +414,7 @@
     "category": "extra",
     "path": "extra/clipcat",
     "version": "0.24.1",
+    "archs": "",
     "description": "Clipboard Manager written in Rust Programming Language",
     "homepage": "https://github.com/xrelkd/clipcat",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -382,6 +424,7 @@
     "category": "extra",
     "path": "extra/cryptomator",
     "version": "1.19.2",
+    "archs": "",
     "description": "Multiplatform transparent client-side encryption of your files in the cloud.",
     "homepage": "https://cryptomator.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -391,6 +434,7 @@
     "category": "extra",
     "path": "extra/dioxus-cli",
     "version": "0.7.3",
+    "archs": "",
     "description": "CLI for building fullstack web, desktop, and mobile apps with a single codebase.",
     "homepage": "https://dioxuslabs.com",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -400,6 +444,7 @@
     "category": "extra",
     "path": "extra/discord",
     "version": "0.0.134",
+    "archs": "",
     "description": "Chat and VOIP application",
     "homepage": "https://discord.com",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
@@ -409,6 +454,7 @@
     "category": "extra",
     "path": "extra/dms-shell",
     "version": "1.4.6",
+    "archs": "",
     "description": "A Quickshell-based desktop shell with Material 3 design principles",
     "homepage": "https://danklinux.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -418,6 +464,7 @@
     "category": "extra",
     "path": "extra/drawio-desktop",
     "version": "29.7.9",
+    "archs": "",
     "description": "Official electron build of draw.io, a JS editor for general diagramming",
     "homepage": "https://www.diagrams.net/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -427,6 +474,7 @@
     "category": "extra",
     "path": "extra/emacs-lucid",
     "version": "30.2",
+    "archs": "",
     "description": "GNU Emacs editor - Lucid toolkit version",
     "homepage": "http://www.gnu.org/software/emacs/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -436,6 +484,7 @@
     "category": "extra",
     "path": "extra/faugus-launcher",
     "version": "1.19.3",
+    "archs": "",
     "description": "Game launcher for Windows games via Wine/Proton/Bottles",
     "homepage": "https://github.com/Faugus/faugus-launcher",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
@@ -445,6 +494,7 @@
     "category": "extra",
     "path": "extra/feishin",
     "version": "1.5.0",
+    "archs": "",
     "description": "Full-featured Subsonic/Jellyfin compatible desktop music player",
     "homepage": "https://feishin.vercel.app/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -454,6 +504,7 @@
     "category": "extra",
     "path": "extra/ferdium",
     "version": "7.1.2",
+    "archs": "",
     "description": "Messaging app for WhatsApp, Slack, Telegram, Hangouts and many many more",
     "homepage": "https://ferdium.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -463,6 +514,7 @@
     "category": "extra",
     "path": "extra/flat-remix-icon-theme",
     "version": "20251119",
+    "archs": "",
     "description": "Flat remix is a pretty simple icon theme inspired on material design",
     "homepage": "https://drasite.com/flat-remix",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -472,6 +524,7 @@
     "category": "extra",
     "path": "extra/floorp",
     "version": "12.13.0",
+    "archs": "",
     "description": "Firefox fork seeking balance between versatility, privacy and openness",
     "homepage": "https://floorp.app/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -481,6 +534,7 @@
     "category": "extra",
     "path": "extra/fluffychat",
     "version": "2.5.0",
+    "archs": "",
     "description": "The cutest instant messenger in the [matrix]",
     "homepage": "https://fluffychat.im/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -490,6 +544,7 @@
     "category": "extra",
     "path": "extra/freetube",
     "version": "0.24.0",
+    "archs": "",
     "description": "Open source desktop YouTube player built with privacy in mind",
     "homepage": "https://freetubeapp.io/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -499,6 +554,7 @@
     "category": "extra",
     "path": "extra/grayjay",
     "version": "17",
+    "archs": "",
     "description": "Grayjay Desktop - follow creators, not platforms",
     "homepage": "https://grayjay.app/",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>"
@@ -508,6 +564,7 @@
     "category": "extra",
     "path": "extra/gruvbox-bibata-cursor-theme",
     "version": "1.0.1",
+    "archs": "",
     "description": "Gruvbox-themed Bibata Cursor",
     "homepage": "https://www.bibata.live/",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>"
@@ -517,6 +574,7 @@
     "category": "extra",
     "path": "extra/gruvbox-gtk-theme",
     "version": "2.2",
+    "archs": "",
     "description": "A theme based on the Gruvbox colour palette - GTK",
     "homepage": "https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -526,6 +584,7 @@
     "category": "extra",
     "path": "extra/gruvbox-icons-theme",
     "version": "4.0",
+    "archs": "",
     "description": "A theme based on the Gruvbox colour palette - Icons",
     "homepage": "https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -535,6 +594,7 @@
     "category": "extra",
     "path": "extra/gruvbox-material-theme",
     "version": "1.0.0",
+    "archs": "",
     "description": "Gruvbox Material theme for GTK, Gnome, Cinnamon, XFCE, Unity and Plank",
     "homepage": "https://github.com/TheGreatMcPain/gruvbox-material-gtk",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -544,6 +604,7 @@
     "category": "extra",
     "path": "extra/heroic-games-launcher",
     "version": "2.21.0",
+    "archs": "",
     "description": "A games launcher for GOG, Amazon and Epic Games.",
     "homepage": "https://heroicgameslauncher.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -553,6 +614,7 @@
     "category": "extra",
     "path": "extra/hyprland-repo",
     "version": "1",
+    "archs": "",
     "description": "Binary repositories for installing Hyprland on Void Linux",
     "homepage": "https://github.com/Makrennel/hyprland-void/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -562,6 +624,7 @@
     "category": "extra",
     "path": "extra/kaidan",
     "version": "0.15.0",
+    "archs": "",
     "description": "Modern chat app for every device",
     "homepage": "https://www.kaidan.im/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -571,6 +634,7 @@
     "category": "extra",
     "path": "extra/librewolf",
     "version": "150.0.1.1",
+    "archs": "",
     "description": "Fork of Firefox, focused on privacy, security and freedom",
     "homepage": "https://librewolf.net/",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>"
@@ -580,6 +644,7 @@
     "category": "extra",
     "path": "extra/lutgen-cli",
     "version": "1.0.1",
+    "archs": "",
     "description": "A blazingly fast interpolated LUT utility for arbitrary and popular color palettes.",
     "homepage": "https://lut.sh/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -589,6 +654,7 @@
     "category": "extra",
     "path": "extra/lutgen-rs",
     "version": "1.0",
+    "archs": "",
     "description": "Blazingly fast interpolated LUT generator and applicator for arbitrary and popular color palettes.",
     "homepage": "https://lut.sh/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -598,6 +664,7 @@
     "category": "extra",
     "path": "extra/lutgen-studio",
     "version": "0.3.0",
+    "archs": "",
     "description": "Offical GUI for Lutgen, the best way to apply popular colorschemes to any image or wallpaper!",
     "homepage": "https://lut.sh/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -607,6 +674,7 @@
     "category": "extra",
     "path": "extra/ly",
     "version": "1.4.0",
+    "archs": "",
     "description": "Lightweight TUI display manager for Linux and BSD",
     "homepage": "https://codeberg.org/fairyglade/ly",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -616,6 +684,7 @@
     "category": "extra",
     "path": "extra/megasync",
     "version": "6.2.2.0",
+    "archs": "",
     "description": "Easy automated syncing between your computers and your MEGA Cloud Drive",
     "homepage": "https://mega.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -625,6 +694,7 @@
     "category": "extra",
     "path": "extra/msttcorefonts",
     "version": "1.3.4",
+    "archs": "",
     "description": "Microsoft Typography Project - corefonts",
     "homepage": "http://corefonts.sourceforge.net",
     "maintainer": "Michael Aldridge <maldridge@voidlinux.org>"
@@ -634,6 +704,7 @@
     "category": "extra",
     "path": "extra/ndpm",
     "version": "0.1.5",
+    "archs": "",
     "description": "A user-friendly package manager wrapper for XBPS with AppImage support",
     "homepage": "https://git.ch-naseem.com/noid-linux/ndpm",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -643,6 +714,7 @@
     "category": "extra",
     "path": "extra/nerd-fonts-cascadiacode",
     "version": "3.4.0",
+    "archs": "",
     "description": "CascadiaCode Nerd Font - monospaced font with programming ligatures and glyphs",
     "homepage": "https://nerdfonts.com",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>"
@@ -652,6 +724,7 @@
     "category": "extra",
     "path": "extra/noctalia-qs",
     "version": "0.0.12",
+    "archs": "",
     "description": "Custom fork of Quickshell powering Noctalia Shell",
     "homepage": "https://github.com/noctalia-dev/noctalia-qs",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -661,6 +734,7 @@
     "category": "extra",
     "path": "extra/noctalia-shell",
     "version": "4.7.6",
+    "archs": "",
     "description": "Sleek and minimal desktop shell, built with Quickshell",
     "homepage": "https://docs.noctalia.dev/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -670,6 +744,7 @@
     "category": "extra",
     "path": "extra/noid-artwork",
     "version": "20260414",
+    "archs": "",
     "description": "Noid Linux artwork",
     "homepage": "https://noid-linux.github.io/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -679,6 +754,7 @@
     "category": "extra",
     "path": "extra/noid-welcome",
     "version": "0.2.2",
+    "archs": "",
     "description": "Noid Linux Welcome Screen",
     "homepage": "https://git.ch-naseem.com/noid-linux/noid-welcome",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -688,6 +764,7 @@
     "category": "extra",
     "path": "extra/nwm",
     "version": "6.8",
+    "archs": "",
     "description": "Custom Build of DWM - a Dynamic window manager for X",
     "homepage": "https://git.ch-naseem.com/ndpm13/dwm",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -697,6 +774,7 @@
     "category": "extra",
     "path": "extra/nyancat",
     "version": "1.2.1",
+    "archs": "",
     "description": "Nyancat rendered in your terminal",
     "homepage": "https://nyancat.dakko.us/",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>"
@@ -706,15 +784,17 @@
     "category": "extra",
     "path": "extra/obsidian",
     "version": "1.12.7",
+    "archs": "",
     "description": "Private and flexible writing app that adapts to the way you think",
     "homepage": "https://obsidian.md/",
-    "maintainer": "Naz <ndpm13@ch-naseem.com>"
+    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "onlyoffice",
     "category": "extra",
     "path": "extra/onlyoffice",
     "version": "9.3.1",
+    "archs": "",
     "description": "An office suite that combines text, spreadsheet and presentation editors allowing to create, view and edit local documents",
     "homepage": "https://www.onlyoffice.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -724,6 +804,7 @@
     "category": "extra",
     "path": "extra/portproton",
     "version": "1.5.2",
+    "archs": "",
     "description": "Software for playing Microsoft Windows games and launchers",
     "homepage": "https://linux-gaming.ru/",
     "maintainer": "Kira <kira0void@proton.me>"
@@ -733,6 +814,7 @@
     "category": "extra",
     "path": "extra/proton-authenticator",
     "version": "1.1.4",
+    "archs": "",
     "description": "An open source and end-to-end encrypted 2FA app. Securely sync and backup your 2FA codes easily.",
     "homepage": "https://proton.me/authenticator",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>"
@@ -742,6 +824,7 @@
     "category": "extra",
     "path": "extra/proton-vpn-gtk-app",
     "version": "4.16.1",
+    "archs": "",
     "description": "Official ProtonVPN Linux app",
     "homepage": "https://protonvpn.com/download-linux",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -751,6 +834,7 @@
     "category": "extra",
     "path": "extra/python3-proton-core",
     "version": "0.7.0",
+    "archs": "",
     "description": "Component contains core logic used by the other Proton components",
     "homepage": "https://github.com/ProtonVPN/python-proton-core",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -760,6 +844,7 @@
     "category": "extra",
     "path": "extra/python3-proton-vpn-api-core",
     "version": "5.1.2",
+    "archs": "",
     "description": "Acts as a facade to the other Proton VPN components",
     "homepage": "https://github.com/ProtonVPN/python-proton-vpn-api-core",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -769,6 +854,7 @@
     "category": "extra",
     "path": "extra/python3-proton-vpn-local-agent",
     "version": "1.6.1",
+    "archs": "",
     "description": "Proton VPN local agent written in Rust",
     "homepage": "https://github.com/ProtonVPN/local-agent-rs",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -778,6 +864,7 @@
     "category": "extra",
     "path": "extra/qt6gtk2",
     "version": "0.7",
+    "archs": "",
     "description": "GTK+2.0 integration plugins for Qt6",
     "homepage": "https://www.opencode.net/trialuser/qt6gtk2",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -787,6 +874,7 @@
     "category": "extra",
     "path": "extra/quran-companion",
     "version": "1.3.3",
+    "archs": "",
     "description": "Free and open-source desktop Quran reader and player",
     "homepage": "https://0xzer0x.github.io/projects/quran-companion/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -796,6 +884,7 @@
     "category": "extra",
     "path": "extra/rustdesk",
     "version": "1.4.6.0",
+    "archs": "",
     "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "homepage": "https://rustdesk.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -805,6 +894,7 @@
     "category": "extra",
     "path": "extra/sbm-rs",
     "version": "0.1.0",
+    "archs": "",
     "description": "Simple bookmarks manager written in Rust",
     "homepage": "https://git.ch-naseem.com/ndpm13/sbm-rs",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -814,6 +904,7 @@
     "category": "extra",
     "path": "extra/slack-desktop",
     "version": "4.49.81",
+    "archs": "",
     "description": "Messaging app for teams",
     "homepage": "https://slack.com/",
     "maintainer": "Rodrigo Oliveira <mdkcore@qtrnn.io>"
@@ -823,6 +914,7 @@
     "category": "extra",
     "path": "extra/spotify",
     "version": "1.2.86",
+    "archs": "",
     "description": "Proprietary music streaming client",
     "homepage": "https://www.spotify.com",
     "maintainer": "Stefan Mühlinghaus <jazzman@alphabreed.com>"
@@ -832,6 +924,7 @@
     "category": "extra",
     "path": "extra/sway-scroll",
     "version": "1.12.11",
+    "archs": "",
     "description": "Fork of the sway compositor with a scrolling layout like PaperWM or niri",
     "homepage": "https://github.com/dawsers/scroll/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -841,6 +934,7 @@
     "category": "extra",
     "path": "extra/tenacity",
     "version": "1.3.4",
+    "archs": "",
     "description": "Easy-to-use multi-track audio editor and recorder, forked from Audacity",
     "homepage": "https://tenacityaudio.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -850,6 +944,7 @@
     "category": "extra",
     "path": "extra/thorium-browser-avx2",
     "version": "138.0.7204.303",
+    "archs": "",
     "description": "Chromium fork focused on performance and security - AVX2 build",
     "homepage": "https://thorium.rocks/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -858,7 +953,8 @@
     "name": "tpm",
     "category": "extra",
     "path": "extra/tpm",
-    "version": "0.0.1",
+    "version": "0.1",
+    "archs": "",
     "description": "A user-friendly package manager wrapper for XBPS",
     "homepage": "https://github.com/T4n-Labs/TPM",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
@@ -868,6 +964,7 @@
     "category": "extra",
     "path": "extra/tutanota-desktop",
     "version": "348.260506.0",
+    "archs": "",
     "description": "The desktop client for Tutanota, the secure e-mail service.",
     "homepage": "https://tuta.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -877,6 +974,7 @@
     "category": "extra",
     "path": "extra/ueberzugpp",
     "version": "2.9.8",
+    "archs": "",
     "description": "Drop in replacement for ueberzug written in C++",
     "homepage": "https://github.com/jstkdng/ueberzugpp",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -886,6 +984,7 @@
     "category": "extra",
     "path": "extra/ungoogled-chromium",
     "version": "147.0.7727.137.1",
+    "archs": "",
     "description": "Lightweight approach to removing Google web service dependency",
     "homepage": "https://github.com/ungoogled-software/ungoogled-chromium",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -895,6 +994,7 @@
     "category": "extra",
     "path": "extra/vscodium",
     "version": "1.116.02821",
+    "archs": "",
     "description": "Free/Libre Open Source Software Binaries of VSCode",
     "homepage": "https://vscodium.com/",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>"
@@ -904,6 +1004,7 @@
     "category": "extra",
     "path": "extra/webapp-manager",
     "version": "1.4.6",
+    "archs": "",
     "description": "Run websites as if they were apps",
     "homepage": "https://github.com/linuxmint/webapp-manager",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -913,6 +1014,7 @@
     "category": "extra",
     "path": "extra/wfetch",
     "version": "",
+    "archs": "",
     "description": "CLI System Information Tool written with zig",
     "homepage": "https://codeberg.org/slowy07/wfetch",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
@@ -922,6 +1024,7 @@
     "category": "extra",
     "path": "extra/xapp-symbolic-icons",
     "version": "1.0.9",
+    "archs": "",
     "description": "Set of symbolic icons for Gtk applications and projects",
     "homepage": "https://github.com/xapp-project/xapp-symbolic-icons",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -931,6 +1034,7 @@
     "category": "extra",
     "path": "extra/xvr",
     "version": "0.6.16",
+    "archs": "",
     "description": "The XVR Programming Language Compiler",
     "homepage": "https://github.com/xvrlang/xvr",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
@@ -940,6 +1044,7 @@
     "category": "extra",
     "path": "extra/zap-rs",
     "version": "0.3.1",
+    "archs": "",
     "description": "Rust-based AppImage package manager inspired by Zap",
     "homepage": "https://git.ch-naseem.com/ndpm13/zap-rs",
     "maintainer": "Naz <ndpm13@ch-naseem.com>"
@@ -949,24 +1054,17 @@
     "category": "extra",
     "path": "extra/zed",
     "version": "1.1.7",
+    "archs": "",
     "description": "High-performance, multiplayer code editor",
     "homepage": "https://zed.dev",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
-  },
-  {
-    "name": "zen-browser",
-    "category": "extra",
-    "path": "extra/zen-browser",
-    "version": "1.19.11b",
-    "description": "Performance oriented Firefox-based web browser",
-    "homepage": "https://zen-browser.app/",
-    "maintainer": "Naz <ndpm13@ch-naeseem.com>"
   },
   {
     "name": "zig",
     "category": "extra",
     "path": "extra/zig",
     "version": "0.16.0",
+    "archs": "",
     "description": "Programming language designed for robustness, optimality, and clarity",
     "homepage": "https://ziglang.org",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
@@ -976,6 +1074,7 @@
     "category": "multilib",
     "path": "multilib/gcc-multilib",
     "version": "14.2.1+20250405",
+    "archs": "",
     "description": "GNU Compiler Collection",
     "homepage": "http://gcc.gnu.org",
     "maintainer": "Orphaned <orphan@voidlinux.org>"
@@ -985,6 +1084,7 @@
     "category": "multilib",
     "path": "multilib/wine",
     "version": "11.5",
+    "archs": "",
     "description": "Run Microsoft Windows applications",
     "homepage": "http://www.winehq.org/",
     "maintainer": "Helmut Pozimski <helmut@pozimski.eu>"

@@ -67,11 +67,11 @@
 ,
   {"name":"azaharplus","category":"extra","path":"extra/azaharplus"}
 ,
-  {"name":"barve-browser","category":"extra","path":"extra/barve-browser"}
-,
   {"name":"bazaar","category":"extra","path":"extra/bazaar"}
 ,
   {"name":"bitwarden-desktop","category":"extra","path":"extra/bitwarden-desktop"}
+,
+  {"name":"brave-browser","category":"extra","path":"extra/brave-browser"}
 ,
   {"name":"brave-browser-origin","category":"extra","path":"extra/brave-browser-origin"}
 ,
@@ -210,8 +210,6 @@
   {"name":"zap-rs","category":"extra","path":"extra/zap-rs"}
 ,
   {"name":"zed","category":"extra","path":"extra/zed"}
-,
-  {"name":"zen-browser","category":"extra","path":"extra/zen-browser"}
 ,
   {"name":"zig","category":"extra","path":"extra/zig"}
 ,

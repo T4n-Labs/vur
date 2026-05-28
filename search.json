@@ -67,11 +67,11 @@
 ,
   {"name":"azaharplus","desc":"A fork of the Azahar 3DS emulator with extra features","path":"extra/azaharplus"}
 ,
-  {"name":"barve-browser","desc":"Web browser that blocks ads and trackers by default","path":"extra/barve-browser"}
-,
   {"name":"bazaar","desc":"FlatHub-first app store for GNOME","path":"extra/bazaar"}
 ,
   {"name":"bitwarden-desktop","desc":"Bitwarden desktop client","path":"extra/bitwarden-desktop"}
+,
+  {"name":"brave-browser","desc":"Web browser that blocks ads and trackers by default","path":"extra/brave-browser"}
 ,
   {"name":"brave-browser-origin","desc":"Minimalist browser from the makers of Brave","path":"extra/brave-browser-origin"}
 ,
@@ -210,8 +210,6 @@
   {"name":"zap-rs","desc":"Rust-based AppImage package manager inspired by Zap","path":"extra/zap-rs"}
 ,
   {"name":"zed","desc":"High-performance, multiplayer code editor","path":"extra/zed"}
-,
-  {"name":"zen-browser","desc":"Performance oriented Firefox-based web browser","path":"extra/zen-browser"}
 ,
   {"name":"zig","desc":"Programming language designed for robustness, optimality, and clarity","path":"extra/zig"}
 ,
