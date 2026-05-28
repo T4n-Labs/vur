@@ -211,6 +211,8 @@
 ,
   {"name":"zed","desc":"High-performance, multiplayer code editor","path":"extra/zed"}
 ,
+  {"name":"zen-browser-x86_64","desc":"Performance oriented Firefox-based web browser","path":"extra/zen-browser-x86_64"}
+,
   {"name":"zig","desc":"Programming language designed for robustness, optimality, and clarity","path":"extra/zig"}
 ,
   {"name":"gcc-multilib","desc":"GNU Compiler Collection","path":"multilib/gcc-multilib"}

@@ -211,6 +211,8 @@
 ,
   {"name":"zed","category":"extra","path":"extra/zed"}
 ,
+  {"name":"zen-browser-x86_64","category":"extra","path":"extra/zen-browser-x86_64"}
+,
   {"name":"zig","category":"extra","path":"extra/zig"}
 ,
   {"name":"gcc-multilib","category":"multilib","path":"multilib/gcc-multilib"}

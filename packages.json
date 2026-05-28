@@ -1060,6 +1060,16 @@
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
+    "name": "zen-browser-x86_64",
+    "category": "extra",
+    "path": "extra/zen-browser-x86_64",
+    "version": "1.20b",
+    "archs": "",
+    "description": "Performance oriented Firefox-based web browser",
+    "homepage": "https://zen-browser.app/",
+    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
     "name": "zig",
     "category": "extra",
     "path": "extra/zig",
