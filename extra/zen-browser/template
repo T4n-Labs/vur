@@ -11,20 +11,14 @@ changelog="https://zen-browser.app/release-notes/"
 distfiles="https://github.com/zen-browser/desktop/releases/download/${version}/zen.linux-x86_64.tar.xz"
 checksum=43fa8cde02d60b473164fd7be8ee6fc0a9f0dc071288f0456850ec56e575c09a
 nostrip=yes
-create_wrksrc=yes
-
-do_extract() {
-	tar -xf ${XBPS_SRCDISTDIR}/${pkgname}-${version}/zen.linux-x86_64.tar.xz \
-		-C ${wrksrc}
-}
+wrksrc="zen"
 
 do_install() {
 	# Salin seluruh isi folder zen/ ke /usr/lib/zen-browser/
 	vmkdir usr/lib/zen-browser
-	cp -r ${wrksrc}/zen/. ${DESTDIR}/usr/lib/zen-browser/
+	cp -r ${wrksrc}/. ${DESTDIR}/usr/lib/zen-browser/
 
-	# zen adalah wrapper script, zen-bin adalah binary asli
-	# keduanya sudah ikut ter-copy, tinggal symlink wrapper-nya
+	# Symlink wrapper script ke /usr/bin/zen
 	vmkdir usr/bin
 	ln -sf /usr/lib/zen-browser/zen ${DESTDIR}/usr/bin/zen
 
