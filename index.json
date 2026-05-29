@@ -211,7 +211,7 @@
 ,
   {"name":"zed","category":"extra","path":"extra/zed"}
 ,
-  {"name":"zen-browser-x86_64","category":"extra","path":"extra/zen-browser-x86_64"}
+  {"name":"zen-browser","category":"extra","path":"extra/zen-browser"}
 ,
   {"name":"zig","category":"extra","path":"extra/zig"}
 ,

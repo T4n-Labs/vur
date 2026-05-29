@@ -211,7 +211,7 @@
 ,
   {"name":"zed","desc":"High-performance, multiplayer code editor","path":"extra/zed"}
 ,
-  {"name":"zen-browser-x86_64","desc":"Performance oriented Firefox-based web browser","path":"extra/zen-browser-x86_64"}
+  {"name":"zen-browser","desc":"Performance oriented Firefox-based web browser","path":"extra/zen-browser"}
 ,
   {"name":"zig","desc":"Programming language designed for robustness, optimality, and clarity","path":"extra/zig"}
 ,
