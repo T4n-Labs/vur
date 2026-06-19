@@ -1,115 +1,33 @@
 [
-  {"name":"NetworkManager-dinit","desc":"Dinit service scripts for","path":"core/NetworkManager-dinit"}
-,
-  {"name":"dbus-dinit","desc":"Dinit service scripts for","path":"core/dbus-dinit"}
-,
-  {"name":"dgop","desc":"API & CLI for System & Process Monitoring","path":"core/dgop"}
-,
-  {"name":"dhcpcd-dinit","desc":"Dinit service scripts for","path":"core/dhcpcd-dinit"}
-,
-  {"name":"dinit","desc":"Service manager and init system","path":"core/dinit"}
-,
-  {"name":"dsearch","desc":"Fast filesystem search service","path":"core/dsearch"}
-,
-  {"name":"elogind-dinit","desc":"Dinit service scripts for","path":"core/elogind-dinit"}
-,
-  {"name":"libglib-testing","desc":"Lib providing test harnesses and mock classes complementing GLib classes","path":"core/libglib-testing"}
-,
-  {"name":"libglib-testing-devel","desc":"Lib providing test harnesses and mock classes complementing GLib classes","path":"core/libglib-testing-devel"}
-,
-  {"name":"libgsystemservice","desc":"Common components needed for building services to be exposed on D-Bus","path":"core/libgsystemservice"}
-,
-  {"name":"libgsystemservice-devel","desc":"Common components needed for building services to be exposed on D-Bus","path":"core/libgsystemservice-devel"}
-,
-  {"name":"libvirt-dinit","desc":"Dinit service scripts for","path":"core/libvirt-dinit"}
-,
-  {"name":"lightdm-dinit","desc":"Dinit service scripts for","path":"core/lightdm-dinit"}
-,
   {"name":"linux-zen","desc":"Zen - Linux kernel and modules","path":"core/linux-zen"}
 ,
   {"name":"luna-sh","desc":"Modern, lightweight, extensible command-line shell written in zig","path":"core/luna-sh"}
 ,
-  {"name":"ly-dinit","desc":"Dinit service scripts for","path":"core/ly-dinit"}
-,
-  {"name":"malcontent","desc":"Parental controls library","path":"core/malcontent"}
-,
-  {"name":"malcontent-devel","desc":"Parental controls library","path":"core/malcontent-devel"}
-,
   {"name":"mission-center","desc":"Monitor your CPU, Memory, Disk, Network and GPU usage","path":"core/mission-center"}
-,
-  {"name":"nmenu","desc":"Generic menu for X","path":"core/nmenu"}
-,
-  {"name":"noid-base-files","desc":"Noid Linux base system files","path":"core/noid-base-files"}
-,
-  {"name":"noid-base-system","desc":"Noid Linux base system meta package","path":"core/noid-base-system"}
-,
-  {"name":"noid-base-system-dinit","desc":"Noid Linux base system meta package - Dinit","path":"core/noid-base-system-dinit"}
-,
-  {"name":"noid-dinit","desc":"RC scripts and boot services for dinit","path":"core/noid-dinit"}
-,
-  {"name":"openssh-dinit","desc":"Dinit service scripts for","path":"core/openssh-dinit"}
-,
-  {"name":"polkit-dinit","desc":"Dinit service scripts for","path":"core/polkit-dinit"}
-,
-  {"name":"sddm-dinit","desc":"Dinit service scripts for","path":"core/sddm-dinit"}
-,
-  {"name":"wpa_supplicant-dinit","desc":"Dinit service scripts for","path":"core/wpa_supplicant-dinit"}
 ,
   {"name":"xlibre-repo","desc":"XLibre for VOID linux","path":"core/xlibre-repo"}
 ,
-  {"name":"zsh","desc":"Z SHell","path":"core/zsh"}
-,
   {"name":"PrismLauncher","desc":"Custom launcher for Minecraft","path":"extra/PrismLauncher"}
-,
-  {"name":"android-studio","desc":"Official Android IDE","path":"extra/android-studio"}
-,
-  {"name":"azahar","desc":"An open-source 3DS emulator project based on Citra.","path":"extra/azahar"}
-,
-  {"name":"azaharplus","desc":"A fork of the Azahar 3DS emulator with extra features","path":"extra/azaharplus"}
-,
-  {"name":"bazaar","desc":"FlatHub-first app store for GNOME","path":"extra/bazaar"}
 ,
   {"name":"bitwarden-desktop","desc":"Bitwarden desktop client","path":"extra/bitwarden-desktop"}
 ,
-  {"name":"brave-browser","desc":"Web browser that blocks ads and trackers by default","path":"extra/brave-browser"}
-,
-  {"name":"brave-browser-origin","desc":"Minimalist browser from the makers of Brave","path":"extra/brave-browser-origin"}
-,
   {"name":"calamares","desc":"Distribution-independent installer framework","path":"extra/calamares"}
-,
-  {"name":"chrony-dinit","desc":"Dinit service scripts for","path":"extra/chrony-dinit"}
-,
-  {"name":"cinny-desktop","desc":"Yet another matrix client for desktop","path":"extra/cinny-desktop"}
-,
-  {"name":"clipcat","desc":"Clipboard Manager written in Rust Programming Language","path":"extra/clipcat"}
-,
-  {"name":"cryptomator","desc":"Multiplatform transparent client-side encryption of your files in the cloud.","path":"extra/cryptomator"}
-,
-  {"name":"dioxus-cli","desc":"CLI for building fullstack web, desktop, and mobile apps with a single codebase.","path":"extra/dioxus-cli"}
 ,
   {"name":"discord","desc":"Chat and VOIP application","path":"extra/discord"}
 ,
   {"name":"dms-shell","desc":"A Quickshell-based desktop shell with Material 3 design principles","path":"extra/dms-shell"}
 ,
-  {"name":"drawio-desktop","desc":"Official electron build of draw.io, a JS editor for general diagramming","path":"extra/drawio-desktop"}
-,
-  {"name":"emacs-lucid","desc":"GNU Emacs editor - Lucid toolkit version","path":"extra/emacs-lucid"}
-,
   {"name":"faugus-launcher","desc":"Game launcher for Windows games via Wine/Proton/Bottles","path":"extra/faugus-launcher"}
-,
-  {"name":"feishin","desc":"Full-featured Subsonic/Jellyfin compatible desktop music player","path":"extra/feishin"}
 ,
   {"name":"ferdium","desc":"Messaging app for WhatsApp, Slack, Telegram, Hangouts and many many more","path":"extra/ferdium"}
 ,
   {"name":"flat-remix-icon-theme","desc":"Flat remix is a pretty simple icon theme inspired on material design","path":"extra/flat-remix-icon-theme"}
 ,
-  {"name":"floorp","desc":"Firefox fork seeking balance between versatility, privacy and openness","path":"extra/floorp"}
+  {"name":"floorp","desc":"Firefox browser fork seeking balance between versatility, privacy and openness","path":"extra/floorp"}
 ,
   {"name":"fluffychat","desc":"The cutest instant messenger in the [matrix]","path":"extra/fluffychat"}
 ,
   {"name":"freetube","desc":"Open source desktop YouTube player built with privacy in mind","path":"extra/freetube"}
-,
-  {"name":"grayjay","desc":"Grayjay Desktop - follow creators, not platforms","path":"extra/grayjay"}
 ,
   {"name":"gruvbox-bibata-cursor-theme","desc":"Gruvbox-themed Bibata Cursor","path":"extra/gruvbox-bibata-cursor-theme"}
 ,
@@ -125,21 +43,13 @@
 ,
   {"name":"kaidan","desc":"Modern chat app for every device","path":"extra/kaidan"}
 ,
-  {"name":"librewolf","desc":"Fork of Firefox, focused on privacy, security and freedom","path":"extra/librewolf"}
+  {"name":"librewolf","desc":"Fork of Firefox browser, focused on privacy, security and freedom","path":"extra/librewolf"}
 ,
-  {"name":"lutgen-cli","desc":"A blazingly fast interpolated LUT utility for arbitrary and popular color palettes.","path":"extra/lutgen-cli"}
-,
-  {"name":"lutgen-rs","desc":"Blazingly fast interpolated LUT generator and applicator for arbitrary and popular color palettes.","path":"extra/lutgen-rs"}
-,
-  {"name":"lutgen-studio","desc":"Offical GUI for Lutgen, the best way to apply popular colorschemes to any image or wallpaper!","path":"extra/lutgen-studio"}
+  {"name":"linuxnauta-repo","desc":"Binary repositories for Void Linux by jmboris","path":"extra/linuxnauta-repo"}
 ,
   {"name":"ly","desc":"Lightweight TUI display manager for Linux and BSD","path":"extra/ly"}
 ,
-  {"name":"megasync","desc":"Easy automated syncing between your computers and your MEGA Cloud Drive","path":"extra/megasync"}
-,
   {"name":"msttcorefonts","desc":"Microsoft Typography Project - corefonts","path":"extra/msttcorefonts"}
-,
-  {"name":"ndpm","desc":"A user-friendly package manager wrapper for XBPS with AppImage support","path":"extra/ndpm"}
 ,
   {"name":"nerd-fonts-cascadiacode","desc":"CascadiaCode Nerd Font - monospaced font with programming ligatures and glyphs","path":"extra/nerd-fonts-cascadiacode"}
 ,
@@ -147,75 +57,29 @@
 ,
   {"name":"noctalia-shell","desc":"Sleek and minimal desktop shell, built with Quickshell","path":"extra/noctalia-shell"}
 ,
-  {"name":"noid-artwork","desc":"Noid Linux artwork","path":"extra/noid-artwork"}
-,
-  {"name":"noid-welcome","desc":"Noid Linux Welcome Screen","path":"extra/noid-welcome"}
-,
-  {"name":"nwm","desc":"Custom Build of DWM - a Dynamic window manager for X","path":"extra/nwm"}
-,
   {"name":"nyancat","desc":"Nyancat rendered in your terminal","path":"extra/nyancat"}
 ,
   {"name":"obsidian","desc":"Private and flexible writing app that adapts to the way you think","path":"extra/obsidian"}
 ,
   {"name":"onlyoffice","desc":"An office suite that combines text, spreadsheet and presentation editors allowing to create, view and edit local documents","path":"extra/onlyoffice"}
 ,
-  {"name":"portproton","desc":"Software for playing Microsoft Windows games and launchers","path":"extra/portproton"}
-,
-  {"name":"proton-authenticator","desc":"An open source and end-to-end encrypted 2FA app. Securely sync and backup your 2FA codes easily.","path":"extra/proton-authenticator"}
-,
-  {"name":"proton-vpn-gtk-app","desc":"Official ProtonVPN Linux app","path":"extra/proton-vpn-gtk-app"}
-,
-  {"name":"python3-proton-core","desc":"Component contains core logic used by the other Proton components","path":"extra/python3-proton-core"}
-,
-  {"name":"python3-proton-vpn-api-core","desc":"Acts as a facade to the other Proton VPN components","path":"extra/python3-proton-vpn-api-core"}
-,
-  {"name":"python3-proton-vpn-local-agent","desc":"Proton VPN local agent written in Rust","path":"extra/python3-proton-vpn-local-agent"}
-,
   {"name":"qt6gtk2","desc":"GTK+2.0 integration plugins for Qt6","path":"extra/qt6gtk2"}
 ,
-  {"name":"quran-companion","desc":"Free and open-source desktop Quran reader and player","path":"extra/quran-companion"}
-,
   {"name":"rustdesk","desc":"An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.","path":"extra/rustdesk"}
-,
-  {"name":"sbm-rs","desc":"Simple bookmarks manager written in Rust","path":"extra/sbm-rs"}
-,
-  {"name":"slack-desktop","desc":"Messaging app for teams","path":"extra/slack-desktop"}
-,
-  {"name":"spotify","desc":"Proprietary music streaming client","path":"extra/spotify"}
-,
-  {"name":"sway-scroll","desc":"Fork of the sway compositor with a scrolling layout like PaperWM or niri","path":"extra/sway-scroll"}
-,
-  {"name":"tenacity","desc":"Easy-to-use multi-track audio editor and recorder, forked from Audacity","path":"extra/tenacity"}
-,
-  {"name":"thorium-browser-avx2","desc":"Chromium fork focused on performance and security - AVX2 build","path":"extra/thorium-browser-avx2"}
 ,
   {"name":"tpm","desc":"A user-friendly package manager wrapper for XBPS","path":"extra/tpm"}
 ,
   {"name":"tutanota-desktop","desc":"The desktop client for Tutanota, the secure e-mail service.","path":"extra/tutanota-desktop"}
 ,
-  {"name":"ueberzugpp","desc":"Drop in replacement for ueberzug written in C++","path":"extra/ueberzugpp"}
-,
-  {"name":"ungoogled-chromium","desc":"Lightweight approach to removing Google web service dependency","path":"extra/ungoogled-chromium"}
-,
   {"name":"vscodium","desc":"Free/Libre Open Source Software Binaries of VSCode","path":"extra/vscodium"}
 ,
   {"name":"webapp-manager","desc":"Run websites as if they were apps","path":"extra/webapp-manager"}
 ,
-  {"name":"wfetch","desc":"CLI System Information Tool written with zig","path":"extra/wfetch"}
-,
-  {"name":"xapp-symbolic-icons","desc":"Set of symbolic icons for Gtk applications and projects","path":"extra/xapp-symbolic-icons"}
-,
-  {"name":"xvr","desc":"The XVR Programming Language Compiler","path":"extra/xvr"}
-,
-  {"name":"zap-rs","desc":"Rust-based AppImage package manager inspired by Zap","path":"extra/zap-rs"}
+  {"name":"xvr","desc":"The XVR Programming Language Compiler By Arfy Slowy","path":"extra/xvr"}
 ,
   {"name":"zed","desc":"High-performance, multiplayer code editor","path":"extra/zed"}
 ,
   {"name":"zen-browser","desc":"Performance oriented Firefox-based web browser","path":"extra/zen-browser"}
 ,
   {"name":"zig","desc":"Programming language designed for robustness, optimality, and clarity","path":"extra/zig"}
-,
-  {"name":"gcc-multilib","desc":"GNU Compiler Collection","path":"multilib/gcc-multilib"}
-,
-  {"name":"wine","desc":"Run Microsoft Windows applications","path":"multilib/wine"}
 ]
