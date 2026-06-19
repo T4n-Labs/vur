@@ -1,1 +1,0 @@
-# Build Style Qmake(Qt5/Qt6)

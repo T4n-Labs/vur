@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Heroic Games Launcher
-Exec=heroic %U
-Icon=heroic-games-launcher
-Type=Application
-Categories=Game;
-MimeType=x-scheme-handler/heroic;
-StartupWMClass=heroic
-Comment=A games launcher for GOG, Amazon and Epic Games.

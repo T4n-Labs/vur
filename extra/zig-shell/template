@@ -1,0 +1,26 @@
+# Template file for 'zig-shell'
+pkgname=zig-shell
+version=0.1
+revision=1
+build_style=meta
+short_desc="Simple Script for Zig Version Control written shell"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
+license="MIT"
+homepage="https://github.com/T4n-Labs/TPM"
+distfiles="https://github.com/T4n-Labs/TPM/archive/refs/tags/${version}.tar.gz"
+checksum=b24de265573d1e2868244bad2dd9fb8138d8e689ca5fd54005749348caf51c50
+
+depends="bash"
+
+do_install() {
+    vinstall zig-shell 755 usr/bin
+
+    vinstall lib/core.sh 644 usr/lib/tpm/lib
+    vinstall lib/ui.sh   644 usr/lib/tpm/lib
+
+    for cmd in install remove search update upgrade; do
+        vinstall commands/${cmd}.sh 755 usr/lib/tpm/commands
+    done
+
+    vinstall config 644 etc/tpm.conf
+}

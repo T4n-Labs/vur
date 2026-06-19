@@ -1,0 +1,19 @@
+# Template file for 'everforest-b-mb-light'
+pkgname=everforest-b-mb-light
+version=1.0.0
+revision=1
+hostmakedepends="tar xz gtk-engine-murrine"
+short_desc="Everforest Dark Hard Border macOS Buttons"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
+license="GPL-3.0"
+homepage="https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme"
+
+do_extract() {
+  tar xf ${FILESDIR}/Everforest-B-MB-light.tar.xa
+}
+
+do_install() {
+  vmkdir usr/share/themes
+
+  
+}t

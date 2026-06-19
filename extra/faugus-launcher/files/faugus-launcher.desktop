@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Faugus Launcher
-Comment=Game launcher for Windows games via Wine/Proton/Bottles
-Exec=faugus-launcher
-Icon=faugus-launcher
-Type=Application
-Categories=Game;
-Terminal=false
-StartupNotify=true
