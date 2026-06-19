@@ -10,16 +10,6 @@
     "maintainer": "JuanMa <numblinux@gmail.com>"
   },
   {
-    "name": "luna-sh",
-    "category": "core",
-    "path": "core/luna-sh",
-    "version": "main",
-    "archs": "",
-    "description": "Modern, lightweight, extensible command-line shell written in zig",
-    "homepage": "https://codeberg.org/slowy07/Luna-sh",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
-  },
-  {
     "name": "mission-center",
     "category": "core",
     "path": "core/mission-center",

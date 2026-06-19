@@ -1,8 +1,6 @@
 [
   {"name":"linux-zen","desc":"Zen - Linux kernel and modules","path":"core/linux-zen"}
 ,
-  {"name":"luna-sh","desc":"Modern, lightweight, extensible command-line shell written in zig","path":"core/luna-sh"}
-,
   {"name":"mission-center","desc":"Monitor your CPU, Memory, Disk, Network and GPU usage","path":"core/mission-center"}
 ,
   {"name":"xlibre-repo","desc":"XLibre for VOID linux","path":"core/xlibre-repo"}

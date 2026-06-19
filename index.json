@@ -1,8 +1,6 @@
 [
   {"name":"linux-zen","category":"core","path":"core/linux-zen"}
 ,
-  {"name":"luna-sh","category":"core","path":"core/luna-sh"}
-,
   {"name":"mission-center","category":"core","path":"core/mission-center"}
 ,
   {"name":"xlibre-repo","category":"core","path":"core/xlibre-repo"}
