@@ -1,3 +1,0 @@
-#!/bin/sh
-install -d -m0711 -olightdm -glightdm /run/lightdm
-exec lightdm

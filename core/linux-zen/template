@@ -1,5 +1,5 @@
 # Template file for 'linux6.13-zen'
-# This template is old
+# Source Code Template : https://github.com/jmboris/voidlinux-kernel-zen-6.13
 pkgname=linux-zen
 version=6.13.0
 revision=1

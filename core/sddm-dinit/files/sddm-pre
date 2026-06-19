@@ -1,3 +1,0 @@
-type		= scripted
-command		= /usr/bin/install -dm0755 -o sddm -g sddm /var/lib/sddm
-depends-on	= local.target

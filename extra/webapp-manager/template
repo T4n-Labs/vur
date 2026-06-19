@@ -8,7 +8,7 @@ depends="python3-tldextract python3-xapp python3-Pillow
 python3-BeautifulSoup4 python3-configobj python3-gobject
 python3-setproctitle python3-tldextract xapp-symbolic-icons"
 short_desc="Run websites as if they were apps"
-maintainer="Naz <ndpm13@ch-naseem.com>"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
 license="GPL-3.0-or-later"
 homepage="https://github.com/linuxmint/webapp-manager"
 distfiles="https://github.com/linuxmint/webapp-manager/releases/download/master.mint22/packages.tar.gz"

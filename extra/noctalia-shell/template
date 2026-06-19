@@ -6,7 +6,7 @@ archs="x86_64"
 depends="noctalia-qs ImageMagick brightnessctl ffmpeg qt6-multimedia
  python wlr-randr"
 short_desc="Sleek and minimal desktop shell, built with Quickshell"
-maintainer="Naz <ndpm13@ch-naseem.com>"
+maintainer="Gh0sT4n"
 license="MIT"
 homepage="https://docs.noctalia.dev/"
 changelog="https://github.com/noctalia-dev/noctalia-shell/releases/"

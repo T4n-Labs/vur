@@ -1,5 +1,5 @@
-# Template file for 'PrismLauncher-Patched'
-pkgname=PrismLauncher-Patched
+# Template file for 'PrismLauncher'
+pkgname=PrismLauncher
 version=11.0.2
 revision=1
 archs="x86_64"
@@ -11,12 +11,11 @@ makedepends="qt6-base-devel qt6-qt5compat-devel zlib-devel quazip-qt6-devel
  libarchive-devel tomlplusplus-devel"
 depends="virtual?java-runtime qt6-svg qt6-imageformats qt6-plugin-tls-openssl"
 short_desc="Custom launcher for Minecraft"
-maintainer="Naz <ndpm13@ch-naseem.com>"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
 license="GPL-3.0-only"
 homepage="https://prismlauncher.org/"
 distfiles="https://github.com/PrismLauncher/PrismLauncher/releases/download/${version}/PrismLauncher-${version}.tar.gz"
 checksum=8956e9351bcb0472fc9c2c61ae68aa2960f27f7cabb1cacd86dd2af1c233a064
-conflicts="PrismLauncher>=0"
 
 if [ -z "$XBPS_CHECK_PKGS" ]; then
 	configure_args+=" -DBUILD_TESTING=0"

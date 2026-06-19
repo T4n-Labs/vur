@@ -14,7 +14,7 @@ makedepends="qt6-base-devel qt6-declarative-devel qt6-svg-devel
 depends="kirigami-addons kquickimageeditor qt6-location
  gst-plugins-good1-qml6"
 short_desc="Modern chat app for every device"
-maintainer="Naz <ndpm13@ch-naseem.com>"
+maintainer="Gh0sT4n <darskevoid@gmai.com>"
 license="GPL-3.0-or-later"
 homepage="https://www.kaidan.im/"
 changelog="https://invent.kde.org/network/kaidan/-/raw/master/NEWS.md/"

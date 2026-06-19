@@ -11,7 +11,7 @@ hostmakedepends="cargo cmake pkg-config gettext blueprint-compiler desktop-file-
 makedepends="gtk4-devel libadwaita-devel libdrm-devel libgbm-devel
  eudev-libudev-devel dbus-devel"
 short_desc="Monitor your CPU, Memory, Disk, Network and GPU usage"
-maintainer="Naz <ndpm13@ch-naseem.com>"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
 license="GPL-3.0-only"
 homepage="https://missioncenter.io/"
 _gitlab_url="https://gitlab.com/mission-center-devs"
