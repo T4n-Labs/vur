@@ -65,8 +65,6 @@
 ,
   {"name":"rustdesk","category":"extra","path":"extra/rustdesk"}
 ,
-  {"name":"tpm","category":"extra","path":"extra/tpm"}
-,
   {"name":"tutanota-desktop","category":"extra","path":"extra/tutanota-desktop"}
 ,
   {"name":"vscodium","category":"extra","path":"extra/vscodium"}

@@ -65,8 +65,6 @@
 ,
   {"name":"rustdesk","desc":"An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.","path":"extra/rustdesk"}
 ,
-  {"name":"tpm","desc":"A user-friendly package manager wrapper for XBPS","path":"extra/tpm"}
-,
   {"name":"tutanota-desktop","desc":"The desktop client for Tutanota, the secure e-mail service.","path":"extra/tutanota-desktop"}
 ,
   {"name":"vscodium","desc":"Free/Libre Open Source Software Binaries of VSCode","path":"extra/vscodium"}

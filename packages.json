@@ -330,16 +330,6 @@
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
-    "name": "tpm",
-    "category": "extra",
-    "path": "extra/tpm",
-    "version": "0.1",
-    "archs": "",
-    "description": "A user-friendly package manager wrapper for XBPS",
-    "homepage": "https://github.com/T4n-Labs/TPM",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
-  },
-  {
     "name": "tutanota-desktop",
     "category": "extra",
     "path": "extra/tutanota-desktop",
