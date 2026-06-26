@@ -22,3 +22,5 @@ VUR berfungsi sebagai tempat berbagi paket yang belum tersedia secara default, d
 > Gunakan dengan bijak. Selalu review template sebelum membangun paket.
 
 #### DOKUMENTASI : [doc.md](./vdokumentasi/index.md)
+
+---
