@@ -1,0 +1,16 @@
+# Template file for 'zvc'
+pkgname=zvc
+version=1.0
+revision=1
+build_style=meta
+depends="curl wget tar"
+short_desc="Simple Script for Zig Version Control written shell(POSIX-sh)"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
+license="MIT"
+homepage="https://github.com/gh0st4n/ZVC"
+distfiles="https://github.com/gh0st4n/ZVC/archive/refs/tags/v${version}.tar.gz"
+checksum=32075737fcf79bb32d554ca0b536a88c2bb6f4422abda4639fe8220506aaf195
+
+do_install() {
+    vinstall zvc.sh 755 usr/local/bin zvc
+}
