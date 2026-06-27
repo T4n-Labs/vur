@@ -78,4 +78,6 @@
   {"name":"zen-browser","category":"extra","path":"extra/zen-browser"}
 ,
   {"name":"zig","category":"extra","path":"extra/zig"}
+,
+  {"name":"zvc","category":"extra","path":"extra/zvc"}
 ]

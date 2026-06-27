@@ -398,4 +398,14 @@
     "description": "Programming language designed for robustness, optimality, and clarity",
     "homepage": "https://ziglang.org",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "zvc",
+    "category": "extra",
+    "path": "extra/zvc",
+    "version": "1.0",
+    "archs": "",
+    "description": "Simple Script for Zig Version Control written shell",
+    "homepage": "https://github.com/gh0st4n/ZVC",
+    "maintainer": "Gh0sT4n <darskevoid@gmail.com>"
   }]

@@ -78,4 +78,6 @@
   {"name":"zen-browser","desc":"Performance oriented Firefox-based web browser","path":"extra/zen-browser"}
 ,
   {"name":"zig","desc":"Programming language designed for robustness, optimality, and clarity","path":"extra/zig"}
+,
+  {"name":"zvc","desc":"Simple Script for Zig Version Control written shell","path":"extra/zvc"}
 ]
