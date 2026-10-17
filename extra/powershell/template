@@ -1,0 +1,50 @@
+# Template file for 'powershell'
+pkgname=powershell
+version=7.6.7
+revision=1
+archs="x86_64* aarch64 armv7l"
+create_wrksrc=yes
+nostrip=yes
+noverifyrdeps=yes
+noshlibprovides=yes
+depends="libunwind icu openssl zlib"
+short_desc="PowerShell for every system!"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
+license="MIT"
+homepage="https://learn.microsoft.com/en-us/powershell/"
+
+case "$XBPS_TARGET_MACHINE" in
+	x86_64)
+		_p_arch="x64"
+		_p_hash="6896f9e3a6b0a354bf470835a96da76d2f801cd50dcf047ad7c4563bf93bf431"
+		;;
+	x86_64-musl)
+		_p_arch="musl-x64"
+		_p_hash="d74a1b7e1d1fbf150ae6f29e083953ce07fc833fe9d66218d54940a8638249c6"
+		;;
+	aarch64)
+		_p_arch="arm64"
+		_p_hash="ba465efdfb0984c1c5dc5ed9eb0b79a7e91a1b52c45f99377058c0659b84d3f1"
+		;;
+	armv7l)
+		_p_arch="arm32"
+		_p_hash="6c056a2104273c834da2e383960ffa850520f3e760bada5af43f7ce8a64146d2"
+		;;
+	*)
+		broken="This architecture is not supported by Microsoft."
+		;;
+esac
+
+distfiles="https://github.com/PowerShell/PowerShell/releases/download/v${version}/powershell-${version}-linux-${_p_arch}.tar.gz"
+checksum="${_p_hash}"
+
+do_install() {
+	vmkdir opt/powershell
+	vcopy "*" opt/powershell
+	chmod 755 ${DESTDIR}/opt/powershell/pwsh
+
+	vmkdir usr/bin
+	ln -sf /opt/powershell/pwsh ${DESTDIR}/usr/bin/pwsh
+
+	vlicense LICENSE.txt
+}
