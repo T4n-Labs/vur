@@ -1,0 +1,38 @@
+# Template file for 'tpkg'
+pkgname=tpkg
+version=1.0
+revision=1
+short_desc="A user-friendly package manager wrapper for XBPS"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="BSD-2-Clause"
+homepage="https://gitlab.com/t4n-pkg/tpkg/"
+distfiles="https://gitlab.com/t4n-pkg/tpkg/-/archive/${version}/tpkg-${version}.tar.gz"
+checksum=db1b831f16817fb1379dbe9eab04dee2ff102c4bbd89a0eb3a1fe3ce7feff950
+
+depends="xbps"
+
+do_install() {
+	vinstall tpkg 755 usr/bin
+
+	vmkdir usr/lib/tpkg
+	for _mod in core usage cmd_query cmd_pkg cmd_repo; do
+		vinstall "lib/${_mod}.sh" 644 usr/lib/tpkg
+	done
+
+	vdoc README.md
+	vlicense LICENSE
+	vdoc docs/docs-user-id.md
+	vdoc docs/docs-user-en.md
+	vdoc docs/docs-dev-id.md
+	vdoc docs/docs-dev-en.md
+}
+
+# Catatan buat maintainer:
+# - "sudo" sengaja tidak dimasukkan ke $depends karena tpkg tetap jalan
+#   di root tanpa sudo (lihat logic $SUDO di lib/core.sh). Kalau mau
+#   memaksa sudo selalu tersedia di sistem non-root, uncomment baris ini:
+# - "sudo" is intentionally omitted from $depends because tpkg still runs
+#   as root without sudo (see the $SUDO logic in lib/core.sh). If you want
+#   to force sudo to always be available on non-root systems, uncomment this line:
+# depends="sudo"
