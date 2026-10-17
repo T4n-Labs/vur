@@ -1,4 +1,6 @@
 [
+  {"name":"acpid-dinit","category":"core","path":"core/acpid-dinit"}
+,
   {"name":"linux-zen","category":"core","path":"core/linux-zen"}
 ,
   {"name":"mission-center","category":"core","path":"core/mission-center"}
@@ -6,6 +8,8 @@
   {"name":"xlibre-repo","category":"core","path":"core/xlibre-repo"}
 ,
   {"name":"PrismLauncher","category":"extra","path":"extra/PrismLauncher"}
+,
+  {"name":"android-studio","category":"extra","path":"extra/android-studio"}
 ,
   {"name":"bitwarden-desktop","category":"extra","path":"extra/bitwarden-desktop"}
 ,
@@ -61,9 +65,13 @@
 ,
   {"name":"onlyoffice","category":"extra","path":"extra/onlyoffice"}
 ,
+  {"name":"powershell","category":"extra","path":"extra/powershell"}
+,
   {"name":"qt6gtk2","category":"extra","path":"extra/qt6gtk2"}
 ,
   {"name":"rustdesk","category":"extra","path":"extra/rustdesk"}
+,
+  {"name":"tpkg","category":"extra","path":"extra/tpkg"}
 ,
   {"name":"tutanota-desktop","category":"extra","path":"extra/tutanota-desktop"}
 ,

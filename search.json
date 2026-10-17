@@ -1,4 +1,6 @@
 [
+  {"name":"acpid-dinit","desc":"Dinit service scripts for","path":"core/acpid-dinit"}
+,
   {"name":"linux-zen","desc":"Zen - Linux kernel and modules","path":"core/linux-zen"}
 ,
   {"name":"mission-center","desc":"Monitor your CPU, Memory, Disk, Network and GPU usage","path":"core/mission-center"}
@@ -6,6 +8,8 @@
   {"name":"xlibre-repo","desc":"XLibre for VOID linux","path":"core/xlibre-repo"}
 ,
   {"name":"PrismLauncher","desc":"Custom launcher for Minecraft","path":"extra/PrismLauncher"}
+,
+  {"name":"android-studio","desc":"Official Android IDE","path":"extra/android-studio"}
 ,
   {"name":"bitwarden-desktop","desc":"Bitwarden desktop client","path":"extra/bitwarden-desktop"}
 ,
@@ -61,9 +65,13 @@
 ,
   {"name":"onlyoffice","desc":"An office suite that combines text, spreadsheet and presentation editors allowing to create, view and edit local documents","path":"extra/onlyoffice"}
 ,
+  {"name":"powershell","desc":"PowerShell for every system!","path":"extra/powershell"}
+,
   {"name":"qt6gtk2","desc":"GTK+2.0 integration plugins for Qt6","path":"extra/qt6gtk2"}
 ,
   {"name":"rustdesk","desc":"An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.","path":"extra/rustdesk"}
+,
+  {"name":"tpkg","desc":"A user-friendly package manager wrapper for XBPS","path":"extra/tpkg"}
 ,
   {"name":"tutanota-desktop","desc":"The desktop client for Tutanota, the secure e-mail service.","path":"extra/tutanota-desktop"}
 ,
