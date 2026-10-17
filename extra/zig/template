@@ -1,17 +1,40 @@
 # Template file for 'zig'
 pkgname=zig
-version=0.16.0
+version=0.17.0
 revision=1
-archs="x86_64"
+archs="x86_64* aarch64* i686 armv7l*"
 short_desc="Programming language designed for robustness, optimality, and clarity"
 maintainer="Gh0sT4n <darskevoid@gmail.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="MIT"
 homepage="https://ziglang.org"
-distfiles="https://ziglang.org/download/${version}/zig-x86_64-linux-${version}.tar.xz"
-checksum=70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00
+
+case "$XBPS_TARGET_MACHINE" in
+	x86_64*)
+		_p_arch="x86_64"
+		_p_hash="1cbe9df9f27e6b78d14ccbca43b6703a404ef79ef1c463de901d7f088d4e2026"
+		;;
+	aarch64*)
+		_p_arch="aarch64"
+		_p_hash="9e8d11661d4ae3bd57702a3832781e23ad151dde5798e16a5ccd503f65234ff8"
+		;;
+    i686)
+		_p_arch="x86"
+		_p_hash="55e39e175cd5b3098afc29ec47b2590134f5b874175369fb9ae7b8e836d7531a"
+		;;
+	armv7l*)
+		_p_arch="arm"
+		_p_hash="53f0045cdef7ba06da70a12b2ef654e4c5283b0139bc441aa7d84f364b46de43"
+		;;
+	*)
+		broken="This architecture is not supported."
+		;;
+esac
+
+distfiles="https://ziglang.org/download/${version}/zig-${_p_arch}-linux-${version}.tar.xz"
+checksum="${_p_hash}"
 nostrip=yes
-# Overwrite any zig version already installed (official or custom)
-# Timpa versi zig manapun yang sudah terinstall (resmi maupun custom)
+conflicts="zig>=0"
 replaces="zig>=0"
 
 do_install() {
@@ -20,6 +43,8 @@ do_install() {
 	vmkdir usr/lib/zig
 	vcopy ./lib/* usr/lib/zig
 
+	vmkdir usr/share/doc/zig
+	vcopy ./doc/* usr/share/doc/zig
+
 	vlicense LICENSE
-	vdoc README.md
 }
