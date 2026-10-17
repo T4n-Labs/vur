@@ -12,7 +12,6 @@ echo "Generating VUR index..."
 echo "[" > $INDEX
 echo "[" > $PACKAGES
 echo "[" > $SEARCH
-
 first=true
 
 for category in core extra multilib; do
@@ -23,13 +22,16 @@ for category in core extra multilib; do
       pkgname=$(basename "$pkg")
       path="$category/$pkgname"
       version=$(grep "^version=" "$template" | cut -d= -f2)
+      
       desc=$(grep "^short_desc=" "$template" | cut -d= -f2- | tr -d '"' | sed 's/\${[^}]*}//g' | sed 's/([^)]*)//g' | xargs)
       
-      archs=$(grep "^archs=" "$template" | cut -d= -f2 | tr -d '"')
+      archs_raw=$(grep "^archs=" "$template" | cut -d= -f2 | tr -d '"')
       
-      if [ -z "$archs" ]; then
-        archs="$ALL_ARCHS"
+      if [ -z "$archs_raw" ]; then
+        archs_raw="$ALL_ARCHS"
       fi
+      
+      archs_json="[\"$(echo "$archs_raw" | sed 's/ /", "/g')\"]"
 
       homepage=$(grep "^homepage=" "$template" | cut -d= -f2 | tr -d '"')
       maintainer=$(grep "^maintainer=" "$template" | cut -d= -f2- | tr -d '"')
@@ -52,7 +54,7 @@ for category in core extra multilib; do
       echo "    \"category\": \"$category\"," >> $PACKAGES
       echo "    \"path\": \"$path\"," >> $PACKAGES
       echo "    \"version\": \"$version\"," >> $PACKAGES
-      echo "    \"archs\": \"$archs\"," >> $PACKAGES 
+      echo "    \"archs\": $archs_json," >> $PACKAGES
       echo "    \"description\": \"$desc\"," >> $PACKAGES
       echo "    \"homepage\": \"$homepage\"," >> $PACKAGES
       echo "    \"maintainer\": \"$maintainer\"," >> $PACKAGES
@@ -72,9 +74,9 @@ echo "]" >> $SEARCH
 # categories.json
 cat <<EOF > $CATEGORIES
 [
-{"name":"core"},
-{"name":"extra"},
-{"name":"multilib"}
+  {"name":"core"},
+  {"name":"extra"},
+  {"name":"multilib"}
 ]
 EOF
 
