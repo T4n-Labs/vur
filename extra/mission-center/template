@@ -1,0 +1,33 @@
+# Template file for 'mission-center'
+pkgname=mission-center
+version=1.2.0
+_gngver=a5272b3c1d853caa4044b737cf49257bfc4c86f2
+_appdetectionver=26b93b8c6f0de6912f0a17022f7ece76bad87612
+revision=1
+archs="x86_64"
+build_style=meson
+configure_args="-Db_lto=false"
+hostmakedepends="cargo cmake pkg-config gettext blueprint-compiler
+ desktop-file-utils"
+makedepends="gtk4-devel libadwaita-devel libdrm-devel libgbm-devel
+ eudev-libudev-devel dbus-devel"
+short_desc="Monitor your CPU, Memory, Disk, Network and GPU usage"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="GPL-3.0-only"
+homepage="https://missioncenter.io/"
+_gitlab_url="https://gitlab.com/mission-center-devs"
+distfiles="${_gitlab_url}/mission-center/-/archive/v${version}/mission-center-v${version}.tar.gz \
+ ${_gitlab_url}/gng/-/archive/${_gngver}/gng-${_gngver}.tar.gz \
+ ${_gitlab_url}/app-detection/-/archive/${_appdetectionver}/app-detection-${_appdetectionver}.tar.gz"
+checksum="a02483259ebcc8d7dd535bf5aebc689a00d071bcb4bb72e62f643c935485d109 \
+ e487986e7b1f165d92280e44b02ad57113fe44e7969483951cd10027feab7e81 \
+ 074cbd4898a104de43835299f5c5c0edc6f901ad00ff89a469a66d4fab8353de"
+skip_extraction="gng-${_gngver}.tar.gz app-detection-${_appdetectionver}.tar.gz"
+
+post_extract() {
+	vsrcextract -C subprojects/magpie "gng-${_gngver}.tar.gz"
+	vsrcextract -C \
+		subprojects/magpie/platform-linux/crates/app-rummage \
+		"app-detection-${_appdetectionver}.tar.gz"
+}
