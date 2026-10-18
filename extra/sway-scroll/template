@@ -1,0 +1,28 @@
+# Template file for 'sway-scroll'
+pkgname=sway-scroll
+version=1.12.21
+revision=1
+archs="x86_64"
+build_style=meson
+configure_args="-Dwerror=false -Db_ndebug=true"
+hostmakedepends="pkg-config cmake scdoc hwids"
+makedepends="wayland-devel wlroots0.20-devel glslang-devel
+ json-c-devel pcre2-devel cairo-devel pango-devel libevdev-devel
+ lua54-devel xorg-server-xwayland libdrm-devel libliftoff-devel
+ gdk-pixbuf-devel readline-devel"
+short_desc="Fork of the sway compositor with a scrolling layout like PaperWM or niri"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="MIT"
+homepage="https://github.com/dawsers/scroll/"
+changelog="https://github.com/dawsers/scroll/releases/"
+distfiles="https://github.com/dawsers/scroll/archive/refs/tags/${version}.tar.gz"
+checksum="83ba9433282bfe41b4909c4b62ef4c2e757a0ac792c301eccfbb1dd5902b6903"
+
+post_install() {
+	vlicense LICENSE
+	vdoc README.md
+
+	vinstall ${FILESDIR}/scroll-portals.conf 644 \
+		usr/share/xdg-desktop-portal
+}
