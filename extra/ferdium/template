@@ -14,9 +14,9 @@ distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="Apache-2.0"
 homepage="https://ferdium.org/"
 changelog="https://raw.githubusercontent.com/ferdium/ferdium-app/refs/heads/develop/CHANGELOG.md"
-distfiles="https://github.com/ferdium/ferdium-app/archive/refs/tags/v${version}.tar.gz>${pkgname}-v${version}.tar.gz
+distfiles="https://github.com/ferdium/ferdium-app/archive/refs/tags/v${version}.tar.gz>${pkgname}-v${version}.tar.gz \
  https://github.com/ferdium/ferdium-recipes/archive/refs/heads/main.tar.gz>recipes.tar.gz"
-checksum="ba266a71335c5e5a29d4a06990b1f8a279238a68fc2d077bb32d5e7ea790b3d5
+checksum="ba266a71335c5e5a29d4a06990b1f8a279238a68fc2d077bb32d5e7ea790b3d5 \
  0f251f6e54aa47d22eb90ddca96baafa1a97507fe671ee4d3cc17d27638d3000"
 
 post_extract() {

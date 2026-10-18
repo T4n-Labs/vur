@@ -16,4 +16,4 @@ license="GPL-3.0-only"
 homepage="https://usebottles.com/"
 changelog="https://github.com/bottlesdevs/Bottles/releases"
 distfiles="https://github.com/bottlesdevs/Bottles/archive/refs/tags/${version}.tar.gz"
-checksum=eb417e37851921565664c9dbe2713f94e643f0963d3c6c89afc4cf2bcd7aff3c
+checksum="eb417e37851921565664c9dbe2713f94e643f0963d3c6c89afc4cf2bcd7aff3c"

@@ -12,7 +12,7 @@ distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="GPL-3.0-only"
 homepage="https://github.com/xrelkd/clipcat"
 distfiles="https://github.com/xrelkd/clipcat/archive/refs/tags/v${version}.tar.gz"
-checksum=3d20e3bbe7b5b7ac478e10e1892d3978a99f4573ed118574b4d441820cff3d7f
+checksum="3d20e3bbe7b5b7ac478e10e1892d3978a99f4573ed118574b4d441820cff3d7f"
 
 do_install() {
 	for pkg in clipcatd clipcatctl clipcat-menu clipcat-notify; do

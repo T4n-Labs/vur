@@ -13,6 +13,6 @@ distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="GPL-2.0-or-later"
 homepage="https://github.com/AzaharPlus/AzaharPlus"
 distfiles="https://github.com/AzaharPlus/AzaharPlus/releases/download/AZAHAR_PLUS_${version//./_}_${_variant}/azaharplus-${version}-${_variant}-unified-source.tar.xz"
-checksum=b1314a9f352361d522045dbef979c7e419b7b913ed4fe40d52461066719a44ed
+checksum="b1314a9f352361d522045dbef979c7e419b7b913ed4fe40d52461066719a44ed"
 conflicts="azahar>=0"
 replaces="azahar>=0"

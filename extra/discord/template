@@ -11,7 +11,7 @@ distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="custom:Proprietary"
 homepage="https://discord.com"
 distfiles="https://dl.discordapp.net/apps/linux/${version}/discord-${version}.tar.gz"
-checksum=fc2213de0769e1a1e35c2fa222ccd73d03ff05f3e804b9d4138422bc816fcba1
+checksum="fc2213de0769e1a1e35c2fa222ccd73d03ff05f3e804b9d4138422bc816fcba1"
 nopie=yes
 nostrip=yes
 

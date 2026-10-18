@@ -19,7 +19,7 @@ license="MIT"
 homepage="https://lut.sh/"
 #changelog=""
 distfiles="https://github.com/ozwaldorf/lutgen-rs/archive/refs/tags/lutgen-v${version}.tar.gz"
-checksum=12923b00a23dc6a9b871e1be1fda266254dca679698ae32957d0c454ef78518a
+checksum="12923b00a23dc6a9b871e1be1fda266254dca679698ae32957d0c454ef78518a"
 
 post_install() {
     vlicense LICENSE

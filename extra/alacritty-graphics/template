@@ -15,7 +15,7 @@ license="Apache-2.0"
 homepage="https://github.com/ayosec/alacritty"
 changelog="https://github.com/ayosec/alacritty/raw/refs/heads/graphics/CHANGELOG.md"
 distfiles="https://github.com/ayosec/alacritty/archive/refs/tags/v${version}-graphics.tar.gz"
-checksum=6a0da03b29e33f392009c109666680fd04340f9e25309e7e6fcd10f5e82f370a
+checksum="6a0da03b29e33f392009c109666680fd04340f9e25309e7e6fcd10f5e82f370a"
 replaces="alacritty>=0"
 conflicts="alacritty>=0"
 

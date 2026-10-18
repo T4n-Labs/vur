@@ -15,7 +15,7 @@ license="MIT"
 homepage="https://github.com/Dvlv/BoxBuddyRS"
 changelog="https://github.com/Dvlv/BoxBuddyRS/releases"
 distfiles="https://github.com/Dvlv/BoxBuddyRS/archive/refs/tags/${version}.tar.gz"
-checksum=5204e956a74fb2dbb99fb3b03fcaf665192b21cdbd8a4be749ab36c1f115286b
+checksum="5204e956a74fb2dbb99fb3b03fcaf665192b21cdbd8a4be749ab36c1f115286b"
 
 pre_build() {
 	sed -i 's|{data_home}/locale|/usr/share/locale|g' src/utils.rs

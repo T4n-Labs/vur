@@ -25,7 +25,7 @@ distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="MIT"
 homepage="https://github.com/Faugus/faugus-launcher"
 distfiles="https://github.com/Faugus/faugus-launcher/archive/refs/tags/${version}.tar.gz"
-checksum=a7cf76ef8d03978905850eb35f93265299a42b213f2f47eabecb5a23f74541da
+checksum="a7cf76ef8d03978905850eb35f93265299a42b213f2f47eabecb5a23f74541da"
 python_version=ignore
 
 pre_build() {

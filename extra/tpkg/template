@@ -8,7 +8,7 @@ distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="BSD-2-Clause"
 homepage="https://gitlab.com/t4n-pkg/tpkg/"
 distfiles="https://gitlab.com/t4n-pkg/tpkg/-/archive/${version}/tpkg-${version}.tar.gz"
-checksum=db1b831f16817fb1379dbe9eab04dee2ff102c4bbd89a0eb3a1fe3ce7feff950
+checksum="db1b831f16817fb1379dbe9eab04dee2ff102c4bbd89a0eb3a1fe3ce7feff950"
 
 depends="xbps"
 

@@ -14,7 +14,7 @@ license="MIT, Apache-2.0"
 homepage="https://biomejs.dev/"
 changelog="https://github.com/biomejs/biome/raw/refs/heads/main/packages/@biomejs/biome/CHANGELOG.md"
 distfiles="https://github.com/biomejs/${pkgname}/archive/@biomejs/biome@${version}.tar.gz"
-checksum=a6195ce3a4575ce316d2253517118f49edcd199a072880748e50170c6993e513
+checksum="a6195ce3a4575ce316d2253517118f49edcd199a072880748e50170c6993e513"
 
 pre_build() {
 	export BIOME_VERSION="${version}"

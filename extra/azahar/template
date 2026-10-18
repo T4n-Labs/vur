@@ -12,4 +12,4 @@ distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="GPL-2.0-only"
 homepage="https://azahar-emu.org/"
 distfiles="https://github.com/azahar-emu/azahar/releases/download/${version}/azahar-unified-source-${version}.tar.xz"
-checksum=b43191b613ed67072af037f9c8d89c1460d5532cc8381757a875f656bb6a10b1
+checksum="b43191b613ed67072af037f9c8d89c1460d5532cc8381757a875f656bb6a10b1"
