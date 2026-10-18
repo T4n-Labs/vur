@@ -1,0 +1,46 @@
+# Template file for 'cinny-desktop'
+pkgname=cinny-desktop
+version=4.12.7
+revision=1
+_cinnyver=4.12.7
+archs="x86_64"
+hostmakedepends="nodejs cargo git pkg-config"
+makedepends="openssl-devel libwebkit2gtk41-devel"
+short_desc="Yet another matrix client for desktop"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="AGPL-3.0-only"
+homepage="https://cinny.in/"
+distfiles="https://github.com/cinnyapp/cinny-desktop/archive/refs/tags/v${version}.tar.gz>cinny-desktop-v${version}.tar.gz
+ https://github.com/cinnyapp/cinny/archive/refs/tags/v${_cinnyver}.tar.gz>cinny-v${version}.tar.gz"
+checksum="80d444d8a2452d4bfb177ee17d3715ead5e22a296ce2c56bd1eff1bc870e01b0
+ 239b1aec953065eef2bd356b499e5e9b91f4122d346da5a56b81a8eb1047ff21"
+skip_extraction="cinny-v${version}.tar.gz"
+
+post_extract() {
+	vsrcextract -C cinny "cinny-v${version}.tar.gz"
+}
+
+pre_build() {
+	cd cinny
+	npm ci --legacy-peer-deps
+	cd ..
+	npm ci
+}
+
+do_build() {
+	npm run tauri build -- --no-bundle
+}
+
+do_install() {
+	vmkdir opt/cinny-desktop
+	vinstall src-tauri/target/release/cinny 755 opt/cinny-desktop
+
+	vmkdir usr/bin
+	ln -sf /opt/cinny-desktop/cinny ${DESTDIR}/usr/bin/cinny
+
+	vinstall ${FILESDIR}/cinny.desktop 644 usr/share/applications
+	vinstall src-tauri/icons/icon.png 644 usr/share/pixmaps cinny.png
+
+	vlicense LICENSE
+}
