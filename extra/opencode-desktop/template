@@ -1,0 +1,46 @@
+# Template file for 'opencode-desktop'
+pkgname=opencode-desktop
+version=1.19.2
+revision=1
+archs="x86_64"
+depends="vulkan-loader"
+short_desc="OpenCode desktop client"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="MIT"
+homepage="https://opencode.ai/"
+changelog="https://github.com/anomalyco/opencode/releases/"
+distfiles="https://github.com/anomalyco/opencode/releases/download/v${version}/${pkgname}-linux-amd64.deb \
+ https://raw.githubusercontent.com/anomalyco/opencode/refs/heads/dev/LICENSE"
+checksum="0815b7d5609f5c7f7642a36c97c0eec104da0f227b7e3c34a06b4298e3b88a0e \
+ 625f0f619133f89bbbb2abe37369613dfa1885eba1e50d02170deb62bb42cb6b"
+skip_extraction="LICENSE"
+nostrip=yes
+
+do_install() {
+	# Prune Debian/Ubuntu-specific and dead files
+	rm -rf "usr/share/doc"
+	rm -f "opt/OpenCode/resources/apparmor-profile"
+	rm -f "opt/OpenCode/resources/app-update.yml"
+
+	# Prune musl native modules
+	find "opt/OpenCode" \( -name '*musl*' \) -exec rm -rf {} +
+
+	# Rename icons to match Icon= field
+	for dir in usr/share/icons/hicolor/*/apps; do
+		[ -f "${dir}/@opencode-aidesktop.png" ] || continue
+		mv "${dir}/@opencode-aidesktop.png" "${dir}/opencode-desktop.png"
+	done
+
+	rm opt/OpenCode/libvulkan.so.1
+
+	vcopy "*" /
+
+	chmod 4755 ${DESTDIR}/opt/OpenCode/chrome-sandbox
+
+	vbin ${FILESDIR}/${pkgname}.sh ${pkgname}
+
+	vinstall ${FILESDIR}/${pkgname}.desktop 644 usr/share/applications
+
+	vlicense ${XBPS_SRCDISTDIR}/${pkgname}-${version}/LICENSE
+}
