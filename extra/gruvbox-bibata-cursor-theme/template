@@ -4,7 +4,8 @@ version=1.0.1
 revision=1
 hostmakedepends="tar xz"
 short_desc="Gruvbox-themed Bibata Cursor"
-maintainer="Gh0sT4n <darskevoid@gmail.com>"
+maintainer="Naz <ndpm13@ch-naeseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="GPL-3.0-or-later"
 homepage="https://www.bibata.live/"
 
