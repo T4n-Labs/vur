@@ -1,26 +1,25 @@
 # Template file for 'bitwarden-desktop'
 pkgname=bitwarden-desktop
-version=2026.3.1
+version=2026.10.0
 revision=1
 archs="x86_64"
-hostmakedepends="tar xz"
-depends="gtk+3 alsa-lib cups libXtst libXScrnSaver nss"
-short_desc="Bitwarden desktop client"
-maintainer="Gh0sT4n <darskevoid@gmail.com>"
+depends="libXtst libXScrnSaver"
+short_desc="Bitwarden client apps (web, browser extension, desktop, and cli)."
+maintainer="Naz <ndpm13@ch-naeseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="GPL-3.0"
 homepage="https://bitwarden.com/"
 distfiles="https://github.com/bitwarden/clients/releases/download/desktop-v${version}/Bitwarden-${version}-amd64.deb"
-checksum=41df25b79e61381463d3901347c7a2927874d8229a174efdbac5b9115f184e40
-
-do_extract() {
-    mkdir -p ${DESTDIR}
-    ar x ${XBPS_SRCDISTDIR}/${pkgname}-${version}/Bitwarden-${version}-amd64.deb
-    tar xf data.tar.xz -C ${DESTDIR}
-}
+checksum=fcabfc7da3c327e2625b105e951cee4e60703bb8e256f0aac9cc9bc83ec7063f
 
 do_install() {
+	vcopy "*" /
+
     vmkdir usr/bin
     ln -sf /opt/Bitwarden/bitwarden ${DESTDIR}/usr/bin/bitwarden
 
     chmod 4755 ${DESTDIR}/opt/Bitwarden/chrome-sandbox
+
+	rm ${DESTDIR}/opt/Bitwarden/libvulkan.so.1
+	rm ${DESTDIR}/opt/Bitwarden/resources/app-update.yml
 }
