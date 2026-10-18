@@ -5,6 +5,7 @@ version=6.13.0
 revision=1
 short_desc="Zen - Linux kernel and modules (${version%.*} series)"
 maintainer="JuanMa <numblinux@gmail.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="GPL-2.0-only"
 
 homepage="https://www.kernel.org"
