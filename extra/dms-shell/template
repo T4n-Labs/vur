@@ -1,6 +1,6 @@
 # Template file for 'dms-shell'
 pkgname=dms-shell
-version=1.4.6
+version=1.5.3
 revision=1
 archs="x86_64"
 build_style=gnu-makefile
@@ -8,11 +8,12 @@ configure_args="${pkgname}-${version}/core"
 hostmakedepends="go"
 depends="dgop quickshell font-inter font-firacode ttf-material-icons niri"
 short_desc="A Quickshell-based desktop shell with Material 3 design principles"
-maintainer="Gh0sT4n <darskevoid@gmail.com>"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="MIT"
 homepage="https://danklinux.com/"
 distfiles="https://github.com/AvengeMedia/DankMaterialShell/archive/refs/tags/v${version}.tar.gz"
-checksum=f54601e522c883fa9cce02bec070e4321e47389a1cf453e7ad0bb7379ad91b61
+checksum=2d665870f7019700fb38d59d043202e298e1aad1d3f1cb96360a75acbd3be9ca
 
 do_install() {
 	vbin core/bin/dms
