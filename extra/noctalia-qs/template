@@ -14,10 +14,11 @@ makedepends="cli11 qt6-base-private-devel
  jemalloc-devel pam-devel polkit-devel"
 depends="qt6-svg"
 short_desc="Custom fork of Quickshell powering Noctalia Shell"
-maintainer="Gh0sT4n"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="LGPL-3.0-only"
 homepage="https://github.com/noctalia-dev/noctalia-qs"
 changelog="https://github.com/noctalia-dev/noctalia-qs/releases/"
 distfiles="https://github.com/noctalia-dev/noctalia-qs/archive/refs/tags/v${version}.tar.gz"
-checksum=5de37541537307d141618aa0d782d3c34e42a6ad21c73533cce80c0e71ee9693
+checksum="5de37541537307d141618aa0d782d3c34e42a6ad21c73533cce80c0e71ee9693"
 conflicts="quickshell>=0"
