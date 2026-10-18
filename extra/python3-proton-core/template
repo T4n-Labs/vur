@@ -1,0 +1,16 @@
+# Template file for 'python3-proton-core'
+pkgname=python3-proton-core
+version=0.7.4
+revision=1
+archs="x86_64"
+build_style=python3-pep517
+hostmakedepends="python3-setuptools"
+depends="python3-requests python3-bcrypt python3-gnupg python3-openssl
+ python3-aiohttp"
+short_desc="Component contains core logic used by the other Proton components"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/ProtonVPN/python-proton-core"
+distfiles="https://github.com/ProtonVPN/python-proton-core/archive/refs/tags/v${version}.tar.gz"
+checksum="602f2554333a9165e56ab9fc4c42960dc6ebaf4eb8a64cbb2e1d95d72dcf20c2"
