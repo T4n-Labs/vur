@@ -1,0 +1,45 @@
+# Template file for 'megasync'
+pkgname=megasync
+version=6.6.2.0
+revision=2
+_sdkver="10.19.0"
+archs="x86_64"
+build_style=cmake
+configure_args="
+ -DCMAKE_BUILD_TYPE:STRING=None
+ -DCMAKE_MODULE_PATH:PATH=src/MEGASync/mega/cmake/modules/packages
+ -DCMAKE_SKIP_INSTALL_RPATH:BOOL=YES
+ -DENABLE_DESIGN_TOKENS_IMPORTER:BOOL=OFF
+ -DENABLE_DESKTOP_APP_TESTS:BOOL=OFF
+ -DUSE_BREAKPAD:BOOL=OFF
+ -DUSE_FFMPEG:BOOL=OFF
+ -DUSE_FREEIMAGE:BOOL=OFF
+ -DUSE_PDFIUM:BOOL=OFF
+ -DCMAKE_INSTALL_PREFIX=/
+ -Wno-dev
+ -DCMAKE_EXE_LINKER_FLAGS=-licui18n"
+hostmakedepends="pkg-config"
+makedepends="crypto++-devel libsodium-devel sqlite-devel libcurl-devel
+ icu-devel libmediainfo-devel libuv-devel readline-devel qt5-devel
+ qt5-declarative-devel qt5-tools-devel qt5-x11extras-devel
+ qt5-svg-devel libaio-devel"
+depends="hicolor-icon-theme qt5-quickcontrols2 qt5-graphicaleffects"
+short_desc="Easy automated syncing between your computers and your MEGA Cloud Drive"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="custom:MEGA-Limited-Code-Review-Licence"
+homepage="https://mega.io"
+changelog="https://github.com/meganz/MEGAsync/releases"
+distfiles="https://github.com/meganz/MEGAsync/archive/refs/tags/v${version}_Linux.tar.gz\
+ https://github.com/meganz/sdk/archive/refs/tags/v${_sdkver}.tar.gz"
+checksum="a1b03eee1342fa534c3f4ff2dda3b76d8a59e4e184473384d291afb6dbd13ca4\
+ dec7cc987988758e3125f39b0202113d1ae7ba0300fb76f4fd47fe5deb12209d"
+skip_extraction="v${_sdkver}.tar.gz"
+
+post_extract() {
+	vsrcextract -C src/MEGASync/mega v${_sdkver}.tar.gz
+}
+
+post_install() {
+	vlicense LICENCE.md
+}
