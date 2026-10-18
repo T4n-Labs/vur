@@ -10,6 +10,7 @@ maintainer="Michael Aldridge <maldridge@voidlinux.org>"
 # Agreement which has since been removed from the MS website.  A very
 # broken version of this original license "Licen.TXT" is included with
 # this package.
+distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="GPL-2.0-or-later, custom:MFLA"
 homepage="http://corefonts.sourceforge.net"
 distfiles="${SOURCEFORGE_SITE}/corefonts/wd97vwr32.exe \
