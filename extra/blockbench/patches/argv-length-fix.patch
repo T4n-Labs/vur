@@ -1,0 +1,13 @@
+diff --git a/js/desktop.ts b/js/desktop.ts
+index 26db9cca..99697e5f 100644
+--- a/js/desktop.ts
++++ b/js/desktop.ts
+@@ -129,7 +129,7 @@ export function loadOpenWithBlockbenchFile() {
+ 		let tab = ModelProject.all.find(project => project.uuid == uuid && project.detached);
+ 		if (tab) tab.close(true);
+ 	})
+-	if (electron.process.argv.length >= 2) {
++	if (electron.process.argv.length > 2) {
+ 		let path = electron.process.argv.last();
+ 		load(path);
+ 	}
