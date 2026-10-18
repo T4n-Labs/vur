@@ -1,35 +1,131 @@
 [
+  {"name":"NetworkManager-dinit","desc":"Dinit service scripts for","path":"core/NetworkManager-dinit"}
+,
   {"name":"acpid-dinit","desc":"Dinit service scripts for","path":"core/acpid-dinit"}
+,
+  {"name":"bluez-dinit","desc":"Dinit service scripts for","path":"core/bluez-dinit"}
+,
+  {"name":"calamares","desc":"Distribution-independent installer framework","path":"core/calamares"}
+,
+  {"name":"chrony-dinit","desc":"Dinit service scripts for","path":"core/chrony-dinit"}
+,
+  {"name":"dbus-dinit","desc":"Dinit service scripts for","path":"core/dbus-dinit"}
+,
+  {"name":"dhcpcd-dinit","desc":"Dinit service scripts for","path":"core/dhcpcd-dinit"}
+,
+  {"name":"dinit","desc":"Service manager and init system","path":"core/dinit"}
+,
+  {"name":"elogind-dinit","desc":"Dinit service scripts for","path":"core/elogind-dinit"}
+,
+  {"name":"libvirt-dinit","desc":"Dinit service scripts for","path":"core/libvirt-dinit"}
+,
+  {"name":"lightdm-dinit","desc":"Dinit service scripts for","path":"core/lightdm-dinit"}
 ,
   {"name":"linux-zen","desc":"Zen - Linux kernel and modules","path":"core/linux-zen"}
 ,
-  {"name":"mission-center","desc":"Monitor your CPU, Memory, Disk, Network and GPU usage","path":"core/mission-center"}
+  {"name":"linux6.12.8-zen","desc":"Zen - Linux kernel and modules","path":"core/linux6.12.8-zen"}
 ,
-  {"name":"xlibre-repo","desc":"XLibre for VOID linux","path":"core/xlibre-repo"}
+  {"name":"linux6.13-zen","desc":"Zen - Linux kernel and modules","path":"core/linux6.13-zen"}
 ,
-  {"name":"PrismLauncher","desc":"Custom launcher for Minecraft","path":"extra/PrismLauncher"}
+  {"name":"linux6.18-xanmod","desc":"Linux kernel and modules","path":"core/linux6.18-xanmod"}
+,
+  {"name":"ly-dinit","desc":"Dinit service scripts for","path":"core/ly-dinit"}
+,
+  {"name":"noid-base-files","desc":"Noid Linux base system files","path":"core/noid-base-files"}
+,
+  {"name":"noid-base-system","desc":"Noid Linux base system meta package","path":"core/noid-base-system"}
+,
+  {"name":"noid-base-system-dinit","desc":"Noid Linux base system meta package - Dinit","path":"core/noid-base-system-dinit"}
+,
+  {"name":"noid-dinit","desc":"RC scripts and boot services for dinit","path":"core/noid-dinit"}
+,
+  {"name":"openssh-dinit","desc":"Dinit service scripts for","path":"core/openssh-dinit"}
+,
+  {"name":"polkit-dinit","desc":"Dinit service scripts for","path":"core/polkit-dinit"}
+,
+  {"name":"sddm-dinit","desc":"Dinit service scripts for","path":"core/sddm-dinit"}
+,
+  {"name":"seatd-dinit","desc":"Dinit service scripts for","path":"core/seatd-dinit"}
+,
+  {"name":"tailscale-dinit","desc":"Dinit service scripts for","path":"core/tailscale-dinit"}
+,
+  {"name":"tlp-dinit","desc":"Dinit service scripts for","path":"core/tlp-dinit"}
+,
+  {"name":"wpa_supplicant-dinit","desc":"Dinit service scripts for","path":"core/wpa_supplicant-dinit"}
+,
+  {"name":"FjordLauncher","desc":"Prism Launcher fork with support for alternative auth servers","path":"extra/FjordLauncher"}
+,
+  {"name":"alacritty-graphics","desc":"Cross-platform, GPU-accelerated terminal emulator","path":"extra/alacritty-graphics"}
+,
+  {"name":"alacritty-graphics-terminfo","desc":"Cross-platform, GPU-accelerated terminal emulator","path":"extra/alacritty-graphics-terminfo"}
 ,
   {"name":"android-studio","desc":"Official Android IDE","path":"extra/android-studio"}
 ,
+  {"name":"azahar","desc":"An open-source 3DS emulator project based on Citra.","path":"extra/azahar"}
+,
+  {"name":"azaharplus","desc":"A fork of the Azahar 3DS emulator with extra features","path":"extra/azaharplus"}
+,
+  {"name":"bazaar","desc":"FlatHub-first app store for GNOME","path":"extra/bazaar"}
+,
+  {"name":"beeper","desc":"Universal chat app","path":"extra/beeper"}
+,
+  {"name":"biome","desc":"Toolchain for web projects","path":"extra/biome"}
+,
   {"name":"bitwarden-desktop","desc":"Bitwarden desktop client","path":"extra/bitwarden-desktop"}
 ,
-  {"name":"calamares","desc":"Distribution-independent installer framework","path":"extra/calamares"}
+  {"name":"blockbench","desc":"Low poly 3D model editor","path":"extra/blockbench"}
+,
+  {"name":"bottles","desc":"Run Windows software and games on Linux","path":"extra/bottles"}
+,
+  {"name":"boxbuddy","desc":"Graphical Interface for Distrobox","path":"extra/boxbuddy"}
+,
+  {"name":"brave","desc":"Web browser that blocks ads and trackers by default","path":"extra/brave"}
+,
+  {"name":"brave-origin","desc":"Minimalist browser from the makers of Brave","path":"extra/brave-origin"}
+,
+  {"name":"bun","desc":"Fast JavaScript runtime, bundler, test runner, and package manager","path":"extra/bun"}
+,
+  {"name":"cinny-desktop","desc":"Yet another matrix client for desktop","path":"extra/cinny-desktop"}
+,
+  {"name":"clipcat","desc":"Clipboard Manager written in Rust Programming Language","path":"extra/clipcat"}
+,
+  {"name":"cryptomator","desc":"Multiplatform transparent client-side encryption of your files in the cloud.","path":"extra/cryptomator"}
+,
+  {"name":"dgop","desc":"API & CLI for System & Process Monitoring","path":"extra/dgop"}
+,
+  {"name":"dioxus-cli","desc":"CLI for building fullstack web, desktop, and mobile apps","path":"extra/dioxus-cli"}
 ,
   {"name":"discord","desc":"Chat and VOIP application","path":"extra/discord"}
 ,
+  {"name":"distrobox","desc":"Use any linux distribution inside your terminal","path":"extra/distrobox"}
+,
   {"name":"dms-shell","desc":"A Quickshell-based desktop shell with Material 3 design principles","path":"extra/dms-shell"}
+,
+  {"name":"dms-shell-niri","desc":"A Quickshell-based desktop shell with Material 3 design principles","path":"extra/dms-shell-niri"}
+,
+  {"name":"drawio-desktop","desc":"Official electron build of draw.io, a JS editor for general diagramming","path":"extra/drawio-desktop"}
+,
+  {"name":"dsearch","desc":"Fast filesystem search service","path":"extra/dsearch"}
+,
+  {"name":"emacs-lucid","desc":"GNU Emacs editor - Lucid toolkit version","path":"extra/emacs-lucid"}
 ,
   {"name":"faugus-launcher","desc":"Game launcher for Windows games via Wine/Proton/Bottles","path":"extra/faugus-launcher"}
 ,
-  {"name":"ferdium","desc":"Messaging app for WhatsApp, Slack, Telegram, Hangouts and many many more","path":"extra/ferdium"}
+  {"name":"feishin","desc":"Full-featured Subsonic/Jellyfin compatible desktop music player","path":"extra/feishin"}
+,
+  {"name":"ferdium","desc":"Desktop app bringing all your messaging services into one installable","path":"extra/ferdium"}
 ,
   {"name":"flat-remix-icon-theme","desc":"Flat remix is a pretty simple icon theme inspired on material design","path":"extra/flat-remix-icon-theme"}
 ,
-  {"name":"floorp","desc":"Firefox browser fork seeking balance between versatility, privacy and openness","path":"extra/floorp"}
+  {"name":"floorp","desc":"Firefox fork seeking balance between versatility, privacy and openness","path":"extra/floorp"}
 ,
-  {"name":"fluffychat","desc":"The cutest instant messenger in the [matrix]","path":"extra/fluffychat"}
+  {"name":"fluffychat","desc":"Cutest instant messenger in the [matrix]","path":"extra/fluffychat"}
+,
+  {"name":"fnm","desc":"Fast and simple Node.js version manager","path":"extra/fnm"}
 ,
   {"name":"freetube","desc":"Open source desktop YouTube player built with privacy in mind","path":"extra/freetube"}
+,
+  {"name":"grayjay","desc":"Cross-platform app to stream and download content from various sources","path":"extra/grayjay"}
 ,
   {"name":"gruvbox-bibata-cursor-theme","desc":"Gruvbox-themed Bibata Cursor","path":"extra/gruvbox-bibata-cursor-theme"}
 ,
@@ -39,47 +135,137 @@
 ,
   {"name":"gruvbox-material-theme","desc":"Gruvbox Material theme for GTK, Gnome, Cinnamon, XFCE, Unity and Plank","path":"extra/gruvbox-material-theme"}
 ,
-  {"name":"heroic-games-launcher","desc":"A games launcher for GOG, Amazon and Epic Games.","path":"extra/heroic-games-launcher"}
+  {"name":"gruvbox-papirus-icon-theme","desc":"SVG icon theme for Linux, based on Paper Icon Set - Gruvboxed","path":"extra/gruvbox-papirus-icon-theme"}
+,
+  {"name":"helium-browser","desc":"Private, fast, and honest web browser","path":"extra/helium-browser"}
+,
+  {"name":"heroic-games-launcher","desc":"Games launcher for GOG, Amazon and Epic Games","path":"extra/heroic-games-launcher"}
 ,
   {"name":"hyprland-repo","desc":"Binary repositories for installing Hyprland on Void Linux","path":"extra/hyprland-repo"}
 ,
+  {"name":"intel-media-driver-nonfree","desc":"Intel Media Driver for VAAPI - nonfree kernels","path":"extra/intel-media-driver-nonfree"}
+,
+  {"name":"intel-media-driver-nonfree-devel","desc":"Intel Media Driver for VAAPI - nonfree kernels","path":"extra/intel-media-driver-nonfree-devel"}
+,
   {"name":"kaidan","desc":"Modern chat app for every device","path":"extra/kaidan"}
 ,
-  {"name":"librewolf","desc":"Fork of Firefox browser, focused on privacy, security and freedom","path":"extra/librewolf"}
+  {"name":"libglib-testing","desc":"Lib providing test harnesses and mock classes complementing GLib classes","path":"extra/libglib-testing"}
+,
+  {"name":"libglib-testing-devel","desc":"Lib providing test harnesses and mock classes complementing GLib classes","path":"extra/libglib-testing-devel"}
+,
+  {"name":"libgsystemservice","desc":"Common components needed for building services to be exposed on D-Bus","path":"extra/libgsystemservice"}
+,
+  {"name":"libgsystemservice-devel","desc":"Common components needed for building services to be exposed on D-Bus","path":"extra/libgsystemservice-devel"}
+,
+  {"name":"librewolf","desc":"Fork of Firefox, focused on privacy, security and freedom","path":"extra/librewolf"}
 ,
   {"name":"linuxnauta-repo","desc":"Binary repositories for Void Linux by jmboris","path":"extra/linuxnauta-repo"}
 ,
+  {"name":"lutgen-cli","desc":"A blazingly fast interpolated LUT utility for arbitrary and popular color palettes.","path":"extra/lutgen-cli"}
+,
+  {"name":"lutgen-studio","desc":"Offical GUI for Lutgen, the best way to apply popular colorschemes to any image or wallpaper!","path":"extra/lutgen-studio"}
+,
   {"name":"ly","desc":"Lightweight TUI display manager for Linux and BSD","path":"extra/ly"}
+,
+  {"name":"malcontent","desc":"Parental controls library","path":"extra/malcontent"}
+,
+  {"name":"malcontent-devel","desc":"Parental controls library","path":"extra/malcontent-devel"}
+,
+  {"name":"megasync","desc":"Easy automated syncing between your computers and your MEGA Cloud Drive","path":"extra/megasync"}
+,
+  {"name":"mission-center","desc":"Monitor your CPU, Memory, Disk, Network and GPU usage","path":"extra/mission-center"}
 ,
   {"name":"msttcorefonts","desc":"Microsoft Typography Project - corefonts","path":"extra/msttcorefonts"}
 ,
+  {"name":"ndpm","desc":"A user-friendly package manager wrapper for XBPS with AppImage support","path":"extra/ndpm"}
+,
   {"name":"nerd-fonts-cascadiacode","desc":"CascadiaCode Nerd Font - monospaced font with programming ligatures and glyphs","path":"extra/nerd-fonts-cascadiacode"}
+,
+  {"name":"nmenu","desc":"Generic menu for X","path":"extra/nmenu"}
 ,
   {"name":"noctalia-qs","desc":"Custom fork of Quickshell powering Noctalia Shell","path":"extra/noctalia-qs"}
 ,
   {"name":"noctalia-shell","desc":"Sleek and minimal desktop shell, built with Quickshell","path":"extra/noctalia-shell"}
 ,
+  {"name":"noid-artwork","desc":"Noid Linux artwork","path":"extra/noid-artwork"}
+,
+  {"name":"noid-welcome","desc":"Noid Linux Welcome Screen","path":"extra/noid-welcome"}
+,
+  {"name":"nwm","desc":"Custom Build of DWM - a Dynamic window manager for X","path":"extra/nwm"}
+,
   {"name":"nyancat","desc":"Nyancat rendered in your terminal","path":"extra/nyancat"}
 ,
   {"name":"obsidian","desc":"Private and flexible writing app that adapts to the way you think","path":"extra/obsidian"}
 ,
-  {"name":"onlyoffice","desc":"An office suite that combines text, spreadsheet and presentation editors allowing to create, view and edit local documents","path":"extra/onlyoffice"}
+  {"name":"onlyoffice","desc":"Office suite that combines text, spreadsheet and presentation editors","path":"extra/onlyoffice"}
+,
+  {"name":"opencode-desktop","desc":"OpenCode desktop client","path":"extra/opencode-desktop"}
 ,
   {"name":"powershell","desc":"PowerShell for every system!","path":"extra/powershell"}
 ,
+  {"name":"proton-authenticator","desc":"End-to-end encrypted 2FA code manager by Proton","path":"extra/proton-authenticator"}
+,
+  {"name":"proton-vpn-gtk-app","desc":"Official ProtonVPN Linux app","path":"extra/proton-vpn-gtk-app"}
+,
+  {"name":"python3-curl-cffi","desc":"Python binding for curl-impersonate fork via cffi","path":"extra/python3-curl-cffi"}
+,
+  {"name":"python3-patool","desc":"Portable command line archive file manager","path":"extra/python3-patool"}
+,
+  {"name":"python3-proton-core","desc":"Component contains core logic used by the other Proton components","path":"extra/python3-proton-core"}
+,
+  {"name":"python3-proton-vpn-api-core","desc":"Acts as a facade to the other Proton VPN components","path":"extra/python3-proton-vpn-api-core"}
+,
   {"name":"qt6gtk2","desc":"GTK+2.0 integration plugins for Qt6","path":"extra/qt6gtk2"}
 ,
-  {"name":"rustdesk","desc":"An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.","path":"extra/rustdesk"}
+  {"name":"quran-companion","desc":"Free and open-source desktop Quran reader and player","path":"extra/quran-companion"}
+,
+  {"name":"rustdesk","desc":"Open-source remote desktop application designed for self-hosting","path":"extra/rustdesk"}
+,
+  {"name":"sable-desktop","desc":"Almost stable Matrix client","path":"extra/sable-desktop"}
+,
+  {"name":"slack-desktop","desc":"Messaging app for teams","path":"extra/slack-desktop"}
+,
+  {"name":"spotify","desc":"Proprietary music streaming client","path":"extra/spotify"}
+,
+  {"name":"sway-scroll","desc":"Fork of the sway compositor with a scrolling layout like PaperWM or niri","path":"extra/sway-scroll"}
+,
+  {"name":"television","desc":"Cross-platform, fast and extensible general purpose fuzzy finde","path":"extra/television"}
+,
+  {"name":"tenacity","desc":"Easy-to-use multi-track audio editor and recorder, forked from Audacity","path":"extra/tenacity"}
+,
+  {"name":"themix","desc":"Graphical application for designing themes and exporting them","path":"extra/themix"}
+,
+  {"name":"thorium-browser-avx2","desc":"Chromium fork focused on performance and security - AVX2 build","path":"extra/thorium-browser-avx2"}
 ,
   {"name":"tpkg","desc":"A user-friendly package manager wrapper for XBPS","path":"extra/tpkg"}
 ,
+  {"name":"tsukimi","desc":"Simple third-party Jellyfin client for Linux","path":"extra/tsukimi"}
+,
   {"name":"tutanota-desktop","desc":"The desktop client for Tutanota, the secure e-mail service.","path":"extra/tutanota-desktop"}
+,
+  {"name":"twine","desc":"GUI for creating nonlinear stories","path":"extra/twine"}
+,
+  {"name":"ueberzugpp","desc":"Drop in replacement for ueberzug written in C++","path":"extra/ueberzugpp"}
+,
+  {"name":"ungoogled-chromium","desc":"Lightweight approach to removing Google web service dependency","path":"extra/ungoogled-chromium"}
+,
+  {"name":"uutils-coreutils","desc":"Cross-platform Rust rewrite of the GNU coreutils","path":"extra/uutils-coreutils"}
+,
+  {"name":"vkbasalt-cli","desc":"Command-line utility for vkBasalt","path":"extra/vkbasalt-cli"}
 ,
   {"name":"vscodium","desc":"Free/Libre Open Source Software Binaries of VSCode","path":"extra/vscodium"}
 ,
   {"name":"webapp-manager","desc":"Run websites as if they were apps","path":"extra/webapp-manager"}
 ,
+  {"name":"wps-office","desc":"Linux office suite with similar appearance to MS Office","path":"extra/wps-office"}
+,
+  {"name":"xapp-symbolic-icons","desc":"Set of symbolic icons for Gtk applications and projects","path":"extra/xapp-symbolic-icons"}
+,
+  {"name":"xlibre-repo","desc":"XLibre for VOID linux","path":"extra/xlibre-repo"}
+,
   {"name":"xvr","desc":"The XVR Programming Language Compiler By Arfy Slowy","path":"extra/xvr"}
+,
+  {"name":"yarr","desc":"Yet another rss reader","path":"extra/yarr"}
 ,
   {"name":"zed","desc":"High-performance, multiplayer code editor","path":"extra/zed"}
 ,
@@ -88,4 +274,12 @@
   {"name":"zig","desc":"Programming language designed for robustness, optimality, and clarity","path":"extra/zig"}
 ,
   {"name":"zvc","desc":"Simple Script for Zig Version Control written shell","path":"extra/zvc"}
+,
+  {"name":"wine-pure","desc":"Run Microsoft Windows applications","path":"multilib/wine-pure"}
+,
+  {"name":"wine-pure-common","desc":"Run Microsoft Windows applications","path":"multilib/wine-pure-common"}
+,
+  {"name":"wine-pure-devel","desc":"Run Microsoft Windows applications","path":"multilib/wine-pure-devel"}
+,
+  {"name":"wine-pure-tools","desc":"Run Microsoft Windows applications","path":"multilib/wine-pure-tools"}
 ]

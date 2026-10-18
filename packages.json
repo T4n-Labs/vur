@@ -1,9 +1,119 @@
 [
   {
+    "name": "NetworkManager-dinit",
+    "category": "core",
+    "path": "core/NetworkManager-dinit",
+    "version": "20260410",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": ""
+  },
+  {
     "name": "acpid-dinit",
     "category": "core",
     "path": "core/acpid-dinit",
     "version": "20261010",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "bluez-dinit",
+    "category": "core",
+    "path": "core/bluez-dinit",
+    "version": "20260601",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "calamares",
+    "category": "core",
+    "path": "core/calamares",
+    "version": "3.4.2",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Distribution-independent installer framework",
+    "homepage": "https://calamares.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "chrony-dinit",
+    "category": "core",
+    "path": "core/chrony-dinit",
+    "version": "20260410",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "dbus-dinit",
+    "category": "core",
+    "path": "core/dbus-dinit",
+    "version": "20260410",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "dhcpcd-dinit",
+    "category": "core",
+    "path": "core/dhcpcd-dinit",
+    "version": "20260410",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "dinit",
+    "category": "core",
+    "path": "core/dinit",
+    "version": "0.22.1",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Service manager and init system",
+    "homepage": "https://davmac.org/projects/dinit/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "elogind-dinit",
+    "category": "core",
+    "path": "core/elogind-dinit",
+    "version": "20260410",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "libvirt-dinit",
+    "category": "core",
+    "path": "core/libvirt-dinit",
+    "version": "20260613",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "lightdm-dinit",
+    "category": "core",
+    "path": "core/lightdm-dinit",
+    "version": "20260410",
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
@@ -19,40 +129,205 @@
     "description": "Zen - Linux kernel and modules",
     "homepage": "https://www.kernel.org",
     "maintainer": "JuanMa <numblinux@gmail.com>",
-    "distributor": ""
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
-    "name": "mission-center",
+    "name": "linux6.12.8-zen",
     "category": "core",
-    "path": "core/mission-center",
-    "version": "1.1.0",
-    "archs": ["x86_64"],
-    "description": "Monitor your CPU, Memory, Disk, Network and GPU usage",
-    "homepage": "https://missioncenter.io/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "path": "core/linux6.12.8-zen",
+    "version": "6.12.8",
+    "archs": ["aarch64", "aarch64-musl", "i686", "i686-musl", "x86_64", "x86_64-musl"],
+    "description": "Zen - Linux kernel and modules",
+    "homepage": "https://www.kernel.org",
+    "maintainer": "JuanMa <numblinux@gmail.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
-    "name": "xlibre-repo",
+    "name": "linux6.13-zen",
     "category": "core",
-    "path": "core/xlibre-repo",
-    "version": "1",
+    "path": "core/linux6.13-zen",
+    "version": "6.13.0",
+    "archs": ["aarch64", "aarch64-musl", "i686", "i686-musl", "x86_64", "x86_64-musl"],
+    "description": "Zen - Linux kernel and modules",
+    "homepage": "https://www.kernel.org",
+    "maintainer": "JuanMa <numblinux@gmail.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "linux6.18-xanmod",
+    "category": "core",
+    "path": "core/linux6.18-xanmod",
+    "version": "6.18.3",
+    "archs": ["aarch64", "aarch64-musl", "i686", "i686-musl", "x86_64", "x86_64-musl"],
+    "description": "Linux kernel and modules",
+    "homepage": "https://www.kernel.org",
+    "maintainer": "JuanMa - Linuxnauta <numblinux@gmail.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "ly-dinit",
+    "category": "core",
+    "path": "core/ly-dinit",
+    "version": "20260410",
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
-    "description": "XLibre for VOID linux",
-    "homepage": "https://github.com/xlibre-void/xlibre/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
-    "name": "PrismLauncher",
-    "category": "extra",
-    "path": "extra/PrismLauncher",
-    "version": "11.0.2",
+    "name": "noid-base-files",
+    "category": "core",
+    "path": "core/noid-base-files",
+    "version": "0.1",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Noid Linux base system files",
+    "homepage": "https://git.ch-naseem.com/noid-linux",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "noid-base-system",
+    "category": "core",
+    "path": "core/noid-base-system",
+    "version": "20260410",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Noid Linux base system meta package",
+    "homepage": "https://git.ch-naseem.com/noid-linux",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "noid-base-system-dinit",
+    "category": "core",
+    "path": "core/noid-base-system-dinit",
+    "version": "20260422",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Noid Linux base system meta package - Dinit",
+    "homepage": "https://git.ch-naseem.com/noid-linux",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "noid-dinit",
+    "category": "core",
+    "path": "core/noid-dinit",
+    "version": "0.1.2",
     "archs": ["x86_64"],
-    "description": "Custom launcher for Minecraft",
-    "homepage": "https://prismlauncher.org/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "description": "RC scripts and boot services for dinit",
+    "homepage": "https://github.com/noid-linux/noid-dinit",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "openssh-dinit",
+    "category": "core",
+    "path": "core/openssh-dinit",
+    "version": "20260410",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "polkit-dinit",
+    "category": "core",
+    "path": "core/polkit-dinit",
+    "version": "20260410",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "sddm-dinit",
+    "category": "core",
+    "path": "core/sddm-dinit",
+    "version": "20260422",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "seatd-dinit",
+    "category": "core",
+    "path": "core/seatd-dinit",
+    "version": "20260601",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "tailscale-dinit",
+    "category": "core",
+    "path": "core/tailscale-dinit",
+    "version": "20260624",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "tlp-dinit",
+    "category": "core",
+    "path": "core/tlp-dinit",
+    "version": "20260924",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "wpa_supplicant-dinit",
+    "category": "core",
+    "path": "core/wpa_supplicant-dinit",
+    "version": "20260410",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Dinit service scripts for",
+    "homepage": "https://noid-linux.github.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "FjordLauncher",
+    "category": "extra",
+    "path": "extra/FjordLauncher",
+    "version": "11.1.1.0",
+    "archs": ["x86_64"],
+    "description": "Prism Launcher fork with support for alternative auth servers",
+    "homepage": "https://github.com/unmojang/FjordLauncher",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "alacritty-graphics",
+    "category": "extra",
+    "path": "extra/alacritty-graphics",
+    "version": "0.17.0",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Cross-platform, GPU-accelerated terminal emulator",
+    "homepage": "https://github.com/ayosec/alacritty",
+    "maintainer": "Naz <ndpm13@ch-naeseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "alacritty-graphics-terminfo",
+    "category": "extra",
+    "path": "extra/alacritty-graphics-terminfo",
+    "version": "0.17.0",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Cross-platform, GPU-accelerated terminal emulator",
+    "homepage": "https://github.com/ayosec/alacritty",
+    "maintainer": "Naz <ndpm13@ch-naeseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "android-studio",
@@ -66,26 +341,191 @@
     "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
+    "name": "azahar",
+    "category": "extra",
+    "path": "extra/azahar",
+    "version": "2124.3",
+    "archs": ["x86_64"],
+    "description": "An open-source 3DS emulator project based on Citra.",
+    "homepage": "https://azahar-emu.org/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "azaharplus",
+    "category": "extra",
+    "path": "extra/azaharplus",
+    "version": "2124.3",
+    "archs": ["x86_64"],
+    "description": "A fork of the Azahar 3DS emulator with extra features",
+    "homepage": "https://github.com/AzaharPlus/AzaharPlus",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "bazaar",
+    "category": "extra",
+    "path": "extra/bazaar",
+    "version": "0.9.7",
+    "archs": ["x86_64"],
+    "description": "FlatHub-first app store for GNOME",
+    "homepage": "https://usebazaar.org/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "beeper",
+    "category": "extra",
+    "path": "extra/beeper",
+    "version": "4.3.209",
+    "archs": ["x86_64"],
+    "description": "Universal chat app",
+    "homepage": "https://www.beeper.com",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "biome",
+    "category": "extra",
+    "path": "extra/biome",
+    "version": "2.4.15",
+    "archs": ["x86_64"],
+    "description": "Toolchain for web projects",
+    "homepage": "https://biomejs.dev/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
     "name": "bitwarden-desktop",
     "category": "extra",
     "path": "extra/bitwarden-desktop",
-    "version": "2026.3.1",
+    "version": "2026.10.0",
     "archs": ["x86_64"],
     "description": "Bitwarden desktop client",
     "homepage": "https://bitwarden.com/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naeseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
-    "name": "calamares",
+    "name": "blockbench",
     "category": "extra",
-    "path": "extra/calamares",
-    "version": "3.4.2",
+    "path": "extra/blockbench",
+    "version": "5.2.2",
+    "archs": ["x86_64"],
+    "description": "Low poly 3D model editor",
+    "homepage": "https://www.blockbench.net/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "bottles",
+    "category": "extra",
+    "path": "extra/bottles",
+    "version": "67.4",
+    "archs": ["x86_64"],
+    "description": "Run Windows software and games on Linux",
+    "homepage": "https://usebottles.com/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "boxbuddy",
+    "category": "extra",
+    "path": "extra/boxbuddy",
+    "version": "2.5.8",
+    "archs": ["x86_64"],
+    "description": "Graphical Interface for Distrobox",
+    "homepage": "https://github.com/Dvlv/BoxBuddyRS",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "brave",
+    "category": "extra",
+    "path": "extra/brave",
+    "version": "1.97.57",
+    "archs": ["x86_64"],
+    "description": "Web browser that blocks ads and trackers by default",
+    "homepage": "https://brave.com",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "brave-origin",
+    "category": "extra",
+    "path": "extra/brave-origin",
+    "version": "1.97.57",
+    "archs": ["x86_64"],
+    "description": "Minimalist browser from the makers of Brave",
+    "homepage": "https://brave.com",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "bun",
+    "category": "extra",
+    "path": "extra/bun",
+    "version": "1.4.3",
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
-    "description": "Distribution-independent installer framework",
-    "homepage": "https://calamares.io",
-    "maintainer": "Gh0sT4n <darsekvoid@gmai.com>",
-    "distributor": ""
+    "description": "Fast JavaScript runtime, bundler, test runner, and package manager",
+    "homepage": "https://bun.com/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "cinny-desktop",
+    "category": "extra",
+    "path": "extra/cinny-desktop",
+    "version": "4.12.7",
+    "archs": ["x86_64"],
+    "description": "Yet another matrix client for desktop",
+    "homepage": "https://cinny.in/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "clipcat",
+    "category": "extra",
+    "path": "extra/clipcat",
+    "version": "0.26.0",
+    "archs": ["x86_64"],
+    "description": "Clipboard Manager written in Rust Programming Language",
+    "homepage": "https://github.com/xrelkd/clipcat",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "cryptomator",
+    "category": "extra",
+    "path": "extra/cryptomator",
+    "version": "1.19.2",
+    "archs": ["x86_64"],
+    "description": "Multiplatform transparent client-side encryption of your files in the cloud.",
+    "homepage": "https://cryptomator.org/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "dgop",
+    "category": "extra",
+    "path": "extra/dgop",
+    "version": "0.2.3",
+    "archs": ["x86_64"],
+    "description": "API & CLI for System & Process Monitoring",
+    "homepage": "https://github.com/AvengeMedia/dgop",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "dioxus-cli",
+    "category": "extra",
+    "path": "extra/dioxus-cli",
+    "version": "0.7.10",
+    "archs": ["x86_64"],
+    "description": "CLI for building fullstack web, desktop, and mobile apps",
+    "homepage": "https://dioxuslabs.com",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "discord",
@@ -99,15 +539,70 @@
     "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
+    "name": "distrobox",
+    "category": "extra",
+    "path": "extra/distrobox",
+    "version": "1.8.2.5",
+    "archs": ["x86_64"],
+    "description": "Use any linux distribution inside your terminal",
+    "homepage": "https://distrobox.it/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
     "name": "dms-shell",
     "category": "extra",
     "path": "extra/dms-shell",
-    "version": "1.4.6",
+    "version": "1.5.3",
     "archs": ["x86_64"],
     "description": "A Quickshell-based desktop shell with Material 3 design principles",
     "homepage": "https://danklinux.com/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "dms-shell-niri",
+    "category": "extra",
+    "path": "extra/dms-shell-niri",
+    "version": "1.5.3",
+    "archs": ["x86_64"],
+    "description": "A Quickshell-based desktop shell with Material 3 design principles",
+    "homepage": "https://danklinux.com/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "drawio-desktop",
+    "category": "extra",
+    "path": "extra/drawio-desktop",
+    "version": "32.4.1",
+    "archs": ["x86_64"],
+    "description": "Official electron build of draw.io, a JS editor for general diagramming",
+    "homepage": "https://www.diagrams.net/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "dsearch",
+    "category": "extra",
+    "path": "extra/dsearch",
+    "version": "0.3.2",
+    "archs": ["x86_64"],
+    "description": "Fast filesystem search service",
+    "homepage": "https://github.com/AvengeMedia/danksearch",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "emacs-lucid",
+    "category": "extra",
+    "path": "extra/emacs-lucid",
+    "version": "31.1",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "GNU Emacs editor - Lucid toolkit version",
+    "homepage": "http://www.gnu.org/software/emacs/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "faugus-launcher",
@@ -118,18 +613,29 @@
     "description": "Game launcher for Windows games via Wine/Proton/Bottles",
     "homepage": "https://github.com/Faugus/faugus-launcher",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "feishin",
+    "category": "extra",
+    "path": "extra/feishin",
+    "version": "1.16.0",
+    "archs": ["x86_64"],
+    "description": "Full-featured Subsonic/Jellyfin compatible desktop music player",
+    "homepage": "https://feishin.vercel.app/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "ferdium",
     "category": "extra",
     "path": "extra/ferdium",
-    "version": "7.1.2",
+    "version": "7.2.3",
     "archs": ["x86_64"],
-    "description": "Messaging app for WhatsApp, Slack, Telegram, Hangouts and many many more",
+    "description": "Desktop app bringing all your messaging services into one installable",
     "homepage": "https://ferdium.org/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "flat-remix-icon-theme",
@@ -139,41 +645,63 @@
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
     "description": "Flat remix is a pretty simple icon theme inspired on material design",
     "homepage": "https://drasite.com/flat-remix",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "floorp",
     "category": "extra",
     "path": "extra/floorp",
-    "version": "12.13.0",
+    "version": "12.20.2",
     "archs": ["x86_64"],
-    "description": "Firefox browser fork seeking balance between versatility, privacy and openness",
+    "description": "Firefox fork seeking balance between versatility, privacy and openness",
     "homepage": "https://floorp.app/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "fluffychat",
     "category": "extra",
     "path": "extra/fluffychat",
-    "version": "2.5.0",
+    "version": "2.10.0",
     "archs": ["x86_64"],
-    "description": "The cutest instant messenger in the [matrix]",
+    "description": "Cutest instant messenger in the [matrix]",
     "homepage": "https://fluffychat.im/",
-    "maintainer": "Gh0sT4n",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "fnm",
+    "category": "extra",
+    "path": "extra/fnm",
+    "version": "1.39.0",
+    "archs": ["x86_64"],
+    "description": "Fast and simple Node.js version manager",
+    "homepage": "https://github.com/Schniz/fnm",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "freetube",
     "category": "extra",
     "path": "extra/freetube",
-    "version": "0.24.0",
+    "version": "0.25.3",
     "archs": ["x86_64"],
     "description": "Open source desktop YouTube player built with privacy in mind",
     "homepage": "https://freetubeapp.io/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "grayjay",
+    "category": "extra",
+    "path": "extra/grayjay",
+    "version": "20",
+    "archs": ["x86_64"],
+    "description": "Cross-platform app to stream and download content from various sources",
+    "homepage": "https://grayjay.app/desktop/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "gruvbox-bibata-cursor-theme",
@@ -183,8 +711,8 @@
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
     "description": "Gruvbox-themed Bibata Cursor",
     "homepage": "https://www.bibata.live/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naeseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "gruvbox-gtk-theme",
@@ -194,8 +722,8 @@
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
     "description": "A theme based on the Gruvbox colour palette - GTK",
     "homepage": "https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "gruvbox-icons-theme",
@@ -205,8 +733,8 @@
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
     "description": "A theme based on the Gruvbox colour palette - Icons",
     "homepage": "https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "gruvbox-material-theme",
@@ -216,52 +744,140 @@
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
     "description": "Gruvbox Material theme for GTK, Gnome, Cinnamon, XFCE, Unity and Plank",
     "homepage": "https://github.com/TheGreatMcPain/gruvbox-material-gtk",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "gruvbox-papirus-icon-theme",
+    "category": "extra",
+    "path": "extra/gruvbox-papirus-icon-theme",
+    "version": "20260801",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "SVG icon theme for Linux, based on Paper Icon Set - Gruvboxed",
+    "homepage": "https://github.com/noid-linux/papirus-icon-theme",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "helium-browser",
+    "category": "extra",
+    "path": "extra/helium-browser",
+    "version": "0.19.4.1",
+    "archs": ["x86_64"],
+    "description": "Private, fast, and honest web browser",
+    "homepage": "https://helium.computer/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "heroic-games-launcher",
     "category": "extra",
     "path": "extra/heroic-games-launcher",
-    "version": "2.21.0",
+    "version": "2.22.4",
     "archs": ["x86_64"],
-    "description": "A games launcher for GOG, Amazon and Epic Games.",
+    "description": "Games launcher for GOG, Amazon and Epic Games",
     "homepage": "https://heroicgameslauncher.com/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "hyprland-repo",
     "category": "extra",
     "path": "extra/hyprland-repo",
-    "version": "1",
+    "version": "2",
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
     "description": "Binary repositories for installing Hyprland on Void Linux",
-    "homepage": "https://github.com/Makrennel/hyprland-void/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "homepage": "https://sofijacom.github.io/hyprland-void/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "intel-media-driver-nonfree",
+    "category": "extra",
+    "path": "extra/intel-media-driver-nonfree",
+    "version": "26.1.5",
+    "archs": ["x86_64", "x86_64-musl"],
+    "description": "Intel Media Driver for VAAPI - nonfree kernels",
+    "homepage": "https://github.com/intel/media-driver",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "intel-media-driver-nonfree-devel",
+    "category": "extra",
+    "path": "extra/intel-media-driver-nonfree-devel",
+    "version": "26.1.5",
+    "archs": ["x86_64", "x86_64-musl"],
+    "description": "Intel Media Driver for VAAPI - nonfree kernels",
+    "homepage": "https://github.com/intel/media-driver",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "kaidan",
     "category": "extra",
     "path": "extra/kaidan",
-    "version": "0.15.0",
+    "version": "0.16.0",
     "archs": ["x86_64"],
     "description": "Modern chat app for every device",
     "homepage": "https://www.kaidan.im/",
-    "maintainer": "Gh0sT4n <darskevoid@gmai.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "libglib-testing",
+    "category": "extra",
+    "path": "extra/libglib-testing",
+    "version": "0.2.0",
+    "archs": ["x86_64"],
+    "description": "Lib providing test harnesses and mock classes complementing GLib classes",
+    "homepage": "https://gitlab.gnome.org/pwithnall/libglib-testing",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "libglib-testing-devel",
+    "category": "extra",
+    "path": "extra/libglib-testing-devel",
+    "version": "0.2.0",
+    "archs": ["x86_64"],
+    "description": "Lib providing test harnesses and mock classes complementing GLib classes",
+    "homepage": "https://gitlab.gnome.org/pwithnall/libglib-testing",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "libgsystemservice",
+    "category": "extra",
+    "path": "extra/libgsystemservice",
+    "version": "0.3.0",
+    "archs": ["x86_64"],
+    "description": "Common components needed for building services to be exposed on D-Bus",
+    "homepage": "https://gitlab.gnome.org/pwithnall/libgsystemservice",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "libgsystemservice-devel",
+    "category": "extra",
+    "path": "extra/libgsystemservice-devel",
+    "version": "0.3.0",
+    "archs": ["x86_64"],
+    "description": "Common components needed for building services to be exposed on D-Bus",
+    "homepage": "https://gitlab.gnome.org/pwithnall/libgsystemservice",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "librewolf",
     "category": "extra",
     "path": "extra/librewolf",
-    "version": "150.0.1.1",
+    "version": "158.0.1",
     "archs": ["x86_64"],
-    "description": "Fork of Firefox browser, focused on privacy, security and freedom",
+    "description": "Fork of Firefox, focused on privacy, security and freedom",
     "homepage": "https://librewolf.net/",
-    "maintainer": "Naz <ndpm13@ch-naeseem.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "linuxnauta-repo",
@@ -271,19 +887,85 @@
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
     "description": "Binary repositories for Void Linux by jmboris",
     "homepage": "https://linuxnauta.com/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "JuanMa <numblinux@gmail.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "lutgen-cli",
+    "category": "extra",
+    "path": "extra/lutgen-cli",
+    "version": "1.0.1",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "A blazingly fast interpolated LUT utility for arbitrary and popular color palettes.",
+    "homepage": "https://lut.sh/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "lutgen-studio",
+    "category": "extra",
+    "path": "extra/lutgen-studio",
+    "version": "0.3.0",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Offical GUI for Lutgen, the best way to apply popular colorschemes to any image or wallpaper!",
+    "homepage": "https://lut.sh/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "ly",
     "category": "extra",
     "path": "extra/ly",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "archs": ["x86_64"],
     "description": "Lightweight TUI display manager for Linux and BSD",
     "homepage": "https://codeberg.org/fairyglade/ly",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "malcontent",
+    "category": "extra",
+    "path": "extra/malcontent",
+    "version": "0.14.0",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Parental controls library",
+    "homepage": "https://gitlab.freedesktop.org/pwithnall/malcontent",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "malcontent-devel",
+    "category": "extra",
+    "path": "extra/malcontent-devel",
+    "version": "0.14.0",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Parental controls library",
+    "homepage": "https://gitlab.freedesktop.org/pwithnall/malcontent",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "megasync",
+    "category": "extra",
+    "path": "extra/megasync",
+    "version": "6.6.2.0",
+    "archs": ["x86_64"],
+    "description": "Easy automated syncing between your computers and your MEGA Cloud Drive",
+    "homepage": "https://mega.io",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "mission-center",
+    "category": "extra",
+    "path": "extra/mission-center",
+    "version": "1.2.0",
+    "archs": ["x86_64"],
+    "description": "Monitor your CPU, Memory, Disk, Network and GPU usage",
+    "homepage": "https://missioncenter.io/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "msttcorefonts",
@@ -294,7 +976,18 @@
     "description": "Microsoft Typography Project - corefonts",
     "homepage": "http://corefonts.sourceforge.net",
     "maintainer": "Michael Aldridge <maldridge@voidlinux.org>",
-    "distributor": ""
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "ndpm",
+    "category": "extra",
+    "path": "extra/ndpm",
+    "version": "0.1.5",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "A user-friendly package manager wrapper for XBPS with AppImage support",
+    "homepage": "https://git.ch-naseem.com/noid-linux/ndpm",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "nerd-fonts-cascadiacode",
@@ -304,8 +997,19 @@
     "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
     "description": "CascadiaCode Nerd Font - monospaced font with programming ligatures and glyphs",
     "homepage": "https://nerdfonts.com",
-    "maintainer": "Gh0sT4n",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naeseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "nmenu",
+    "category": "extra",
+    "path": "extra/nmenu",
+    "version": "5.4",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Generic menu for X",
+    "homepage": "https://git.ch-naseem.com/ndpm13/dmenu/",
+    "maintainer": "Leah Neukirchen <leah@vuxu.org>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "noctalia-qs",
@@ -315,52 +1019,96 @@
     "archs": ["x86_64"],
     "description": "Custom fork of Quickshell powering Noctalia Shell",
     "homepage": "https://github.com/noctalia-dev/noctalia-qs",
-    "maintainer": "Gh0sT4n",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "noctalia-shell",
     "category": "extra",
     "path": "extra/noctalia-shell",
-    "version": "4.7.6",
+    "version": "4.7.7",
     "archs": ["x86_64"],
     "description": "Sleek and minimal desktop shell, built with Quickshell",
     "homepage": "https://docs.noctalia.dev/",
-    "maintainer": "Gh0sT4n",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "noid-artwork",
+    "category": "extra",
+    "path": "extra/noid-artwork",
+    "version": "20260622",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Noid Linux artwork",
+    "homepage": "https://noid-linux.github.io/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "noid-welcome",
+    "category": "extra",
+    "path": "extra/noid-welcome",
+    "version": "0.2.2",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Noid Linux Welcome Screen",
+    "homepage": "https://git.ch-naseem.com/noid-linux/noid-welcome",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "nwm",
+    "category": "extra",
+    "path": "extra/nwm",
+    "version": "6.8",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Custom Build of DWM - a Dynamic window manager for X",
+    "homepage": "https://git.ch-naseem.com/ndpm13/dwm",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "nyancat",
     "category": "extra",
     "path": "extra/nyancat",
-    "version": "1.2.1",
-    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "version": "1.5.2",
+    "archs": ["x86_64"],
     "description": "Nyancat rendered in your terminal",
     "homepage": "https://nyancat.dakko.us/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "obsidian",
     "category": "extra",
     "path": "extra/obsidian",
-    "version": "1.12.7",
+    "version": "1.14.4",
     "archs": ["x86_64"],
     "description": "Private and flexible writing app that adapts to the way you think",
     "homepage": "https://obsidian.md/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "onlyoffice",
     "category": "extra",
     "path": "extra/onlyoffice",
-    "version": "9.3.1",
-    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
-    "description": "An office suite that combines text, spreadsheet and presentation editors allowing to create, view and edit local documents",
+    "version": "10.0.0",
+    "archs": ["x86_64"],
+    "description": "Office suite that combines text, spreadsheet and presentation editors",
     "homepage": "https://www.onlyoffice.com/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "opencode-desktop",
+    "category": "extra",
+    "path": "extra/opencode-desktop",
+    "version": "1.19.2",
+    "archs": ["x86_64"],
+    "description": "OpenCode desktop client",
+    "homepage": "https://opencode.ai/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "powershell",
@@ -371,7 +1119,73 @@
     "description": "PowerShell for every system!",
     "homepage": "https://learn.microsoft.com/en-us/powershell/",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "proton-authenticator",
+    "category": "extra",
+    "path": "extra/proton-authenticator",
+    "version": "1.1.6",
+    "archs": ["x86_64"],
+    "description": "End-to-end encrypted 2FA code manager by Proton",
+    "homepage": "https://proton.me/authenticator",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "proton-vpn-gtk-app",
+    "category": "extra",
+    "path": "extra/proton-vpn-gtk-app",
+    "version": "4.18.7",
+    "archs": ["x86_64"],
+    "description": "Official ProtonVPN Linux app",
+    "homepage": "https://protonvpn.com/download-linux",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "python3-curl-cffi",
+    "category": "extra",
+    "path": "extra/python3-curl-cffi",
+    "version": "0.15.0",
+    "archs": ["x86_64"],
+    "description": "Python binding for curl-impersonate fork via cffi",
+    "homepage": "https://curl-cffi.readthedocs.io/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "python3-patool",
+    "category": "extra",
+    "path": "extra/python3-patool",
+    "version": "4.0.5",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Portable command line archive file manager",
+    "homepage": "https://github.com/wummel/patool",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "python3-proton-core",
+    "category": "extra",
+    "path": "extra/python3-proton-core",
+    "version": "0.7.4",
+    "archs": ["x86_64"],
+    "description": "Component contains core logic used by the other Proton components",
+    "homepage": "https://github.com/ProtonVPN/python-proton-core",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "python3-proton-vpn-api-core",
+    "category": "extra",
+    "path": "extra/python3-proton-vpn-api-core",
+    "version": "5.8.7",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Acts as a facade to the other Proton VPN components",
+    "homepage": "https://github.com/ProtonVPN/python-proton-vpn-api-core",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "qt6gtk2",
@@ -381,19 +1195,118 @@
     "archs": ["x86_64"],
     "description": "GTK+2.0 integration plugins for Qt6",
     "homepage": "https://www.opencode.net/trialuser/qt6gtk2",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "quran-companion",
+    "category": "extra",
+    "path": "extra/quran-companion",
+    "version": "1.3.3",
+    "archs": ["x86_64"],
+    "description": "Free and open-source desktop Quran reader and player",
+    "homepage": "https://0xzer0x.github.io/projects/quran-companion/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "rustdesk",
     "category": "extra",
     "path": "extra/rustdesk",
-    "version": "1.4.6.0",
+    "version": "1.5.0",
     "archs": ["x86_64"],
-    "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
+    "description": "Open-source remote desktop application designed for self-hosting",
     "homepage": "https://rustdesk.com/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "sable-desktop",
+    "category": "extra",
+    "path": "extra/sable-desktop",
+    "version": "1.22.11",
+    "archs": ["x86_64"],
+    "description": "Almost stable Matrix client",
+    "homepage": "https://github.com/SableClient/Sable",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "slack-desktop",
+    "category": "extra",
+    "path": "extra/slack-desktop",
+    "version": "4.51.180",
+    "archs": ["x86_64"],
+    "description": "Messaging app for teams",
+    "homepage": "https://slack.com/",
+    "maintainer": "Rodrigo Oliveira <mdkcore@qtrnn.io>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "spotify",
+    "category": "extra",
+    "path": "extra/spotify",
+    "version": "1.2.96",
+    "archs": ["x86_64"],
+    "description": "Proprietary music streaming client",
+    "homepage": "https://www.spotify.com",
+    "maintainer": "Stefan Mühlinghaus <jazzman@alphabreed.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "sway-scroll",
+    "category": "extra",
+    "path": "extra/sway-scroll",
+    "version": "1.12.21",
+    "archs": ["x86_64"],
+    "description": "Fork of the sway compositor with a scrolling layout like PaperWM or niri",
+    "homepage": "https://github.com/dawsers/scroll/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "television",
+    "category": "extra",
+    "path": "extra/television",
+    "version": "0.14.3",
+    "archs": ["x86_64"],
+    "description": "Cross-platform, fast and extensible general purpose fuzzy finde",
+    "homepage": "https://github.com/alexpasmantier/television",
+    "maintainer": "JuanMa <numblinux@gmail.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "tenacity",
+    "category": "extra",
+    "path": "extra/tenacity",
+    "version": "1.3.5",
+    "archs": ["x86_64"],
+    "description": "Easy-to-use multi-track audio editor and recorder, forked from Audacity",
+    "homepage": "https://tenacityaudio.org/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "themix",
+    "category": "extra",
+    "path": "extra/themix",
+    "version": "1.15.1",
+    "archs": ["x86_64"],
+    "description": "Graphical application for designing themes and exporting them",
+    "homepage": "https://github.com/themix-project/themix-gui/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "thorium-browser-avx2",
+    "category": "extra",
+    "path": "extra/thorium-browser-avx2",
+    "version": "138.0.7204.303",
+    "archs": ["x86_64"],
+    "description": "Chromium fork focused on performance and security - AVX2 build",
+    "homepage": "https://thorium.rocks/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "tpkg",
@@ -407,15 +1320,81 @@
     "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
+    "name": "tsukimi",
+    "category": "extra",
+    "path": "extra/tsukimi",
+    "version": "26.9.2",
+    "archs": ["x86_64"],
+    "description": "Simple third-party Jellyfin client for Linux",
+    "homepage": "https://github.com/tsukinaha/tsukimi",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
     "name": "tutanota-desktop",
     "category": "extra",
     "path": "extra/tutanota-desktop",
-    "version": "348.260506.0",
+    "version": "360.260922.0",
     "archs": ["x86_64"],
     "description": "The desktop client for Tutanota, the secure e-mail service.",
     "homepage": "https://tuta.com/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "twine",
+    "category": "extra",
+    "path": "extra/twine",
+    "version": "2.12.1",
+    "archs": ["x86_64"],
+    "description": "GUI for creating nonlinear stories",
+    "homepage": "https://twinery.org/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "ueberzugpp",
+    "category": "extra",
+    "path": "extra/ueberzugpp",
+    "version": "2.9.10",
+    "archs": ["x86_64"],
+    "description": "Drop in replacement for ueberzug written in C++",
+    "homepage": "https://github.com/jstkdng/ueberzugpp",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "ungoogled-chromium",
+    "category": "extra",
+    "path": "extra/ungoogled-chromium",
+    "version": "155.0.8059.79.1",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Lightweight approach to removing Google web service dependency",
+    "homepage": "https://github.com/ungoogled-software/ungoogled-chromium",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "uutils-coreutils",
+    "category": "extra",
+    "path": "extra/uutils-coreutils",
+    "version": "0.12.0",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Cross-platform Rust rewrite of the GNU coreutils",
+    "homepage": "https://github.com/uutils/coreutils",
+    "maintainer": "Nafis <mnabid.25@outlook.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "vkbasalt-cli",
+    "category": "extra",
+    "path": "extra/vkbasalt-cli",
+    "version": "3.1.1",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Command-line utility for vkBasalt",
+    "homepage": "https://gitlab.com/TheEvilSkeleton/vkbasalt-cli",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "vscodium",
@@ -440,6 +1419,39 @@
     "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
+    "name": "wps-office",
+    "category": "extra",
+    "path": "extra/wps-office",
+    "version": "11.1.0.11733",
+    "archs": ["x86_64"],
+    "description": "Linux office suite with similar appearance to MS Office",
+    "homepage": "https://www.wps.com/",
+    "maintainer": "mobinmob <mobinmob@disroot.org>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "xapp-symbolic-icons",
+    "category": "extra",
+    "path": "extra/xapp-symbolic-icons",
+    "version": "1.1.0",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Set of symbolic icons for Gtk applications and projects",
+    "homepage": "https://github.com/xapp-project/xapp-symbolic-icons",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "xlibre-repo",
+    "category": "extra",
+    "path": "extra/xlibre-repo",
+    "version": "1",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "XLibre for VOID linux",
+    "homepage": "https://github.com/xlibre-void/xlibre/",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
     "name": "xvr",
     "category": "extra",
     "path": "extra/xvr",
@@ -448,6 +1460,17 @@
     "description": "The XVR Programming Language Compiler By Arfy Slowy",
     "homepage": "https://github.com/xvrlang/xvr",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "yarr",
+    "category": "extra",
+    "path": "extra/yarr",
+    "version": "2.9",
+    "archs": ["x86_64"],
+    "description": "Yet another rss reader",
+    "homepage": "https://github.com/nkanaev/yarr",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
     "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
@@ -465,11 +1488,11 @@
     "name": "zen-browser",
     "category": "extra",
     "path": "extra/zen-browser",
-    "version": "1.20.1b",
+    "version": "1.23.3b",
     "archs": ["x86_64"],
     "description": "Performance oriented Firefox-based web browser",
     "homepage": "https://zen-browser.app/",
-    "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
     "distributor": ""
   },
   {
@@ -493,4 +1516,48 @@
     "homepage": "https://github.com/gh0st4n/ZVC/README.md",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
     "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "wine-pure",
+    "category": "multilib",
+    "path": "multilib/wine-pure",
+    "version": "11.18",
+    "archs": ["x86_64"],
+    "description": "Run Microsoft Windows applications",
+    "homepage": "https://github.com/ventureoo/PKGBUILDs",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": ""
+  },
+  {
+    "name": "wine-pure-common",
+    "category": "multilib",
+    "path": "multilib/wine-pure-common",
+    "version": "11.18",
+    "archs": ["x86_64"],
+    "description": "Run Microsoft Windows applications",
+    "homepage": "https://github.com/ventureoo/PKGBUILDs",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": ""
+  },
+  {
+    "name": "wine-pure-devel",
+    "category": "multilib",
+    "path": "multilib/wine-pure-devel",
+    "version": "11.18",
+    "archs": ["x86_64"],
+    "description": "Run Microsoft Windows applications",
+    "homepage": "https://github.com/ventureoo/PKGBUILDs",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": ""
+  },
+  {
+    "name": "wine-pure-tools",
+    "category": "multilib",
+    "path": "multilib/wine-pure-tools",
+    "version": "11.18",
+    "archs": ["x86_64"],
+    "description": "Run Microsoft Windows applications",
+    "homepage": "https://github.com/ventureoo/PKGBUILDs",
+    "maintainer": "Naz <ndpm13@ch-naseem.com>",
+    "distributor": ""
   }]

@@ -1,25 +1,117 @@
 [
+  {"name":"NetworkManager-dinit","category":"core","path":"core/NetworkManager-dinit"}
+,
   {"name":"acpid-dinit","category":"core","path":"core/acpid-dinit"}
+,
+  {"name":"bluez-dinit","category":"core","path":"core/bluez-dinit"}
+,
+  {"name":"calamares","category":"core","path":"core/calamares"}
+,
+  {"name":"chrony-dinit","category":"core","path":"core/chrony-dinit"}
+,
+  {"name":"dbus-dinit","category":"core","path":"core/dbus-dinit"}
+,
+  {"name":"dhcpcd-dinit","category":"core","path":"core/dhcpcd-dinit"}
+,
+  {"name":"dinit","category":"core","path":"core/dinit"}
+,
+  {"name":"elogind-dinit","category":"core","path":"core/elogind-dinit"}
+,
+  {"name":"libvirt-dinit","category":"core","path":"core/libvirt-dinit"}
+,
+  {"name":"lightdm-dinit","category":"core","path":"core/lightdm-dinit"}
 ,
   {"name":"linux-zen","category":"core","path":"core/linux-zen"}
 ,
-  {"name":"mission-center","category":"core","path":"core/mission-center"}
+  {"name":"linux6.12.8-zen","category":"core","path":"core/linux6.12.8-zen"}
 ,
-  {"name":"xlibre-repo","category":"core","path":"core/xlibre-repo"}
+  {"name":"linux6.13-zen","category":"core","path":"core/linux6.13-zen"}
 ,
-  {"name":"PrismLauncher","category":"extra","path":"extra/PrismLauncher"}
+  {"name":"linux6.18-xanmod","category":"core","path":"core/linux6.18-xanmod"}
+,
+  {"name":"ly-dinit","category":"core","path":"core/ly-dinit"}
+,
+  {"name":"noid-base-files","category":"core","path":"core/noid-base-files"}
+,
+  {"name":"noid-base-system","category":"core","path":"core/noid-base-system"}
+,
+  {"name":"noid-base-system-dinit","category":"core","path":"core/noid-base-system-dinit"}
+,
+  {"name":"noid-dinit","category":"core","path":"core/noid-dinit"}
+,
+  {"name":"openssh-dinit","category":"core","path":"core/openssh-dinit"}
+,
+  {"name":"polkit-dinit","category":"core","path":"core/polkit-dinit"}
+,
+  {"name":"sddm-dinit","category":"core","path":"core/sddm-dinit"}
+,
+  {"name":"seatd-dinit","category":"core","path":"core/seatd-dinit"}
+,
+  {"name":"tailscale-dinit","category":"core","path":"core/tailscale-dinit"}
+,
+  {"name":"tlp-dinit","category":"core","path":"core/tlp-dinit"}
+,
+  {"name":"wpa_supplicant-dinit","category":"core","path":"core/wpa_supplicant-dinit"}
+,
+  {"name":"FjordLauncher","category":"extra","path":"extra/FjordLauncher"}
+,
+  {"name":"alacritty-graphics","category":"extra","path":"extra/alacritty-graphics"}
+,
+  {"name":"alacritty-graphics-terminfo","category":"extra","path":"extra/alacritty-graphics-terminfo"}
 ,
   {"name":"android-studio","category":"extra","path":"extra/android-studio"}
 ,
+  {"name":"azahar","category":"extra","path":"extra/azahar"}
+,
+  {"name":"azaharplus","category":"extra","path":"extra/azaharplus"}
+,
+  {"name":"bazaar","category":"extra","path":"extra/bazaar"}
+,
+  {"name":"beeper","category":"extra","path":"extra/beeper"}
+,
+  {"name":"biome","category":"extra","path":"extra/biome"}
+,
   {"name":"bitwarden-desktop","category":"extra","path":"extra/bitwarden-desktop"}
 ,
-  {"name":"calamares","category":"extra","path":"extra/calamares"}
+  {"name":"blockbench","category":"extra","path":"extra/blockbench"}
+,
+  {"name":"bottles","category":"extra","path":"extra/bottles"}
+,
+  {"name":"boxbuddy","category":"extra","path":"extra/boxbuddy"}
+,
+  {"name":"brave","category":"extra","path":"extra/brave"}
+,
+  {"name":"brave-origin","category":"extra","path":"extra/brave-origin"}
+,
+  {"name":"bun","category":"extra","path":"extra/bun"}
+,
+  {"name":"cinny-desktop","category":"extra","path":"extra/cinny-desktop"}
+,
+  {"name":"clipcat","category":"extra","path":"extra/clipcat"}
+,
+  {"name":"cryptomator","category":"extra","path":"extra/cryptomator"}
+,
+  {"name":"dgop","category":"extra","path":"extra/dgop"}
+,
+  {"name":"dioxus-cli","category":"extra","path":"extra/dioxus-cli"}
 ,
   {"name":"discord","category":"extra","path":"extra/discord"}
 ,
+  {"name":"distrobox","category":"extra","path":"extra/distrobox"}
+,
   {"name":"dms-shell","category":"extra","path":"extra/dms-shell"}
 ,
+  {"name":"dms-shell-niri","category":"extra","path":"extra/dms-shell-niri"}
+,
+  {"name":"drawio-desktop","category":"extra","path":"extra/drawio-desktop"}
+,
+  {"name":"dsearch","category":"extra","path":"extra/dsearch"}
+,
+  {"name":"emacs-lucid","category":"extra","path":"extra/emacs-lucid"}
+,
   {"name":"faugus-launcher","category":"extra","path":"extra/faugus-launcher"}
+,
+  {"name":"feishin","category":"extra","path":"extra/feishin"}
 ,
   {"name":"ferdium","category":"extra","path":"extra/ferdium"}
 ,
@@ -29,7 +121,11 @@
 ,
   {"name":"fluffychat","category":"extra","path":"extra/fluffychat"}
 ,
+  {"name":"fnm","category":"extra","path":"extra/fnm"}
+,
   {"name":"freetube","category":"extra","path":"extra/freetube"}
+,
+  {"name":"grayjay","category":"extra","path":"extra/grayjay"}
 ,
   {"name":"gruvbox-bibata-cursor-theme","category":"extra","path":"extra/gruvbox-bibata-cursor-theme"}
 ,
@@ -39,25 +135,63 @@
 ,
   {"name":"gruvbox-material-theme","category":"extra","path":"extra/gruvbox-material-theme"}
 ,
+  {"name":"gruvbox-papirus-icon-theme","category":"extra","path":"extra/gruvbox-papirus-icon-theme"}
+,
+  {"name":"helium-browser","category":"extra","path":"extra/helium-browser"}
+,
   {"name":"heroic-games-launcher","category":"extra","path":"extra/heroic-games-launcher"}
 ,
   {"name":"hyprland-repo","category":"extra","path":"extra/hyprland-repo"}
 ,
+  {"name":"intel-media-driver-nonfree","category":"extra","path":"extra/intel-media-driver-nonfree"}
+,
+  {"name":"intel-media-driver-nonfree-devel","category":"extra","path":"extra/intel-media-driver-nonfree-devel"}
+,
   {"name":"kaidan","category":"extra","path":"extra/kaidan"}
+,
+  {"name":"libglib-testing","category":"extra","path":"extra/libglib-testing"}
+,
+  {"name":"libglib-testing-devel","category":"extra","path":"extra/libglib-testing-devel"}
+,
+  {"name":"libgsystemservice","category":"extra","path":"extra/libgsystemservice"}
+,
+  {"name":"libgsystemservice-devel","category":"extra","path":"extra/libgsystemservice-devel"}
 ,
   {"name":"librewolf","category":"extra","path":"extra/librewolf"}
 ,
   {"name":"linuxnauta-repo","category":"extra","path":"extra/linuxnauta-repo"}
 ,
+  {"name":"lutgen-cli","category":"extra","path":"extra/lutgen-cli"}
+,
+  {"name":"lutgen-studio","category":"extra","path":"extra/lutgen-studio"}
+,
   {"name":"ly","category":"extra","path":"extra/ly"}
+,
+  {"name":"malcontent","category":"extra","path":"extra/malcontent"}
+,
+  {"name":"malcontent-devel","category":"extra","path":"extra/malcontent-devel"}
+,
+  {"name":"megasync","category":"extra","path":"extra/megasync"}
+,
+  {"name":"mission-center","category":"extra","path":"extra/mission-center"}
 ,
   {"name":"msttcorefonts","category":"extra","path":"extra/msttcorefonts"}
 ,
+  {"name":"ndpm","category":"extra","path":"extra/ndpm"}
+,
   {"name":"nerd-fonts-cascadiacode","category":"extra","path":"extra/nerd-fonts-cascadiacode"}
+,
+  {"name":"nmenu","category":"extra","path":"extra/nmenu"}
 ,
   {"name":"noctalia-qs","category":"extra","path":"extra/noctalia-qs"}
 ,
   {"name":"noctalia-shell","category":"extra","path":"extra/noctalia-shell"}
+,
+  {"name":"noid-artwork","category":"extra","path":"extra/noid-artwork"}
+,
+  {"name":"noid-welcome","category":"extra","path":"extra/noid-welcome"}
+,
+  {"name":"nwm","category":"extra","path":"extra/nwm"}
 ,
   {"name":"nyancat","category":"extra","path":"extra/nyancat"}
 ,
@@ -65,21 +199,73 @@
 ,
   {"name":"onlyoffice","category":"extra","path":"extra/onlyoffice"}
 ,
+  {"name":"opencode-desktop","category":"extra","path":"extra/opencode-desktop"}
+,
   {"name":"powershell","category":"extra","path":"extra/powershell"}
+,
+  {"name":"proton-authenticator","category":"extra","path":"extra/proton-authenticator"}
+,
+  {"name":"proton-vpn-gtk-app","category":"extra","path":"extra/proton-vpn-gtk-app"}
+,
+  {"name":"python3-curl-cffi","category":"extra","path":"extra/python3-curl-cffi"}
+,
+  {"name":"python3-patool","category":"extra","path":"extra/python3-patool"}
+,
+  {"name":"python3-proton-core","category":"extra","path":"extra/python3-proton-core"}
+,
+  {"name":"python3-proton-vpn-api-core","category":"extra","path":"extra/python3-proton-vpn-api-core"}
 ,
   {"name":"qt6gtk2","category":"extra","path":"extra/qt6gtk2"}
 ,
+  {"name":"quran-companion","category":"extra","path":"extra/quran-companion"}
+,
   {"name":"rustdesk","category":"extra","path":"extra/rustdesk"}
+,
+  {"name":"sable-desktop","category":"extra","path":"extra/sable-desktop"}
+,
+  {"name":"slack-desktop","category":"extra","path":"extra/slack-desktop"}
+,
+  {"name":"spotify","category":"extra","path":"extra/spotify"}
+,
+  {"name":"sway-scroll","category":"extra","path":"extra/sway-scroll"}
+,
+  {"name":"television","category":"extra","path":"extra/television"}
+,
+  {"name":"tenacity","category":"extra","path":"extra/tenacity"}
+,
+  {"name":"themix","category":"extra","path":"extra/themix"}
+,
+  {"name":"thorium-browser-avx2","category":"extra","path":"extra/thorium-browser-avx2"}
 ,
   {"name":"tpkg","category":"extra","path":"extra/tpkg"}
 ,
+  {"name":"tsukimi","category":"extra","path":"extra/tsukimi"}
+,
   {"name":"tutanota-desktop","category":"extra","path":"extra/tutanota-desktop"}
+,
+  {"name":"twine","category":"extra","path":"extra/twine"}
+,
+  {"name":"ueberzugpp","category":"extra","path":"extra/ueberzugpp"}
+,
+  {"name":"ungoogled-chromium","category":"extra","path":"extra/ungoogled-chromium"}
+,
+  {"name":"uutils-coreutils","category":"extra","path":"extra/uutils-coreutils"}
+,
+  {"name":"vkbasalt-cli","category":"extra","path":"extra/vkbasalt-cli"}
 ,
   {"name":"vscodium","category":"extra","path":"extra/vscodium"}
 ,
   {"name":"webapp-manager","category":"extra","path":"extra/webapp-manager"}
 ,
+  {"name":"wps-office","category":"extra","path":"extra/wps-office"}
+,
+  {"name":"xapp-symbolic-icons","category":"extra","path":"extra/xapp-symbolic-icons"}
+,
+  {"name":"xlibre-repo","category":"extra","path":"extra/xlibre-repo"}
+,
   {"name":"xvr","category":"extra","path":"extra/xvr"}
+,
+  {"name":"yarr","category":"extra","path":"extra/yarr"}
 ,
   {"name":"zed","category":"extra","path":"extra/zed"}
 ,
@@ -88,4 +274,12 @@
   {"name":"zig","category":"extra","path":"extra/zig"}
 ,
   {"name":"zvc","category":"extra","path":"extra/zvc"}
+,
+  {"name":"wine-pure","category":"multilib","path":"multilib/wine-pure"}
+,
+  {"name":"wine-pure-common","category":"multilib","path":"multilib/wine-pure-common"}
+,
+  {"name":"wine-pure-devel","category":"multilib","path":"multilib/wine-pure-devel"}
+,
+  {"name":"wine-pure-tools","category":"multilib","path":"multilib/wine-pure-tools"}
 ]
