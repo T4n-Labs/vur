@@ -1,0 +1,46 @@
+# Template file for 'proton-authenticator'
+pkgname=proton-authenticator
+version=1.1.6
+revision=1
+archs="x86_64"
+hostmakedepends="yarn cargo pkg-config"
+makedepends="glib-devel gtk+3-devel libsoup3-devel
+ libwebkit2gtk41-devel"
+short_desc="End-to-end encrypted 2FA code manager by Proton"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://proton.me/authenticator"
+changelog="https://github.com/ProtonMail/WebClients/raw/refs/heads/main/applications/authenticator/CHANGELOG.md"
+distfiles="https://github.com/ProtonMail/WebClients/archive/refs/heads/release/proton-authenticator@${version}.tar.gz"
+checksum="08de1eb91d380e66dc5fd5aa71bf1100e8b6504d55ea721ae08834777ebd050d"
+
+post_extract() {
+    # Configure Yarn workspaces to build only authenticator instead of all applications
+    sed -i 's/"applications\/\*",/"applications\/authenticator",/' package.json
+}
+
+pre_build() {
+    SENTRYCLI_SKIP_DOWNLOAD=1 yarn install
+}
+
+do_build() {
+	QA_BUILD=false yarn workspace proton-authenticator build:desktop
+}
+
+do_install() {
+	vbin applications/authenticator/src-tauri/target/release/${pkgname}
+	
+	vinstall ${FILESDIR}/${pkgname}.desktop 644 usr/share/applications
+
+	for i in 32x32 64x64 128x128; do
+		vinstall applications/authenticator/src-tauri/icons/${i}.png \
+				 644 usr/share/icons/hicolor/${i}/apps/${pkgname}.png
+	done
+
+    vinstall applications/authenticator/src-tauri/icons/128x128@2x.png \
+			 644 usr/share/icons/hicolor/128x128@2/apps/${pkgname}.png
+
+    vinstall applications/authenticator/src-tauri/icons/icon.png \
+			 644 usr/share/icons/hicolor/512x512/apps/${pkgname}.png
+}
