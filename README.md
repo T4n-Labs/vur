@@ -1,26 +1,32 @@
-# 🇮🇩 INDONESIA / [🇬🇧 ENGLISH](./README-EN.md)
+# 🇬🇧 ENGLISH / [🇮🇩 INDONESIA](./README-ID.md)
 
-## PENGENALAN
+## INTRODUCTION
 
-**VUR (Void User Repository)** adalah repository berbasis komunitas untuk **Void Linux** yang menyediakan template paket tambahan di luar repository resmi.
+**VUR (Void User Repository)** is a community-driven repository for **Void Linux** that provides additional package templates outside the official repositories.
 
-VUR berfungsi sebagai tempat berbagi paket yang belum tersedia secara default, dibangun menggunakan sistem `xbps-src` milik Void.
+VUR serves as a place to share packages that are not available by default, built using Void’s `xbps-src` system.
 
-### KARAKTERISTIK
+### CHARACTERISTICS
 
-* Berbasis template `xbps-src`
-* Dikelola oleh komunitas
-* Tidak didukung secara resmi oleh Void Linux
-* Perlu audit sebelum build/install
+* Based on `xbps-src` templates
+* Community-maintained
+* Not officially supported by Void Linux
+* Requires auditing before build/install
 
-### TUJUAN
+### GOALS
 
-* Memperluas ekosistem Void
-* Menyediakan software niche / eksperimental
-* Mendukung kolaborasi komunitas
+* Expand the Void ecosystem
+* Provide niche / experimental software
+* Encourage community collaboration
 
-> Gunakan dengan bijak. Selalu review template sebelum membangun paket.
+> Use responsibly. Always review templates before building packages.
 
-#### DOKUMENTASI : [doc.md](./vdokumentasi/index.md)
+#### DOKUMENTASI : [doc.md](vdocs/DaftarISI.md)
 
 ---
+
+<div align="center">
+
+[@T4n-Labs](https://t4n-labs.github.io/site) · [@Gh0sT4n](https://gh0st4n.github.io/site)
+
+</div>
