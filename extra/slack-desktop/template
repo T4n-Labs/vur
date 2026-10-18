@@ -1,0 +1,24 @@
+# Template file for 'slack-desktop'
+pkgname=slack-desktop
+version=4.51.180
+revision=1
+archs="x86_64"
+depends="xdg-utils"
+short_desc="Messaging app for teams"
+maintainer="Rodrigo Oliveira <mdkcore@qtrnn.io>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="custom:Proprietary"
+homepage="https://slack.com/"
+changelog="https://slack.com/release-notes/linux"
+distfiles="https://downloads.slack-edge.com/desktop-releases/linux/x64/${version}/${pkgname}-${version}-amd64.deb"
+checksum="aa45e151794703377012a9ad78f0b2152c368852e085267ae689dafb5c308ea1"
+nopie=yes
+
+do_install() {
+	vlicense usr/share/doc/slack-desktop/OPEN_SOURCE_LICENSE_ATTRIBUTIONS
+	vinstall usr/share/applications/slack.desktop 644 usr/share/applications
+	vinstall usr/share/pixmaps/slack.png 644 usr/share/pixmaps
+	mkdir ${DESTDIR}/usr/bin
+	vcopy usr/lib/slack usr/lib
+	ln -s ../lib/slack/slack ${DESTDIR}/usr/bin/slack
+}
