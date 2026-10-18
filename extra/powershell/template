@@ -10,6 +10,7 @@ noshlibprovides=yes
 depends="libunwind icu openssl zlib"
 short_desc="PowerShell for every system!"
 maintainer="Gh0sT4n <darskevoid@gmail.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="MIT"
 homepage="https://learn.microsoft.com/en-us/powershell/"
 
