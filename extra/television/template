@@ -1,0 +1,18 @@
+# Template file for 'television'
+pkgname=television
+version=0.14.3
+revision=1
+archs="x86_64"
+build_style=cargo
+depends="fd bat fzf"
+short_desc="Cross-platform, fast and extensible general purpose fuzzy finde"
+maintainer="JuanMa <numblinux@gmail.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="MIT"
+homepage="https://github.com/alexpasmantier/television"
+distfiles="https://github.com/alexpasmantier/television/archive/refs/tags/${version}.tar.gz"
+checksum="26e5fc813034273b8740127f384619e89bc3ba1d2c496491ca0fdfa924175eac"
+
+post_install() {
+	vlicense LICENSE
+}
