@@ -1,0 +1,28 @@
+# Template file for 'grayjay'
+pkgname=grayjay
+version=20
+revision=1
+archs="x86_64"
+depends="vulkan-loader"
+short_desc="Cross-platform app to stream and download content from various sources"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="custom:Source First License 1.1"
+homepage="https://grayjay.app/desktop/"
+changelog="https://gitlab.futo.org/videostreaming/Grayjay.Desktop/-/tags"
+distfiles="https://updater.grayjay.app/Apps/Grayjay.Desktop/${version}/Grayjay.Desktop-linux-x64-v${version}.zip"
+checksum="cf35fbd4adb19b4a65bc7095dbc28648c4e024438d2cf77078b3fee3a14f9b30"
+nostrip=yes
+
+do_install() {
+	rm -f cef/libvulkan.so.1
+	rm -f *Updater*
+
+	vmkdir opt/${pkgname}
+	vcopy "*" opt/${pkgname}
+
+	vbin ${FILESDIR}/${pkgname}.sh ${pkgname}
+	vinstall ${FILESDIR}/${pkgname}.desktop 644 usr/share/applications
+
+	vinstall grayjay.png 644 usr/share/icons/hicolor/512x512/apps
+}
