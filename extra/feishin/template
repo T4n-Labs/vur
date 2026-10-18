@@ -1,0 +1,40 @@
+# Template file for 'feishin'
+pkgname=feishin
+version=1.16.0
+revision=1
+_electronver=35
+archs="x86_64"
+hostmakedepends="pnpm"
+makedepends="electron${_electronver}-devel"
+depends="electron${_electronver}"
+short_desc="Full-featured Subsonic/Jellyfin compatible desktop music player"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://feishin.vercel.app/"
+changelog="https://github.com/jeffvli/feishin/raw/refs/heads/development/CHANGELOG.md"
+distfiles="https://github.com/jeffvli/feishin/archive/refs/tags/v${version}.tar.gz"
+checksum=b7c04c40224cc0fbe6ced87c5b16986499bb865827d5db949413bc8ea93b87f2
+
+pre_build() {
+	# -- -c doesn't work apparently 
+	sed -i \
+		"s/electronVersion:.*/electronVersion: $(cat /usr/lib/electron${_electronver}/version)\nelectronDist: \"\/usr\/lib\/electron${_electronver}\"/" \
+		electron-builder.yml
+
+	pnpm install --frozen-lockfile
+}
+
+do_build() {
+	pnpm package
+}
+
+do_install() {
+	vmkdir /usr/lib/${pkgname}
+	vcopy dist/linux-unpacked/resources usr/lib/${pkgname}/resources
+
+	sed "s/@electronver@/${_electronver}/g" ${FILESDIR}/${pkgname}.sh > ${TMPDIR}/${pkgname}.sh
+	vbin ${TMPDIR}/${pkgname}.sh ${pkgname}
+
+	vinstall ${FILESDIR}/${pkgname}.desktop 644 usr/share/applications
+}
