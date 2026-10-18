@@ -1,1 +1,0 @@
-# Build-Style Cabal(Haskell Project)
