@@ -30,7 +30,7 @@ license="BSD-2-Clause, CC-BY-4.0, CC0-1.0, GPL-3.0-or-later, LGPL-2.1-only, LGPL
 homepage="https://calamares.io"
 changelog="https://codeberg.org/Calamares/calamares/releases/"
 distfiles="https://codeberg.org/Calamares/calamares/archive/v${version}.tar.gz"
-checksum=7b8d0ee09645ad9d625baaebe0ba9ffd5baedbe92153347fd4d0a003a2d7639c
+checksum=4e9bfa5e6fe50cb302d665bca98f9bdae71ff354ec8841f115773b386734fdc1
 
 post_install() {
 	vbin build/loadmodule
