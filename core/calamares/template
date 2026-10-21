@@ -1,4 +1,4 @@
-# Template file for 'calamares'
+# Template file for 'calamares' 'maintain for only x86_64 glibc'
 pkgname=calamares
 version=3.4.2
 revision=3
