@@ -1313,7 +1313,7 @@
     "category": "extra",
     "path": "extra/tpkg",
     "version": "1.0.1",
-    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "i686-musl", "x86_64", "x86_64-musl"],
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
     "description": "A user-friendly package manager wrapper for XBPS",
     "homepage": "https://gitlab.com/t4n-pkg/tpkg/",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
