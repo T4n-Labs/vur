@@ -1,6 +1,6 @@
 # Template file for 'tpkg'
 pkgname=tpkg
-version=1.0.1
+version=1.1.0
 revision=1
 short_desc="A user-friendly package manager wrapper for XBPS"
 maintainer="Gh0sT4n <darskevoid@gmail.com>"
