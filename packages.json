@@ -1317,7 +1317,7 @@
     "description": "A user-friendly package manager wrapper for XBPS",
     "homepage": "https://gitlab.com/t4n-pkg/tpkg/",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
     "name": "tsukimi",
