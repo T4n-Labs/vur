@@ -1,14 +1,14 @@
 # Template file for 'tpkg'
 pkgname=tpkg
-version=1.0
+version=1.0.1
 revision=1
+archs="x86_64* aarch64* armv6l* armv7l* i686*"
 short_desc="A user-friendly package manager wrapper for XBPS"
 maintainer="Gh0sT4n <darskevoid@gmail.com>"
-distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="BSD-2-Clause"
 homepage="https://gitlab.com/t4n-pkg/tpkg/"
 distfiles="https://gitlab.com/t4n-pkg/tpkg/-/archive/${version}/tpkg-${version}.tar.gz"
-checksum="db1b831f16817fb1379dbe9eab04dee2ff102c4bbd89a0eb3a1fe3ce7feff950"
+checksum=93c0d212617cbd1fedb42a59b2b185292a1e7d6fe1b6602106f8e784d476153a
 
 depends="xbps"
 
