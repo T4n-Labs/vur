@@ -5,6 +5,7 @@ revision=1
 archs="x86_64* aarch64* armv6l* armv7l* i686*"
 short_desc="A user-friendly package manager wrapper for XBPS"
 maintainer="Gh0sT4n <darskevoid@gmail.com>"
+distributor="Gh0sT4n <darskevoid@gmail.com>"
 license="BSD-2-Clause"
 homepage="https://gitlab.com/t4n-pkg/tpkg/"
 distfiles="https://gitlab.com/t4n-pkg/tpkg/-/archive/${version}/tpkg-${version}.tar.gz"
