@@ -2,7 +2,6 @@
 pkgname=tpkg
 version=1.0.1
 revision=1
-archs="x86_64* aarch64* armv6l* armv7l* i686*"
 short_desc="A user-friendly package manager wrapper for XBPS"
 maintainer="Gh0sT4n <darskevoid@gmail.com>"
 distributor="Gh0sT4n <darskevoid@gmail.com>"
