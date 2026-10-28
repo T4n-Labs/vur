@@ -473,6 +473,17 @@
     "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
+    "name": "burpsuite",
+    "category": "extra",
+    "path": "extra/burpsuite",
+    "version": "2026.10.1",
+    "archs": ["aarch64", "aarch64-musl", "x86_64", "x86_64-musl"],
+    "description": "Integrated platform for performing security testing of web applications",
+    "homepage": "https://portswigger.net/burp",
+    "maintainer": "gh0st4n <darskevoid@gmail.com>",
+    "distributor": "gh0st4n <darskevoid@gmail.com>"
+  },
+  {
     "name": "cinny-desktop",
     "category": "extra",
     "path": "extra/cinny-desktop",
@@ -955,6 +966,17 @@
     "homepage": "https://mega.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
     "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "metasploit",
+    "category": "extra",
+    "path": "extra/metasploit",
+    "version": "6.5.8",
+    "archs": ["aarch64", "x86_64"],
+    "description": "Penetration testing framework for developing and using exploit code",
+    "homepage": "https://www.metasploit.com",
+    "maintainer": "gh0st4n <darskevoid@gmail.com>",
+    "distributor": "gh0st4n <darskevoid@gmail.com>"
   },
   {
     "name": "mission-center",

@@ -85,6 +85,8 @@
 ,
   {"name":"bun","category":"extra","path":"extra/bun"}
 ,
+  {"name":"burpsuite","category":"extra","path":"extra/burpsuite"}
+,
   {"name":"cinny-desktop","category":"extra","path":"extra/cinny-desktop"}
 ,
   {"name":"clipcat","category":"extra","path":"extra/clipcat"}
@@ -172,6 +174,8 @@
   {"name":"malcontent-devel","category":"extra","path":"extra/malcontent-devel"}
 ,
   {"name":"megasync","category":"extra","path":"extra/megasync"}
+,
+  {"name":"metasploit","category":"extra","path":"extra/metasploit"}
 ,
   {"name":"mission-center","category":"extra","path":"extra/mission-center"}
 ,

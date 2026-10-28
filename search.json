@@ -85,6 +85,8 @@
 ,
   {"name":"bun","desc":"Fast JavaScript runtime, bundler, test runner, and package manager","path":"extra/bun"}
 ,
+  {"name":"burpsuite","desc":"Integrated platform for performing security testing of web applications","path":"extra/burpsuite"}
+,
   {"name":"cinny-desktop","desc":"Yet another matrix client for desktop","path":"extra/cinny-desktop"}
 ,
   {"name":"clipcat","desc":"Clipboard Manager written in Rust Programming Language","path":"extra/clipcat"}
@@ -172,6 +174,8 @@
   {"name":"malcontent-devel","desc":"Parental controls library","path":"extra/malcontent-devel"}
 ,
   {"name":"megasync","desc":"Easy automated syncing between your computers and your MEGA Cloud Drive","path":"extra/megasync"}
+,
+  {"name":"metasploit","desc":"Penetration testing framework for developing and using exploit code","path":"extra/metasploit"}
 ,
   {"name":"mission-center","desc":"Monitor your CPU, Memory, Disk, Network and GPU usage","path":"extra/mission-center"}
 ,
