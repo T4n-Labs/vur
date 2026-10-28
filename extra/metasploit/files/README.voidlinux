@@ -1,0 +1,18 @@
+Post-Installation Setup for Metasploit Framework
+================================================
+
+Metasploit requires a PostgreSQL database to function optimally (for storing 
+workspace data, hosts, services, and vulnerabilities).
+
+After installing this package, you MUST initialize the database by running:
+
+    $ msfdb init
+
+This will automatically start the PostgreSQL service, create the 'msf' user, 
+and initialize the databases.
+
+To verify the database is connected, run:
+    $ msfconsole
+    msf6 > db_status
+
+For more information, see: https://docs.metasploit.com/docs/using-metasploit/getting-started/setting-up-a-metasploit-database.html

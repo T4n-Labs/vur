@@ -1,0 +1,71 @@
+# Template file for 'metasploit'
+pkgname=metasploit
+version=6.5.8
+revision=1
+archs="x86_64 aarch64"
+wrksrc="metasploit-framework-${version}"
+hostmakedepends="ruby ruby-devel pkg-config"
+makedepends="ruby-devel postgresql-libs-devel libpcap-devel sqlite-devel libxml2-devel
+ libxslt-devel libffi-devel openssl-devel zlib-devel libyaml-devel"
+# Manual specify semua runtime deps karena noverifyrdeps=yes
+depends="ruby postgresql nmap libpcap openssl libffi libyaml zlib"
+short_desc="Penetration testing framework for developing and using exploit code"
+maintainer="gh0st4n <darskevoid@gmail.com>"
+distributor="gh0st4n <darskevoid@gmail.com>"
+license="BSD-3-Clause"
+homepage="https://www.metasploit.com"
+distfiles="https://github.com/rapid7/metasploit-framework/archive/refs/tags/${version}.tar.gz"
+checksum=c590012173e96580deb37adb39cd96ec8c72199a10d4ed1c3d7ba1210d48568c
+nocross=yes
+
+# === FIX XBPS HOOKS ===
+# Metasploit membawa payload prebuilt cross-arch (ELF ARM/MIPS/PPC, PE Windows,
+# raw shellcode blobs) sebagai DATA runtime. Hook strip/PIE/shlib tidak boleh
+# memprosesnya karena akan gagal atau merusak offset payload.
+nostrip=yes
+nodebug=yes
+python_version=ignore
+
+# Matikan verifikasi runtime deps secara global karena skiprdeps tidak mendukung
+# wildcard/direktori. Manual specify semua depends di atas.
+noverifyrdeps=yes
+
+# Lokasi install tree Metasploit (arch-specific karena ada gem native)
+_msfdir=/usr/lib/metasploit-framework
+
+do_build() {
+	bundle config set --local path vendor/bundle
+	bundle config set --local without "development:test:coverage"
+	bundle config set --local frozen true
+
+	bundle config set --local build.nokogiri "--use-system-libraries"
+	bundle config set --local build.sqlite3 "--enable-system-libraries"
+	bundle config set --local build.pg "--with-pg-config=/usr/bin/pg_config"
+
+	bundle install --jobs "${XBPS_MAKEJOBS:-1}"
+
+	find vendor/bundle -type f \( -name '*.o' -o -name 'gem_make.out' \
+		-o -name 'mkmf.log' \) -delete
+	rm -rf vendor/bundle/ruby/*/cache
+}
+
+do_install() {
+	vmkdir "${_msfdir#/}"
+
+	local f
+	for f in app config data db documentation lib modules plugins \
+		script scripts tools vendor .bundle \
+		Gemfile Gemfile.lock metasploit-framework.gemspec \
+		msf-json-rpc.ru msf-ws.ru \
+		msfconsole msfd msfdb msfmcpd msfrpc msfrpcd msfvenom; do
+		cp -a "${f}" "${DESTDIR}${_msfdir}/"
+	done
+
+	vmkdir usr/bin
+	for f in msfconsole msfd msfdb msfmcpd msfrpc msfrpcd msfvenom; do
+		ln -s "${_msfdir}/${f}" "${DESTDIR}/usr/bin/${f}"
+	done
+
+	vlicense COPYING
+	vdoc "${FILESDIR}/README.voidlinux"
+}

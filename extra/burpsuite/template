@@ -1,0 +1,46 @@
+# Template file for 'burpsuite'
+pkgname=burpsuite
+version=2026.10.1
+revision=1
+archs="x86_64* aarch64*"
+build_style=fetch
+hostmakedepends="curl"
+depends="openjdk21"
+short_desc="Integrated platform for performing security testing of web applications"
+maintainer="gh0st4n <darskevoid@gmail.com>"
+distributor="gh0st4n <darskevoid@gmail.com>"
+license="custom:Proprietary"
+homepage="https://portswigger.net/burp"
+
+do_fetch() {
+    local _url="https://portswigger-cdn.net/burp/releases/download?product=desktop&version=${version}&type=Jar"
+    local _outdir="${XBPS_SRCDISTDIR}/${pkgname}-${version}"
+    local _outfile="${_outdir}/burpsuite-${version}.jar"
+    
+    mkdir -p "${_outdir}"
+    msg_normal "Fetching Burp Suite JAR v${version}...\n"
+    
+    # -f: fail on HTTP errors, -L: follow redirects, -A: spoof browser
+    curl -fL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+        -o "${_outfile}" "${_url}"
+    
+    # Validasi ukuran file (harus > 100MB)
+    local _size=$(stat -c%s "${_outfile}" 2>/dev/null || echo 0)
+    if [ "$_size" -lt 100000000 ]; then
+        msg_error "Downloaded file too small (${_size} bytes). CDN blocked request or returned error page.\n"
+        rm -f "${_outfile}"
+        return 1
+    fi
+}
+
+do_install() {
+    local _jar="${XBPS_SRCDISTDIR}/${pkgname}-${version}/burpsuite-${version}.jar"
+    
+    # Install file JAR ke /usr/share/burpsuite/burpsuite.jar
+    vinstall "${_jar}" 644 usr/share/burpsuite burpsuite.jar
+    
+    # Install wrapper script, desktop entry, dan icon
+    vbin "${FILESDIR}/burpsuite" burpsuite
+    vinstall "${FILESDIR}/burpsuite.desktop" 644 usr/share/applications
+    vinstall "${FILESDIR}/burpsuite.png" 644 usr/share/pixmaps
+}
