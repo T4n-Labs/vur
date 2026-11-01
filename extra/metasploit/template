@@ -1,14 +1,13 @@
 # Template file for 'metasploit'
 pkgname=metasploit
 version=6.5.8
-revision=1
+revision=2
 archs="x86_64 aarch64"
 wrksrc="metasploit-framework-${version}"
 hostmakedepends="ruby ruby-devel pkg-config"
 makedepends="ruby-devel postgresql-libs-devel libpcap-devel sqlite-devel libxml2-devel
  libxslt-devel libffi-devel openssl-devel zlib-devel libyaml-devel"
-# Manual specify semua runtime deps karena noverifyrdeps=yes
-depends="ruby postgresql nmap libpcap openssl libffi libyaml zlib"
+depends="ruby postgresql nmap libpcap"
 short_desc="Penetration testing framework for developing and using exploit code"
 maintainer="gh0st4n <darskevoid@gmail.com>"
 distributor="gh0st4n <darskevoid@gmail.com>"
@@ -19,18 +18,11 @@ checksum=c590012173e96580deb37adb39cd96ec8c72199a10d4ed1c3d7ba1210d48568c
 nocross=yes
 
 # === FIX XBPS HOOKS ===
-# Metasploit membawa payload prebuilt cross-arch (ELF ARM/MIPS/PPC, PE Windows,
-# raw shellcode blobs) sebagai DATA runtime. Hook strip/PIE/shlib tidak boleh
-# memprosesnya karena akan gagal atau merusak offset payload.
 nostrip=yes
 nodebug=yes
 python_version=ignore
-
-# Matikan verifikasi runtime deps secara global karena skiprdeps tidak mendukung
-# wildcard/direktori. Manual specify semua depends di atas.
 noverifyrdeps=yes
 
-# Lokasi install tree Metasploit (arch-specific karena ada gem native)
 _msfdir=/usr/lib/metasploit-framework
 
 do_build() {
@@ -61,9 +53,17 @@ do_install() {
 		cp -a "${f}" "${DESTDIR}${_msfdir}/"
 	done
 
+	# Wrapper script (JANGAN pakai symlink)
 	vmkdir usr/bin
 	for f in msfconsole msfd msfdb msfmcpd msfrpc msfrpcd msfvenom; do
-		ln -s "${_msfdir}/${f}" "${DESTDIR}/usr/bin/${f}"
+		cat > "${DESTDIR}/usr/bin/${f}" << EOF
+#!/bin/sh
+MSF_DIR="/usr/lib/metasploit-framework"
+export BUNDLE_GEMFILE="\${MSF_DIR}/Gemfile"
+export BUNDLE_PATH="\${MSF_DIR}/vendor/bundle"
+exec ruby "\${MSF_DIR}/${f}" "\$@"
+EOF
+		chmod 755 "${DESTDIR}/usr/bin/${f}"
 	done
 
 	vlicense COPYING
