@@ -1,13 +1,13 @@
 # Template file for 'metasploit'
 pkgname=metasploit
 version=6.5.8
-revision=2
+revision=3
 archs="x86_64 aarch64"
 wrksrc="metasploit-framework-${version}"
 hostmakedepends="ruby ruby-devel pkg-config"
 makedepends="ruby-devel postgresql-libs-devel libpcap-devel sqlite-devel libxml2-devel
  libxslt-devel libffi-devel openssl-devel zlib-devel libyaml-devel"
-depends="ruby postgresql nmap libpcap"
+depends="ruby postgresql postgresql-client nmap libpcap"
 short_desc="Penetration testing framework for developing and using exploit code"
 maintainer="gh0st4n <darskevoid@gmail.com>"
 distributor="gh0st4n <darskevoid@gmail.com>"
@@ -53,15 +53,18 @@ do_install() {
 		cp -a "${f}" "${DESTDIR}${_msfdir}/"
 	done
 
-	# Wrapper script (JANGAN pakai symlink)
+	# Fix permission world-writable agar hook 14 tidak gagal
+	chmod -R go-w "${DESTDIR}${_msfdir}"
+
+	# === FIX WRAPPER SCRIPTS (FINAL) ===
+	# Gunakan 'cd' + 'bundle exec' agar load path Ruby ter-resolve dengan sempurna
 	vmkdir usr/bin
 	for f in msfconsole msfd msfdb msfmcpd msfrpc msfrpcd msfvenom; do
 		cat > "${DESTDIR}/usr/bin/${f}" << EOF
 #!/bin/sh
 MSF_DIR="/usr/lib/metasploit-framework"
-export BUNDLE_GEMFILE="\${MSF_DIR}/Gemfile"
-export BUNDLE_PATH="\${MSF_DIR}/vendor/bundle"
-exec ruby "\${MSF_DIR}/${f}" "\$@"
+cd "\$MSF_DIR" || exit 1
+exec bundle exec ruby "./${f}" "\$@"
 EOF
 		chmod 755 "${DESTDIR}/usr/bin/${f}"
 	done

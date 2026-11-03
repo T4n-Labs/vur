@@ -1,18 +1,33 @@
 Post-Installation Setup for Metasploit Framework
 ================================================
 
-Metasploit requires a PostgreSQL database to function optimally (for storing 
-workspace data, hosts, services, and vulnerabilities).
-
-After installing this package, you MUST initialize the database by running:
+Metasploit uses a PostgreSQL database to store workspaces, hosts, services
+and vulnerabilities. This package does NOT create or start any database
+automatically; you set it up yourself as a regular user (NOT root):
 
     $ msfdb init
 
-This will automatically start the PostgreSQL service, create the 'msf' user, 
-and initialize the databases.
+By default msfdb creates a private PostgreSQL cluster in ~/.msf4/db, owned
+by your user, so the system-wide postgresql runit service is NOT required.
+The database client and server tools (psql, createdb, initdb, pg_ctl) are
+pulled in by the 'postgresql' and 'postgresql-client' dependencies.
 
-To verify the database is connected, run:
+Useful commands:
+
+    $ msfdb status      # show database state
+    $ msfdb start       # start your private database
+    $ msfdb stop        # stop it
+
+To verify the connection:
+
     $ msfconsole
     msf6 > db_status
 
-For more information, see: https://docs.metasploit.com/docs/using-metasploit/getting-started/setting-up-a-metasploit-database.html
+Using the system-wide PostgreSQL service instead (optional, advanced):
+enable it with 'ln -s /etc/sv/postgresql /var/service/', initialise the
+cluster yourself, and pass --connection-string to msfdb. Note that the
+default 'initdb' settings allow passwordless local connections, so review
+pg_hba.conf before using it on a multi-user machine.
+
+For more information, see:
+https://docs.metasploit.com/docs/using-metasploit/getting-started/setting-up-a-metasploit-database.html

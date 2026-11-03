@@ -47,18 +47,14 @@ Metasploit membawa ratusan payload pre-compiled cross-architecture (ELF ARM/MIPS
 
 ## ⚙️ Konfigurasi Pasca-Instalasi (PENTING)
 
-Metasploit memerlukan database PostgreSQL. Karena T4n OS menggunakan **runit**, ikuti langkah ini:
+Metasploit memerlukan database PostgreSQL. Paket ini **tidak** membuat atau menjalankan database secara otomatis (tidak ada hook `INSTALL`); kamu menginisialisasinya sendiri.
 
-### 1. Aktifkan Service PostgreSQL (sebagai root)
-```bash
-sudo ln -s /etc/sv/postgresql /var/service/
-sudo sv status postgresql  # Pastikan statusnya "run"
-```
-
-### 2. Inisialisasi Database (sebagai user biasa, JANGAN root)
+### 1. Inisialisasi Database (sebagai user biasa, JANGAN root)
 ```bash
 msfdb init
 ```
+Secara default `msfdb` membuat cluster PostgreSQL pribadi di `~/.msf4/db` milik user kamu, jadi **service runit `postgresql` sistem tidak diperlukan**.
+
 Output yang diharapkan:
 ```text
 [+] Initialising database
@@ -69,11 +65,20 @@ Output yang diharapkan:
 [+] Creating initial database schema
 ```
 
-### 3. Verifikasi Koneksi
+### 2. Verifikasi Koneksi
 ```bash
+msfdb status
 msfconsole -x 'db_status; exit'
 ```
 Output yang diharapkan: `[*] postgresql connected to msf`
+
+### 3. (Opsional) Memakai PostgreSQL service sistem
+Hanya jika kamu memang ingin database terpusat. Aktifkan service, inisialisasi cluster sendiri, lalu jalankan `msfdb init --connection-string=...`.
+```bash
+sudo ln -s /etc/sv/postgresql /var/service/
+sudo sv status postgresql
+```
+> ⚠️ `initdb` bawaan memakai autentikasi `trust` untuk koneksi lokal. Tinjau `pg_hba.conf` sebelum dipakai di mesin multi-user.
 
 > 💡 **Catatan tentang "Kernel Panic" Easter Egg**:  
 > Jika saat menjalankan `msfconsole` muncul teks palsu seperti `Unable to handle kernel NULL pointer dereference at virtual address 0xd34db33f` atau `M3 T4 SP L0 1T...`, **abaikan saja**. Itu adalah lelucon internal (Easter Egg) klasik dari developer Metasploit dan **bukan** berarti sistem kamu crash.
@@ -85,6 +90,7 @@ Output yang diharapkan: `[*] postgresql connected to msf`
 | `bundle install` gagal download gem | Pastikan network aktif di build chroot (jangan pakai flag `-N` pada `xbps-src`). |
 | Gagal compile gem native | Cek `makedepends` di template (`libpq-devel`, `libpcap-devel`, `sqlite-devel`, `libxml2-devel`, `libxslt-devel`, `libffi-devel`, `openssl-devel`, `libyaml-devel`). |
 | `LoadError: cannot load such file -- rex/socket` | Pastikan kamu menggunakan versi template terbaru yang menggunakan **wrapper script** di `/usr/bin/`, bukan symlink. Jalankan `xbps-install -Syu metasploit`. |
+| `msfdb init`: `psql`/`createdb` is not in the environment path | Pasang `postgresql-client` (`sudo xbps-install postgresql-client`). Paket `metasploit` revisi 4+ sudah menyertakannya di `depends`. |
 | Checksum mismatch | Jalankan `./fetch.sh <versi>` lalu build ulang. |
 
 ## ⚠️ Disclaimer
