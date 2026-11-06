@@ -1232,6 +1232,17 @@
     "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
+    "name": "radare2",
+    "category": "extra",
+    "path": "extra/radare2",
+    "version": "6.2.6",
+    "archs": ["aarch64", "aarch64-musl", "armv6l", "armv6l-musl", "armv7l", "armv7l-musl", "i686", "x86_64", "x86_64-musl"],
+    "description": "Advanced command line debugger and hexadecimal editor",
+    "homepage": "https://www.radare.org",
+    "maintainer": "gh0st4n <darskevoid@gmail.com>",
+    "distributor": "gh0st4n <darskevoid@gmail.com>"
+  },
+  {
     "name": "rustdesk",
     "category": "extra",
     "path": "extra/rustdesk",

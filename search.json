@@ -223,6 +223,8 @@
 ,
   {"name":"quran-companion","desc":"Free and open-source desktop Quran reader and player","path":"extra/quran-companion"}
 ,
+  {"name":"radare2","desc":"Advanced command line debugger and hexadecimal editor","path":"extra/radare2"}
+,
   {"name":"rustdesk","desc":"Open-source remote desktop application designed for self-hosting","path":"extra/rustdesk"}
 ,
   {"name":"sable-desktop","desc":"Almost stable Matrix client","path":"extra/sable-desktop"}

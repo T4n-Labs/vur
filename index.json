@@ -223,6 +223,8 @@
 ,
   {"name":"quran-companion","category":"extra","path":"extra/quran-companion"}
 ,
+  {"name":"radare2","category":"extra","path":"extra/radare2"}
+,
   {"name":"rustdesk","category":"extra","path":"extra/rustdesk"}
 ,
   {"name":"sable-desktop","category":"extra","path":"extra/sable-desktop"}
