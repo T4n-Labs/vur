@@ -1265,6 +1265,28 @@
     "distributor": "Gh0sT4n <darskevoid@gmail.com>"
   },
   {
+    "name": "sklauncher",
+    "category": "extra",
+    "path": "extra/sklauncher",
+    "version": "3.2.18",
+    "archs": ["aarch64", "aarch64-musl", "x86_64", "x86_64-musl"],
+    "description": "Custom Minecraft launcher with additional features <STABLE>",
+    "homepage": "https://skmedix.pl",
+    "maintainer": "gh0st4n <darskevoid@gmail.com>",
+    "distributor": "gh0st4n <darskevoid@gmail.com>"
+  },
+  {
+    "name": "sklauncher-beta",
+    "category": "extra",
+    "path": "extra/sklauncher-beta",
+    "version": "4.0.57",
+    "archs": ["x86_64"],
+    "description": "Custom Minecraft launcher with additional features",
+    "homepage": "https://skmedix.pl",
+    "maintainer": "gh0st4n <darskevoid@gmail.com>",
+    "distributor": "gh0st4n <darskevoid@gmail.com>"
+  },
+  {
     "name": "slack-desktop",
     "category": "extra",
     "path": "extra/slack-desktop",
