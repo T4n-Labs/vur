@@ -1,0 +1,67 @@
+# Template file for 'sklauncher'
+pkgname=sklauncher
+version=3.2.18
+revision=1
+archs="x86_64* aarch64*"
+short_desc="Custom Minecraft launcher with additional features <STABLE>"
+maintainer="gh0st4n <darskevoid@gmail.com>"
+distributor="gh0st4n <darskevoid@gmail.com>"
+license="custom:SKLauncher"
+homepage="https://skmedix.pl"
+distfiles="https://skmedix.pl/binaries/skl/${version}/SKlauncher-${version}.jar"
+checksum="25a73e3770a1d8d14bce53e8920e2e893aacc3c715d0fb22f878ef2090d03863"
+
+repository=nonfree
+
+depends="openjdk21-jre"
+
+skip_extraction="SKlauncher-${version}.jar"
+
+do_install() {
+    # Install jar file langsung dari distfiles
+    vinstall ${XBPS_SRCDISTDIR}/${pkgname}-${version}/SKlauncher-${version}.jar 644 usr/share/sklauncher sklauncher.jar
+
+    # Ekstrak icon dari .jar (format ZIP) ke temporary folder
+    local tmpdir="${wrksrc}/icon_extract"
+    mkdir -p "${tmpdir}"
+    unzip -o -j "${XBPS_SRCDISTDIR}/${pkgname}-${version}/SKlauncher-${version}.jar" \
+        "*.png" "*.svg" "*.ico" -d "${tmpdir}" 2>/dev/null || true
+
+    # Cari dan install icon yang ditemukan
+    local icon_found=0
+    for icon in "${tmpdir}"/*.png "${tmpdir}"/*.svg; do
+        if [ -f "$icon" ]; then
+            local basename=$(basename "$icon")
+            # Install ke hicolor dengan berbagai ukuran
+            vinstall "$icon" 644 usr/share/icons/hicolor/scalable/apps sklauncher.svg 2>/dev/null || \
+            vinstall "$icon" 644 usr/share/icons/hicolor/512x512/apps sklauncher.png 2>/dev/null || true
+            icon_found=1
+            break
+        fi
+    done
+
+    # Fallback: jika tidak ada icon di .jar, download dari GitHub
+    if [ "$icon_found" -eq 0 ]; then
+        msg_warn "Icon tidak ditemukan di .jar, menggunakan fallback"
+        # Buat placeholder atau skip
+    fi
+
+    # Create wrapper script
+    cat > ${wrksrc}/sklauncher <<EOF
+#!/bin/sh
+exec java -jar /usr/share/sklauncher/sklauncher.jar "\$@"
+EOF
+    vbin ${wrksrc}/sklauncher sklauncher
+
+    # Desktop file
+    cat > ${wrksrc}/sklauncher.desktop <<EOF
+[Desktop Entry]
+Name=SKLauncher
+Comment=Custom Minecraft Launcher
+Exec=sklauncher
+Icon=sklauncher
+Type=Application
+Categories=Game;Java;
+EOF
+    vinstall ${wrksrc}/sklauncher.desktop 644 usr/share/applications
+}

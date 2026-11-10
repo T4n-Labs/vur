@@ -1,0 +1,28 @@
+# Template file for 'sklauncher-beta'
+pkgname=sklauncher-beta
+version=4.0.57
+revision=1
+archs="x86_64"
+short_desc="Custom Minecraft launcher with additional features (Beta)"
+maintainer="gh0st4n <darskevoid@gmail.com>"
+distributor="gh0st4n <darskevoid@gmail.com>"
+license="custom:SKLauncher"
+homepage="https://skmedix.pl"
+distfiles="https://github.com/sklauncher/binaries/releases/download/v${version}/sklauncher_${version}_amd64.deb"
+checksum="255f55220aed3a591366339771c63364ec6d7397d173bb5d4f62557135a3ecbb"
+
+repository=nonfree
+
+do_install() {
+    # Copy per-subfolder agar tidak terjadi /usr/usr
+    for dir in usr/bin usr/lib usr/share; do
+        if [ -d "${wrksrc}/${dir}" ]; then
+            vcopy "${dir}" "${dir}"
+        fi
+    done
+
+    # Handle folder opt jika ada
+    if [ -d "${wrksrc}/opt" ]; then
+        vcopy opt opt
+    fi
+}
