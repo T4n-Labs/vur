@@ -10,7 +10,7 @@ homepage="https://github.com/gh0st4n/ZVC/README.md"
 distfiles="https://github.com/gh0st4n/ZVC/archive/refs/tags/v${version}.tar.gz"
 checksum=32075737fcf79bb32d554ca0b536a88c2bb6f4422abda4639fe8220506aaf195
 
-depends="dash"
+depends="dash curl wget"
 
 do_install() {
 	vinstall zvc.sh 755 usr/bin zvc
