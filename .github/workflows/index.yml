@@ -1,6 +1,20 @@
 name: Generate VUR Index
+
 on:
   push:
+    branches: [main]
+    paths:
+      - 'core/**'
+      - 'extra/**'
+      - 'multilib/**'
+      - 'vtools/generate.sh'
+      - '.github/workflows/index.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: vur-index
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,10 +24,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Make scripts executable
-        run: chmod +x vtools/*.sh
+        run: chmod +x .github/workflows/generate.sh
 
       - name: Generate index
-        run: ./vtools/generate.sh
+        run: ./.github/workflows/generate.sh
 
       - name: Commit index
         run: |
