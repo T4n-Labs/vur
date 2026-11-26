@@ -8,7 +8,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "acpid-dinit",
@@ -19,7 +22,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "bluez-dinit",
@@ -30,7 +36,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "calamares",
@@ -41,7 +50,10 @@
     "description": "Distribution-independent installer framework",
     "homepage": "https://calamares.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["git","extra-cmake-modules","pkg-config","gettext","ckbcomp","kcoreaddons","python3-QtPy","libpwquality","python3-yaml","python3-jsonschema"],
+    "makedepends": ["python3-devel","python3-jsonschema","yaml-cpp-devel","python3-yaml","boost-devel","qt6-base-devel","python3-devel","kpmcore-devel","qt6-tools","qt6-translations","boost","boost-python3","python3-QtPy","qt6-svg-devel","libpwquality","qt6-webengine","plasma-framework-devel","qt6-webengine"],
+    "depends": ["kconfig","kcoreaddons","kiconthemes","ki18n","kio","ksolid","boost","ckbcomp","polkit-qt6","gtk-update-icon-cache","plasma-framework","squashfs-tools","libpwquality","icu","rsync"]
   },
   {
     "name": "chrony-dinit",
@@ -52,7 +64,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "dbus-dinit",
@@ -63,7 +78,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "dhcpcd-dinit",
@@ -74,7 +92,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "dinit",
@@ -85,7 +106,10 @@
     "description": "Service manager and init system",
     "homepage": "https://davmac.org/projects/dinit/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["m4"],
+    "makedepends": ["libcap-devel"],
+    "depends": []
   },
   {
     "name": "elogind-dinit",
@@ -96,7 +120,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "libvirt-dinit",
@@ -107,7 +134,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "lightdm-dinit",
@@ -118,7 +148,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "linux-zen",
@@ -129,7 +162,24 @@
     "description": "Zen - Linux kernel and modules",
     "homepage": "https://www.kernel.org",
     "maintainer": "JuanMa <numblinux@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["tar","xz","bc","elfutils-devel","flex","gmp-devel","kmod","libmpc-devel","pkg-config","openssl-devel","perl","uboot-mkimage","cpio","pahole","python3","zstd","wget"],
+    "makedepends": [],
+    "depends": []
+  },
+  {
+    "name": "linux6.12.6-zen",
+    "category": "core",
+    "path": "core/linux6.12.6-zen",
+    "version": "6.12.6",
+    "archs": ["aarch64", "aarch64-musl", "i686", "i686-musl", "x86_64", "x86_64-musl"],
+    "description": "Zen - Linux kernel and modules",
+    "homepage": "https://www.kernel.org",
+    "maintainer": "JuanMa <numblinux@gmail.com>",
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["tar","xz","bc","elfutils-devel","flex","gmp-devel","kmod","libmpc-devel","pkg-config","openssl-devel","perl","uboot-mkimage","cpio","pahole","python3","zstd"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "linux6.12.8-zen",
@@ -140,7 +190,10 @@
     "description": "Zen - Linux kernel and modules",
     "homepage": "https://www.kernel.org",
     "maintainer": "JuanMa <numblinux@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["tar","xz","bc","elfutils-devel","flex","gmp-devel","kmod","libmpc-devel","pkg-config","openssl-devel","perl","uboot-mkimage","cpio","pahole","python3","zstd","wget"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "linux6.13-zen",
@@ -151,7 +204,10 @@
     "description": "Zen - Linux kernel and modules",
     "homepage": "https://www.kernel.org",
     "maintainer": "JuanMa <numblinux@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["tar","xz","bc","elfutils-devel","flex","gmp-devel","kmod","libmpc-devel","pkg-config","openssl-devel","perl","uboot-mkimage","cpio","pahole","python3","zstd","wget"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "linux6.18-xanmod",
@@ -162,7 +218,10 @@
     "description": "Linux kernel and modules",
     "homepage": "https://www.kernel.org",
     "maintainer": "JuanMa - Linuxnauta <numblinux@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["tar","xz","bc","elfutils-devel","flex","gmp-devel","kmod","libmpc-devel","pkg-config","openssl-devel","perl","uboot-mkimage","cpio","pahole","python3","zstd"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "ly-dinit",
@@ -173,7 +232,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "noid-base-files",
@@ -184,7 +246,10 @@
     "description": "Noid Linux base system files",
     "homepage": "https://git.ch-naseem.com/noid-linux",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["xbps-triggers"]
   },
   {
     "name": "noid-base-system",
@@ -195,7 +260,10 @@
     "description": "Noid Linux base system meta package",
     "homepage": "https://git.ch-naseem.com/noid-linux",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["noid-base-files","ncurses","coreutils","findutils","diffutils","libgcc","dash","bash","grep","gzip","file","sed","gawk","less","util-linux","which","tar","man-pages","mdocml>=1.13.3","shadow","e2fsprogs","btrfs-progs","xfsprogs","f2fs-tools","dosfstools","procps-ng","tzdata","pciutils","usbutils","iana-etc","openssh","dhcpcd","kbd","iproute2","iputils","iw","wpa_supplicant","xbps","nvi","sudo","wifi-firmware","noid-artwork","traceroute","ethtool","kmod","acpid","eudev","runit-void","removed-packages"]
   },
   {
     "name": "noid-base-system-dinit",
@@ -206,7 +274,10 @@
     "description": "Noid Linux base system meta package - Dinit",
     "homepage": "https://git.ch-naseem.com/noid-linux",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["noid-base-files","ncurses","coreutils","findutils","diffutils","libgcc","dash","bash","grep","gzip","file","sed","gawk","less","util-linux","which","tar","man-pages","mdocml>=1.13.3","shadow","e2fsprogs","btrfs-progs","xfsprogs","f2fs-tools","dosfstools","procps-ng","tzdata","pciutils","usbutils","iana-etc","openssh","dhcpcd","kbd","iproute2","iputils","iw","wpa_supplicant","xbps","nvi","sudo","wifi-firmware","noid-artwork","traceroute","ethtool","kmod","acpid","eudev","dinit","noid-dinit","removed-packages"]
   },
   {
     "name": "noid-dinit",
@@ -217,7 +288,10 @@
     "description": "RC scripts and boot services for dinit",
     "homepage": "https://github.com/noid-linux/noid-dinit",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","scdoc"],
+    "makedepends": ["dbus-devel"],
+    "depends": ["dinit","eudev","bash"]
   },
   {
     "name": "openssh-dinit",
@@ -228,7 +302,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "polkit-dinit",
@@ -239,7 +316,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "sddm-dinit",
@@ -250,7 +330,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "seatd-dinit",
@@ -261,7 +344,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "tailscale-dinit",
@@ -272,7 +358,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "tlp-dinit",
@@ -283,7 +372,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${_pkgname}"]
   },
   {
     "name": "wpa_supplicant-dinit",
@@ -294,7 +386,10 @@
     "description": "Dinit service scripts for",
     "homepage": "https://noid-linux.github.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dinit","${pkgname%-dinit}"]
   },
   {
     "name": "FjordLauncher",
@@ -305,7 +400,10 @@
     "description": "Prism Launcher fork with support for alternative auth servers",
     "homepage": "https://github.com/unmojang/FjordLauncher",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["extra-cmake-modules","openjdk17","pkg-config","qt6-tools","qt6-base","scdoc"],
+    "makedepends": ["qt6-base-devel","qt6-qt5compat-devel","zlib-devel","quazip-qt6-devel","qt6-networkauth-devel","cmark-devel","libgamemode-devel","qrencode-devel","libarchive-devel","tomlplusplus-devel"],
+    "depends": ["virtual?java-runtime","qt6-svg","qt6-imageformats","qt6-plugin-tls-openssl"]
   },
   {
     "name": "alacritty-graphics",
@@ -316,7 +414,10 @@
     "description": "Cross-platform, GPU-accelerated terminal emulator",
     "homepage": "https://github.com/ayosec/alacritty",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","python3","scdoc"],
+    "makedepends": ["freetype-devel","fontconfig-devel","libxcb-devel","libxkbcommon-devel"],
+    "depends": ["libXcursor","libXrandr","libXi","libXxf86vm","ncurses","alacritty-graphics-terminfo-${version}_${revision}","libxkbcommon-x11"]
   },
   {
     "name": "alacritty-graphics-terminfo",
@@ -327,7 +428,10 @@
     "description": "Cross-platform, GPU-accelerated terminal emulator",
     "homepage": "https://github.com/ayosec/alacritty",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","python3","scdoc"],
+    "makedepends": ["freetype-devel","fontconfig-devel","libxcb-devel","libxkbcommon-devel"],
+    "depends": ["libXcursor","libXrandr","libXi","libXxf86vm","ncurses","alacritty-graphics-terminfo-${version}_${revision}","libxkbcommon-x11"]
   },
   {
     "name": "android-studio",
@@ -338,7 +442,10 @@
     "description": "Official Android IDE",
     "homepage": "https://developer.android.com/studio/",
     "maintainer": "Bnyro <bnyro@tutanota.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["tar"],
+    "makedepends": [],
+    "depends": ["libbsd"]
   },
   {
     "name": "azahar",
@@ -349,7 +456,10 @@
     "description": "An open-source 3DS emulator project based on Citra.",
     "homepage": "https://azahar-emu.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","git","clang-tools-extra","doxygen"],
+    "makedepends": ["qt6-base-devel","qt6-multimedia-devel","SDL2-devel","qt6-base-private-devel","jack-devel","portaudio-devel"],
+    "depends": []
   },
   {
     "name": "azaharplus",
@@ -360,7 +470,10 @@
     "description": "A fork of the Azahar 3DS emulator with extra features",
     "homepage": "https://github.com/AzaharPlus/AzaharPlus",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","git","clang-tools-extra","doxygen"],
+    "makedepends": ["qt6-base-devel","qt6-multimedia-devel","SDL2-devel","qt6-base-private-devel","jack-devel","portaudio-devel"],
+    "depends": []
   },
   {
     "name": "bazaar",
@@ -371,7 +484,10 @@
     "description": "FlatHub-first app store for GNOME",
     "homepage": "https://usebazaar.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","glib-devel","gettext","cmake","blueprint-compiler","desktop-file-utils","gtk4-update-icon-cache","python3-Babel"],
+    "makedepends": ["gtk4-devel","glib-devel","libadwaita-devel","libdex-devel","flatpak-devel","AppStream-devel","libxmlb-devel","glycin-devel","glycin-gtk4-devel","libyaml-devel","libsoup3-devel","json-glib-devel","libmd4c-devel","libwebkitgtk60-devel","libsecret-devel","libproxy-devel","accountsservice-devel","malcontent-devel","gtksourceview5-devel","elogind-devel"],
+    "depends": ["glycin-loaders"]
   },
   {
     "name": "beeper",
@@ -382,7 +498,10 @@
     "description": "Universal chat app",
     "homepage": "https://www.beeper.com",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["vulkan-loader"]
   },
   {
     "name": "biome",
@@ -393,7 +512,10 @@
     "description": "Toolchain for web projects",
     "homepage": "https://biomejs.dev/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["libgit2-1.9-devel"],
+    "depends": []
   },
   {
     "name": "bitwarden-desktop",
@@ -404,7 +526,10 @@
     "description": "Bitwarden desktop client",
     "homepage": "https://bitwarden.com/",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["libXtst","libXScrnSaver"]
   },
   {
     "name": "blockbench",
@@ -415,7 +540,10 @@
     "description": "Low poly 3D model editor",
     "homepage": "https://www.blockbench.net/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["nodejs"],
+    "makedepends": ["electron${_electronver}-devel"],
+    "depends": ["electron${_electronver}"]
   },
   {
     "name": "bottles",
@@ -426,7 +554,10 @@
     "description": "Run Windows software and games on Linux",
     "homepage": "https://usebottles.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["gettext","blueprint-compiler","pkg-config","gtk4-update-icon-cache","desktop-file-utils"],
+    "makedepends": ["glib-devel","gtk4-devel","libadwaita-devel"],
+    "depends": ["python3-chardet","python3-icoextract","python3-pathvalidate","python3-curl","python3-patool","python3-yara","vkbasalt-cli","freetype"]
   },
   {
     "name": "boxbuddy",
@@ -437,7 +568,10 @@
     "description": "Graphical Interface for Distrobox",
     "homepage": "https://github.com/Dvlv/BoxBuddyRS",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["glib-devel","pango-devel","gdk-pixbuf-devel","graphene-devel","gtk4-devel","libadwaita-devel"],
+    "depends": ["distrobox"]
   },
   {
     "name": "brave",
@@ -448,7 +582,10 @@
     "description": "Web browser that blocks ads and trackers by default",
     "homepage": "https://brave.com",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["vulkan-loader"]
   },
   {
     "name": "brave-origin",
@@ -459,7 +596,10 @@
     "description": "Minimalist browser from the makers of Brave",
     "homepage": "https://brave.com",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["vulkan-loader"]
   },
   {
     "name": "bun",
@@ -470,7 +610,10 @@
     "description": "Fast JavaScript runtime, bundler, test runner, and package manager",
     "homepage": "https://bun.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "burpsuite",
@@ -481,7 +624,10 @@
     "description": "Integrated platform for performing security testing of web applications",
     "homepage": "https://portswigger.net/burp",
     "maintainer": "gh0st4n <darskevoid@gmail.com>",
-    "distributor": "gh0st4n <darskevoid@gmail.com>"
+    "distributor": "gh0st4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["curl"],
+    "makedepends": [],
+    "depends": ["openjdk21"]
   },
   {
     "name": "cinny-desktop",
@@ -492,7 +638,10 @@
     "description": "Yet another matrix client for desktop",
     "homepage": "https://cinny.in/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["nodejs","cargo","git","pkg-config"],
+    "makedepends": ["openssl-devel","libwebkit2gtk41-devel"],
+    "depends": []
   },
   {
     "name": "clipcat",
@@ -503,7 +652,10 @@
     "description": "Clipboard Manager written in Rust Programming Language",
     "homepage": "https://github.com/xrelkd/clipcat",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","protobuf"],
+    "makedepends": ["libgit2-1.9-devel","protobuf-devel"],
+    "depends": []
   },
   {
     "name": "cryptomator",
@@ -514,7 +666,10 @@
     "description": "Multiplatform transparent client-side encryption of your files in the cloud.",
     "homepage": "https://cryptomator.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["openjdk${_jdkver}","openjdk${_jdkver}-jmods","apache-maven"],
+    "makedepends": [],
+    "depends": ["fuse3","alsa-lib","hicolor-icon-theme","libXtst","libnet","libXrender"]
   },
   {
     "name": "dgop",
@@ -525,7 +680,10 @@
     "description": "API & CLI for System & Process Monitoring",
     "homepage": "https://github.com/AvengeMedia/dgop",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["go"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "dioxus-cli",
@@ -536,7 +694,10 @@
     "description": "CLI for building fullstack web, desktop, and mobile apps",
     "homepage": "https://dioxuslabs.com",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["libzstd-devel","openssl-devel","libgit2-1.9-devel"],
+    "depends": []
   },
   {
     "name": "discord",
@@ -547,7 +708,10 @@
     "description": "Chat and VOIP application",
     "homepage": "https://discord.com",
     "maintainer": "Orphaned <orphan@voidlinux.org>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["alsa-lib","dbus-glib","gtk+3","libnotify","nss","libXtst","libcxx","libatomic","xdg-utils","webrtc-audio-processing","libXScrnSaver"]
   },
   {
     "name": "distrobox",
@@ -558,7 +722,10 @@
     "description": "Use any linux distribution inside your terminal",
     "homepage": "https://distrobox.it/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["bash"]
   },
   {
     "name": "dms-shell",
@@ -569,7 +736,10 @@
     "description": "A Quickshell-based desktop shell with Material 3 design principles",
     "homepage": "https://danklinux.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["go"],
+    "makedepends": [],
+    "depends": ["dgop","quickshell","font-inter","font-firacode","ttf-material-icons","niri"]
   },
   {
     "name": "dms-shell-niri",
@@ -580,7 +750,10 @@
     "description": "A Quickshell-based desktop shell with Material 3 design principles",
     "homepage": "https://danklinux.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["go"],
+    "makedepends": [],
+    "depends": ["dgop","quickshell","font-inter","font-firacode","ttf-material-icons","niri"]
   },
   {
     "name": "drawio-desktop",
@@ -591,7 +764,10 @@
     "description": "Official electron build of draw.io, a JS editor for general diagramming",
     "homepage": "https://www.diagrams.net/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["nodejs","electron${_electronver}-devel"],
+    "makedepends": [],
+    "depends": ["electron${_electronver}"]
   },
   {
     "name": "dsearch",
@@ -602,7 +778,10 @@
     "description": "Fast filesystem search service",
     "homepage": "https://github.com/AvengeMedia/danksearch",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["go"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "emacs-lucid",
@@ -613,7 +792,10 @@
     "description": "GNU Emacs editor - Lucid toolkit version",
     "homepage": "http://www.gnu.org/software/emacs/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","tar","texinfo"],
+    "makedepends": ["ncurses-devel","libXaw-devel","libXi-devel","gtk+3-devel","dbus-devel","acl-devel","$(vopt_if","jpeg","libjpeg-turbo-devel)","$(vopt_if","tiff","tiff-devel)","$(vopt_if","gif","giflib-devel)","$(vopt_if","png","libpng-devel)","$(vopt_if","webp","libwebp-devel)","$(vopt_if","xpm","libXpm-devel)","$(vopt_if","svg","librsvg-devel)","$(vopt_if","imagemagick","libmagick-devel)","$(vopt_if","xml","libxml2-devel)","$(vopt_if","gnutls","gnutls-devel)","$(vopt_if","sound","alsa-lib-devel)","$(vopt_if","m17n","m17n-lib-devel)","$(vopt_if","harfbuzz","harfbuzz-devel)","$(vopt_if","cairo","cairo-devel)","$(vopt_if","gmp","gmp-devel)","$(vopt_if","treesitter","tree-sitter-devel)","$(vopt_if","sqlite","sqlite-devel)","$(vopt_if","nativecomp","libgccjit-devel)"],
+    "depends": ["emacs-common-30.2_2","desktop-file-utils","hicolor-icon-theme"]
   },
   {
     "name": "faugus-launcher",
@@ -624,7 +806,10 @@
     "description": "Game launcher for Windows games via Wine/Proton/Bottles",
     "homepage": "https://github.com/Faugus/faugus-launcher",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["meson","ninja","pkg-config","python3"],
+    "makedepends": ["libayatana-appindicator-devel","libcanberra-devel"],
+    "depends": ["python3","python3-gobject","python3-requests","python3-Pillow","python3-vdf","python3-psutil","python3-pygame","ImageMagick","python3-icoextract","libayatana-appindicator","libcanberra","Vulkan-Tools"]
   },
   {
     "name": "feishin",
@@ -635,7 +820,10 @@
     "description": "Full-featured Subsonic/Jellyfin compatible desktop music player",
     "homepage": "https://feishin.vercel.app/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pnpm"],
+    "makedepends": ["electron${_electronver}-devel"],
+    "depends": ["electron${_electronver}"]
   },
   {
     "name": "ferdium",
@@ -646,7 +834,10 @@
     "description": "Desktop app bringing all your messaging services into one installable",
     "homepage": "https://ferdium.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pnpm","git"],
+    "makedepends": ["electron${_electronver}-devel"],
+    "depends": ["electron${_electronver}"]
   },
   {
     "name": "flat-remix-icon-theme",
@@ -657,7 +848,10 @@
     "description": "Flat remix is a pretty simple icon theme inspired on material design",
     "homepage": "https://drasite.com/flat-remix",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "floorp",
@@ -668,7 +862,10 @@
     "description": "Firefox fork seeking balance between versatility, privacy and openness",
     "homepage": "https://floorp.app/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "fluffychat",
@@ -679,7 +876,10 @@
     "description": "Cutest instant messenger in the [matrix]",
     "homepage": "https://fluffychat.im/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "fnm",
@@ -690,7 +890,10 @@
     "description": "Fast and simple Node.js version manager",
     "homepage": "https://github.com/Schniz/fnm",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["libzstd-devel"],
+    "depends": []
   },
   {
     "name": "freetube",
@@ -701,7 +904,10 @@
     "description": "Open source desktop YouTube player built with privacy in mind",
     "homepage": "https://freetubeapp.io/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pnpm"],
+    "makedepends": [],
+    "depends": ["electron${_electronver}"]
   },
   {
     "name": "grayjay",
@@ -712,7 +918,10 @@
     "description": "Cross-platform app to stream and download content from various sources",
     "homepage": "https://grayjay.app/desktop/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["vulkan-loader"]
   },
   {
     "name": "gruvbox-bibata-cursor-theme",
@@ -723,7 +932,10 @@
     "description": "Gruvbox-themed Bibata Cursor",
     "homepage": "https://www.bibata.live/",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["tar","xz"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "gruvbox-gtk-theme",
@@ -734,7 +946,10 @@
     "description": "A theme based on the Gruvbox colour palette - GTK",
     "homepage": "https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["sassc"],
+    "makedepends": [],
+    "depends": ["gtk-engine-murrine","gnome-themes-extra"]
   },
   {
     "name": "gruvbox-icons-theme",
@@ -745,7 +960,10 @@
     "description": "A theme based on the Gruvbox colour palette - Icons",
     "homepage": "https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "gruvbox-material-theme",
@@ -756,7 +974,10 @@
     "description": "Gruvbox Material theme for GTK, Gnome, Cinnamon, XFCE, Unity and Plank",
     "homepage": "https://github.com/TheGreatMcPain/gruvbox-material-gtk",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["unzip"],
+    "makedepends": [],
+    "depends": ["gtk-engine-murrine"]
   },
   {
     "name": "gruvbox-papirus-icon-theme",
@@ -767,7 +988,10 @@
     "description": "SVG icon theme for Linux, based on Paper Icon Set - Gruvboxed",
     "homepage": "https://github.com/noid-linux/papirus-icon-theme",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "helium-browser",
@@ -778,7 +1002,10 @@
     "description": "Private, fast, and honest web browser",
     "homepage": "https://helium.computer/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["vulkan-loader"]
   },
   {
     "name": "heroic-games-launcher",
@@ -789,7 +1016,10 @@
     "description": "Games launcher for GOG, Amazon and Epic Games",
     "homepage": "https://heroicgameslauncher.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pnpm","python3"],
+    "makedepends": ["electron35-devel"],
+    "depends": ["wine","winetricks","curl","zenity","gamemode","vulkan-loader"]
   },
   {
     "name": "hyprland-repo",
@@ -800,7 +1030,10 @@
     "description": "Binary repositories for installing Hyprland on Void Linux",
     "homepage": "https://sofijacom.github.io/hyprland-void/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "intel-media-driver-nonfree",
@@ -811,7 +1044,10 @@
     "description": "Intel Media Driver for VAAPI - nonfree kernels",
     "homepage": "https://github.com/intel/media-driver",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["libva-devel","libX11-devel","intel-gmmlib-devel","libpciaccess-devel"],
+    "depends": []
   },
   {
     "name": "intel-media-driver-nonfree-devel",
@@ -822,7 +1058,10 @@
     "description": "Intel Media Driver for VAAPI - nonfree kernels",
     "homepage": "https://github.com/intel/media-driver",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["libva-devel","libX11-devel","intel-gmmlib-devel","libpciaccess-devel"],
+    "depends": []
   },
   {
     "name": "kaidan",
@@ -833,7 +1072,10 @@
     "description": "Modern chat app for every device",
     "homepage": "https://www.kaidan.im/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["extra-cmake-modules","qt6-base","pkg-config"],
+    "makedepends": ["qt6-base-devel","qt6-declarative-devel","qt6-svg-devel","qt6-multimedia-devel","qt6-location-devel","qt6-base-private-devel","kf6-prison-devel","kf6-kirigami-devel","kf6-kio-devel","KDSingleApplication","kirigami-addons-devel","qxmpp-devel","qtkeychain-qt6-devel","kf6-knotifications-devel","kf6-kcrash-devel","kquickimageeditor-devel","kf6-qqc2-desktop-style-devel","gstreamer1-devel","kf6-kitemmodels-devel"],
+    "depends": ["kirigami-addons","kquickimageeditor","qt6-location","gst-plugins-good1-qml6","qt6-plugin-sqlite"]
   },
   {
     "name": "libglib-testing",
@@ -844,7 +1086,10 @@
     "description": "Lib providing test harnesses and mock classes complementing GLib classes",
     "homepage": "https://gitlab.gnome.org/pwithnall/libglib-testing",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","cmake","gtk-doc"],
+    "makedepends": ["glib-devel"],
+    "depends": []
   },
   {
     "name": "libglib-testing-devel",
@@ -855,7 +1100,10 @@
     "description": "Lib providing test harnesses and mock classes complementing GLib classes",
     "homepage": "https://gitlab.gnome.org/pwithnall/libglib-testing",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","cmake","gtk-doc"],
+    "makedepends": ["glib-devel"],
+    "depends": []
   },
   {
     "name": "libgsystemservice",
@@ -866,7 +1114,10 @@
     "description": "Common components needed for building services to be exposed on D-Bus",
     "homepage": "https://gitlab.gnome.org/pwithnall/libgsystemservice",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","gtk-doc"],
+    "makedepends": ["glib-devel","polkit-devel"],
+    "depends": []
   },
   {
     "name": "libgsystemservice-devel",
@@ -877,7 +1128,10 @@
     "description": "Common components needed for building services to be exposed on D-Bus",
     "homepage": "https://gitlab.gnome.org/pwithnall/libgsystemservice",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","gtk-doc"],
+    "makedepends": ["glib-devel","polkit-devel"],
+    "depends": []
   },
   {
     "name": "librewolf",
@@ -888,7 +1142,10 @@
     "description": "Fork of Firefox, focused on privacy, security and freedom",
     "homepage": "https://librewolf.net/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["desktop-file-utils","hicolor-icon-theme","pciutils"]
   },
   {
     "name": "linuxnauta-repo",
@@ -899,7 +1156,10 @@
     "description": "Binary repositories for Void Linux by jmboris",
     "homepage": "https://linuxnauta.com/",
     "maintainer": "JuanMa <numblinux@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "lutgen-cli",
@@ -910,7 +1170,10 @@
     "description": "A blazingly fast interpolated LUT utility for arbitrary and popular color palettes.",
     "homepage": "https://lut.sh/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": ["openssl-devel"],
+    "depends": []
   },
   {
     "name": "lutgen-studio",
@@ -921,7 +1184,10 @@
     "description": "Offical GUI for Lutgen, the best way to apply popular colorschemes to any image or wallpaper!",
     "homepage": "https://lut.sh/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": ["openssl-devel","libxcb-devel","libxkbcommon-devel"],
+    "depends": []
   },
   {
     "name": "ly",
@@ -932,7 +1198,10 @@
     "description": "Lightweight TUI display manager for Linux and BSD",
     "homepage": "https://codeberg.org/fairyglade/ly",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","zig-0.17"],
+    "makedepends": ["pam-devel","libxcb-devel"],
+    "depends": ["xorg-server","xauth","brightnessctl"]
   },
   {
     "name": "malcontent",
@@ -943,7 +1212,10 @@
     "description": "Parental controls library",
     "homepage": "https://gitlab.freedesktop.org/pwithnall/malcontent",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","gtk-doc","gettext","itstool","gobject-introspection","desktop-file-utils"],
+    "makedepends": ["accountsservice-devel","elogind-devel","glib-devel","gtk4-devel","libadwaita-devel","flatpak-devel","libsoup3-devel","gnome-desktop-devel","pam-devel","libgsystemservice-devel","libglib-testing-devel"],
+    "depends": []
   },
   {
     "name": "malcontent-devel",
@@ -954,7 +1226,10 @@
     "description": "Parental controls library",
     "homepage": "https://gitlab.freedesktop.org/pwithnall/malcontent",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","gtk-doc","gettext","itstool","gobject-introspection","desktop-file-utils"],
+    "makedepends": ["accountsservice-devel","elogind-devel","glib-devel","gtk4-devel","libadwaita-devel","flatpak-devel","libsoup3-devel","gnome-desktop-devel","pam-devel","libgsystemservice-devel","libglib-testing-devel"],
+    "depends": []
   },
   {
     "name": "megasync",
@@ -965,7 +1240,10 @@
     "description": "Easy automated syncing between your computers and your MEGA Cloud Drive",
     "homepage": "https://mega.io",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["crypto++-devel","libsodium-devel","sqlite-devel","libcurl-devel","icu-devel","libmediainfo-devel","libuv-devel","readline-devel","qt5-devel","qt5-declarative-devel","qt5-tools-devel","qt5-x11extras-devel","qt5-svg-devel","libaio-devel"],
+    "depends": ["hicolor-icon-theme","qt5-quickcontrols2","qt5-graphicaleffects"]
   },
   {
     "name": "metasploit",
@@ -976,7 +1254,10 @@
     "description": "Penetration testing framework for developing and using exploit code",
     "homepage": "https://www.metasploit.com",
     "maintainer": "gh0st4n <darskevoid@gmail.com>",
-    "distributor": "gh0st4n <darskevoid@gmail.com>"
+    "distributor": "gh0st4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["ruby","ruby-devel","pkg-config"],
+    "makedepends": ["ruby-devel","postgresql-libs-devel","libpcap-devel","sqlite-devel","libxml2-devel","libxslt-devel","libffi-devel","openssl-devel","zlib-devel","libyaml-devel"],
+    "depends": ["ruby","postgresql","postgresql-client","nmap","libpcap"]
   },
   {
     "name": "mission-center",
@@ -987,7 +1268,10 @@
     "description": "Monitor your CPU, Memory, Disk, Network and GPU usage",
     "homepage": "https://missioncenter.io/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["cargo","cmake","pkg-config","gettext","blueprint-compiler","desktop-file-utils"],
+    "makedepends": ["gtk4-devel","libadwaita-devel","libdrm-devel","libgbm-devel","eudev-libudev-devel","dbus-devel"],
+    "depends": []
   },
   {
     "name": "msttcorefonts",
@@ -998,7 +1282,10 @@
     "description": "Microsoft Typography Project - corefonts",
     "homepage": "http://corefonts.sourceforge.net",
     "maintainer": "Michael Aldridge <maldridge@voidlinux.org>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["cabextract"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "ndpm",
@@ -1009,7 +1296,10 @@
     "description": "A user-friendly package manager wrapper for XBPS with AppImage support",
     "homepage": "https://git.ch-naseem.com/noid-linux/ndpm",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["openssl-devel"],
+    "depends": ["sudo","openssl"]
   },
   {
     "name": "nerd-fonts-cascadiacode",
@@ -1020,7 +1310,10 @@
     "description": "CascadiaCode Nerd Font - monospaced font with programming ligatures and glyphs",
     "homepage": "https://nerdfonts.com",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["font-util"]
   },
   {
     "name": "nmenu",
@@ -1031,7 +1324,10 @@
     "description": "Generic menu for X",
     "homepage": "https://git.ch-naseem.com/ndpm13/dmenu/",
     "maintainer": "Leah Neukirchen <leah@vuxu.org>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": ["libXinerama-devel","libXft-devel","freetype-devel"],
+    "depends": []
   },
   {
     "name": "noctalia-qs",
@@ -1042,7 +1338,10 @@
     "description": "Custom fork of Quickshell powering Noctalia Shell",
     "homepage": "https://github.com/noctalia-dev/noctalia-qs",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","wayland-devel","qt6-base","qt6-declarative-devel","qt6-shadertools"],
+    "makedepends": ["cli11","qt6-base-private-devel","qt6-declarative-private-devel","qt6-shadertools-devel","pipewire-devel","jemalloc-devel","pam-devel","polkit-devel"],
+    "depends": ["qt6-svg"]
   },
   {
     "name": "noctalia-shell",
@@ -1053,7 +1352,10 @@
     "description": "Sleek and minimal desktop shell, built with Quickshell",
     "homepage": "https://docs.noctalia.dev/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["noctalia-qs","ImageMagick","brightnessctl","ffmpeg","qt6-multimedia","python","wlr-randr"]
   },
   {
     "name": "noid-artwork",
@@ -1064,7 +1366,10 @@
     "description": "Noid Linux artwork",
     "homepage": "https://noid-linux.github.io/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "noid-welcome",
@@ -1075,7 +1380,10 @@
     "description": "Noid Linux Welcome Screen",
     "homepage": "https://git.ch-naseem.com/noid-linux/noid-welcome",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["yad","alacritty","sudo","curl"]
   },
   {
     "name": "nwm",
@@ -1086,7 +1394,10 @@
     "description": "Custom Build of DWM - a Dynamic window manager for X",
     "homepage": "https://git.ch-naseem.com/ndpm13/dwm",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": ["libXinerama-devel","libXft-devel","freetype-devel"],
+    "depends": []
   },
   {
     "name": "nyancat",
@@ -1097,7 +1408,10 @@
     "description": "Nyancat rendered in your terminal",
     "homepage": "https://nyancat.dakko.us/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "obsidian",
@@ -1108,7 +1422,10 @@
     "description": "Private and flexible writing app that adapts to the way you think",
     "homepage": "https://obsidian.md/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "onlyoffice",
@@ -1119,7 +1436,10 @@
     "description": "Office suite that combines text, spreadsheet and presentation editors",
     "homepage": "https://www.onlyoffice.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "opencode-desktop",
@@ -1130,7 +1450,10 @@
     "description": "OpenCode desktop client",
     "homepage": "https://opencode.ai/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["vulkan-loader"]
   },
   {
     "name": "powershell",
@@ -1141,7 +1464,10 @@
     "description": "PowerShell for every system!",
     "homepage": "https://learn.microsoft.com/en-us/powershell/",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["libunwind","icu","openssl","zlib"]
   },
   {
     "name": "proton-authenticator",
@@ -1152,7 +1478,10 @@
     "description": "End-to-end encrypted 2FA code manager by Proton",
     "homepage": "https://proton.me/authenticator",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["yarn","cargo","pkg-config"],
+    "makedepends": ["glib-devel","gtk+3-devel","libsoup3-devel","libwebkit2gtk41-devel"],
+    "depends": []
   },
   {
     "name": "proton-vpn-gtk-app",
@@ -1163,7 +1492,10 @@
     "description": "Official ProtonVPN Linux app",
     "homepage": "https://protonvpn.com/download-linux",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["python3-setuptools","gettext"],
+    "makedepends": [],
+    "depends": ["python3-cairo","python3-dbus","python3-distro","python3-gobject","python3-packaging","python3-requests","python3-proton-core","python3-proton-vpn-api-core"]
   },
   {
     "name": "python3-curl-cffi",
@@ -1174,7 +1506,10 @@
     "description": "Python binding for curl-impersonate fork via cffi",
     "homepage": "https://curl-cffi.readthedocs.io/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["python3-setuptools","python3-wheel","python3-cffi"],
+    "makedepends": ["python3-devel"],
+    "depends": ["python3-certifi","python3-cffi","python3-rich"]
   },
   {
     "name": "python3-patool",
@@ -1185,7 +1520,10 @@
     "description": "Portable command line archive file manager",
     "homepage": "https://github.com/wummel/patool",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["python3-setuptools"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "python3-proton-core",
@@ -1196,7 +1534,10 @@
     "description": "Component contains core logic used by the other Proton components",
     "homepage": "https://github.com/ProtonVPN/python-proton-core",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["python3-setuptools"],
+    "makedepends": [],
+    "depends": ["python3-requests","python3-bcrypt","python3-gnupg","python3-openssl","python3-aiohttp"]
   },
   {
     "name": "python3-proton-vpn-api-core",
@@ -1207,7 +1548,10 @@
     "description": "Acts as a facade to the other Proton VPN components",
     "homepage": "https://github.com/ProtonVPN/python-proton-vpn-api-core",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["python3-setuptools","cargo","cargo-auditable","pkg-config"],
+    "makedepends": ["libmnl-devel","libnftnl-devel"],
+    "depends": ["python3-proton-core","python3-distro","python3-sentry","python3-cryptography","python3-pynacl","python3-fido2","python3-packaging","python3-gobject","python3-cairo","python3-Jinja2","python3-dbus-fast"]
   },
   {
     "name": "qt6gtk2",
@@ -1218,7 +1562,10 @@
     "description": "GTK+2.0 integration plugins for Qt6",
     "homepage": "https://www.opencode.net/trialuser/qt6gtk2",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["gtk+-devel","qt6-base-private-devel"],
+    "depends": []
   },
   {
     "name": "quran-companion",
@@ -1229,7 +1576,10 @@
     "description": "Free and open-source desktop Quran reader and player",
     "homepage": "https://0xzer0x.github.io/projects/quran-companion/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["qt6-base","qt6-tools"],
+    "makedepends": ["qt6-multimedia-devel"],
+    "depends": []
   },
   {
     "name": "radare2",
@@ -1240,7 +1590,10 @@
     "description": "Advanced command line debugger and hexadecimal editor",
     "homepage": "https://www.radare.org",
     "maintainer": "gh0st4n <darskevoid@gmail.com>",
-    "distributor": "gh0st4n <darskevoid@gmail.com>"
+    "distributor": "gh0st4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["capstone-devel","file-devel","xxHash-devel","openssl-devel","libuv-devel","zlib-devel","libzip-devel","liblz4-devel"],
+    "depends": []
   },
   {
     "name": "rustdesk",
@@ -1251,7 +1604,10 @@
     "description": "Open-source remote desktop application designed for self-hosting",
     "homepage": "https://rustdesk.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["xdotool","libva","libvdpau"]
   },
   {
     "name": "sable-desktop",
@@ -1262,7 +1618,10 @@
     "description": "Almost stable Matrix client",
     "homepage": "https://github.com/SableClient/Sable",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pnpm","python3","cargo","pkg-config"],
+    "makedepends": ["glib-devel","gtk+3-devel","libsoup3-devel","libwebkit2gtk41-devel","nspr-devel","nss-devel"],
+    "depends": ["vulkan-loader"]
   },
   {
     "name": "sklauncher",
@@ -1273,7 +1632,10 @@
     "description": "Custom Minecraft launcher with additional features <STABLE>",
     "homepage": "https://skmedix.pl",
     "maintainer": "gh0st4n <darskevoid@gmail.com>",
-    "distributor": "gh0st4n <darskevoid@gmail.com>"
+    "distributor": "gh0st4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["openjdk21-jre"]
   },
   {
     "name": "sklauncher-beta",
@@ -1284,7 +1646,10 @@
     "description": "Custom Minecraft launcher with additional features",
     "homepage": "https://skmedix.pl",
     "maintainer": "gh0st4n <darskevoid@gmail.com>",
-    "distributor": "gh0st4n <darskevoid@gmail.com>"
+    "distributor": "gh0st4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "slack-desktop",
@@ -1295,7 +1660,10 @@
     "description": "Messaging app for teams",
     "homepage": "https://slack.com/",
     "maintainer": "Rodrigo Oliveira <mdkcore@qtrnn.io>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["xdg-utils"]
   },
   {
     "name": "spotify",
@@ -1306,7 +1674,10 @@
     "description": "Proprietary music streaming client",
     "homepage": "https://www.spotify.com",
     "maintainer": "Stefan Mühlinghaus <jazzman@alphabreed.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["libcurl"],
+    "makedepends": [],
+    "depends": ["libcurl","libayatana-appindicator","libatomic"]
   },
   {
     "name": "sway-scroll",
@@ -1317,7 +1688,10 @@
     "description": "Fork of the sway compositor with a scrolling layout like PaperWM or niri",
     "homepage": "https://github.com/dawsers/scroll/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","cmake","scdoc","hwids"],
+    "makedepends": ["wayland-devel","wlroots0.20-devel","glslang-devel","json-c-devel","pcre2-devel","cairo-devel","pango-devel","libevdev-devel","lua54-devel","xorg-server-xwayland","libdrm-devel","libliftoff-devel","gdk-pixbuf-devel","readline-devel"],
+    "depends": []
   },
   {
     "name": "television",
@@ -1328,7 +1702,10 @@
     "description": "Cross-platform, fast and extensible general purpose fuzzy finde",
     "homepage": "https://github.com/alexpasmantier/television",
     "maintainer": "JuanMa <numblinux@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["fd","bat","fzf"]
   },
   {
     "name": "tenacity",
@@ -1339,7 +1716,10 @@
     "description": "Easy-to-use multi-track audio editor and recorder, forked from Audacity",
     "homepage": "https://tenacityaudio.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config","git"],
+    "makedepends": ["wxWidgets-devel","alsa-lib-devel","expat-devel","libflac-devel","lame-devel","libid3tag-devel","libmad-devel","libogg-devel","libsndfile-devel","libvorbis-devel","lilv-devel","lv2","portaudio-devel","portmidi-devel","libsoxr-devel","soundtouch-devel","sqlite-devel","suil-devel","twolame-devel","vamp-plugin-sdk-devel","zlib-devel","ffmpeg-devel","jack-devel","serd-devel","sord-devel"],
+    "depends": []
   },
   {
     "name": "themix",
@@ -1350,7 +1730,10 @@
     "description": "Graphical application for designing themes and exporting them",
     "homepage": "https://github.com/themix-project/themix-gui/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["gettext","python3"],
+    "makedepends": [],
+    "depends": ["gtk+3","python3","python3-gobject","python3-cairo","python3-pystache","python3-yaml","gdk-pixbuf","xorg","sassc","librsvg","glib","parallel","optipng","inkscape","gtk-engine-murrine","meson","bc"]
   },
   {
     "name": "thorium-browser-avx2",
@@ -1361,7 +1744,10 @@
     "description": "Chromium fork focused on performance and security - AVX2 build",
     "homepage": "https://thorium.rocks/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["vulkan-loader"]
   },
   {
     "name": "tpkg",
@@ -1372,7 +1758,10 @@
     "description": "A user-friendly package manager wrapper for XBPS",
     "homepage": "https://gitlab.com/t4n-pkg/tpkg/",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["xbps"]
   },
   {
     "name": "tsukimi",
@@ -1383,7 +1772,10 @@
     "description": "Simple third-party Jellyfin client for Linux",
     "homepage": "https://github.com/tsukinaha/tsukimi",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["rust","pkg-config","cargo","gettext","blueprint-compiler"],
+    "makedepends": ["openssl-devel","dbus-devel","glib-devel","gtk4-devel","libadwaita-devel","mpv-devel","glycin-devel"],
+    "depends": []
   },
   {
     "name": "tutanota-desktop",
@@ -1394,7 +1786,10 @@
     "description": "The desktop client for Tutanota, the secure e-mail service.",
     "homepage": "https://tuta.com/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "twine",
@@ -1405,7 +1800,10 @@
     "description": "GUI for creating nonlinear stories",
     "homepage": "https://twinery.org/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["nodejs"],
+    "makedepends": ["electron${_electronver}-devel"],
+    "depends": ["electron${_electronver}"]
   },
   {
     "name": "ueberzugpp",
@@ -1416,7 +1814,10 @@
     "description": "Drop in replacement for ueberzug written in C++",
     "homepage": "https://github.com/jstkdng/ueberzugpp",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["pkg-config"],
+    "makedepends": ["cli11","openssl-devel","tbb-devel","xcb-util-devel","xcb-util-image-devel","libopencv-devel","libvips-devel","libsixel-devel","chafa-devel","spdlog","range-v3","fmt-devel","json-c++"],
+    "depends": []
   },
   {
     "name": "ungoogled-chromium",
@@ -1427,7 +1828,10 @@
     "description": "Lightweight approach to removing Google web service dependency",
     "homepage": "https://github.com/ungoogled-software/ungoogled-chromium",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "uutils-coreutils",
@@ -1438,7 +1842,10 @@
     "description": "Cross-platform Rust rewrite of the GNU coreutils",
     "homepage": "https://github.com/uutils/coreutils",
     "maintainer": "Nafis <mnabid.25@outlook.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["cargo","pkg-config"],
+    "makedepends": ["oniguruma-devel","rust-std"],
+    "depends": []
   },
   {
     "name": "vkbasalt-cli",
@@ -1449,7 +1856,10 @@
     "description": "Command-line utility for vkBasalt",
     "homepage": "https://gitlab.com/TheEvilSkeleton/vkbasalt-cli",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["python3-setuptools"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "vscodium",
@@ -1460,7 +1870,10 @@
     "description": "Free/Libre Open Source Software Binaries of VSCode",
     "homepage": "https://vscodium.com/",
     "maintainer": "Naz <ndpm13@ch-naeseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["fontconfig","libXtst","libnotify","libXScrnSaver"]
   },
   {
     "name": "webapp-manager",
@@ -1471,7 +1884,10 @@
     "description": "Run websites as if they were apps",
     "homepage": "https://github.com/linuxmint/webapp-manager",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["tar","xz"],
+    "makedepends": [],
+    "depends": ["python3-tldextract","python3-xapp","python3-Pillow","python3-BeautifulSoup4","python3-configobj","python3-gobject","python3-setproctitle","python3-tldextract","xapp-symbolic-icons"]
   },
   {
     "name": "wps-office",
@@ -1482,7 +1898,10 @@
     "description": "Linux office suite with similar appearance to MS Office",
     "homepage": "https://www.wps.com/",
     "maintainer": "mobinmob <mobinmob@disroot.org>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "xapp-symbolic-icons",
@@ -1493,7 +1912,10 @@
     "description": "Set of symbolic icons for Gtk applications and projects",
     "homepage": "https://github.com/xapp-project/xapp-symbolic-icons",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["hicolor-icon-theme"]
   },
   {
     "name": "xlibre-repo",
@@ -1504,7 +1926,10 @@
     "description": "XLibre for VOID linux",
     "homepage": "https://github.com/xlibre-void/xlibre/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "xvr",
@@ -1515,7 +1940,10 @@
     "description": "The XVR Programming Language Compiler By Arfy Slowy",
     "homepage": "https://github.com/xvrlang/xvr",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": ["llvm${_llvm_major}","llvm${_llvm_major}-devel","clang${_llvm_major}","gcc","libxml2-devel","libcurl-devel"],
+    "depends": []
   },
   {
     "name": "yarr",
@@ -1526,7 +1954,10 @@
     "description": "Yet another rss reader",
     "homepage": "https://github.com/nkanaev/yarr",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": ["nodejs","esbuild","go"],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "zed",
@@ -1537,7 +1968,10 @@
     "description": "High-performance, multiplayer code editor",
     "homepage": "https://zed.dev",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": ""
+    "distributor": "",
+    "hostmakedepends": ["pkg-config","python3","python3-setuptools","clang","cmake","protobuf","gettext","which","git","cargo"],
+    "makedepends": ["alsa-lib-devel","fontconfig-devel","glib-devel","libxcb-devel","libxkbcommon-devel","libzstd-devel","openssl-devel","wayland-devel","vulkan-loader","sqlite-devel","zlib-devel","libX11-devel","Vulkan-Headers","Vulkan-ValidationLayers","protobuf-devel","dbus-devel","libpng-devel","elfutils-devel"],
+    "depends": ["alsa-lib","curl","fontconfig","glib","libxcb","libX11","libxkbcommon","libxkbcommon-x11","sqlite","vulkan-loader","wayland","zlib","zstd","nodejs","openbsd-netcat"]
   },
   {
     "name": "zen-browser",
@@ -1548,7 +1982,10 @@
     "description": "Performance oriented Firefox-based web browser",
     "homepage": "https://zen-browser.app/",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": ""
+    "distributor": "",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "zig",
@@ -1559,7 +1996,10 @@
     "description": "Programming language designed for robustness, optimality, and clarity",
     "homepage": "https://ziglang.org",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": []
   },
   {
     "name": "zvc",
@@ -1570,7 +2010,10 @@
     "description": "Simple Script for Zig Version Control written shell",
     "homepage": "https://github.com/gh0st4n/ZVC/README.md",
     "maintainer": "Gh0sT4n <darskevoid@gmail.com>",
-    "distributor": "Gh0sT4n <darskevoid@gmail.com>"
+    "distributor": "Gh0sT4n <darskevoid@gmail.com>",
+    "hostmakedepends": [],
+    "makedepends": [],
+    "depends": ["dash","curl","wget"]
   },
   {
     "name": "wine-pure",
@@ -1581,7 +2024,10 @@
     "description": "Run Microsoft Windows applications",
     "homepage": "https://github.com/ventureoo/PKGBUILDs",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": ""
+    "distributor": "",
+    "hostmakedepends": ["pkg-config","flex","gettext","$(vopt_if","mingw","cross-${XBPS_TARGET_MACHINE%-musl}-w64-mingw32)"],
+    "makedepends": ["gettext-devel","glu-devel","libSM-devel","libXext-devel","libX11-devel","libXpm-devel","libXinerama-devel","libXcomposite-devel","libXmu-devel","libXxf86vm-devel","libXcursor-devel","libXrandr-devel","libXdamage-devel","libXi-devel","alsa-lib-devel","libgphoto2-devel","glib-devel","freetype-devel","pulseaudio-devel","giflib-devel","v4l-utils-devel","fontconfig-devel","gnutls-devel","dbus-devel","sane-devel","libpcap-devel","cups-devel","ocl-icd-devel","vulkan-loader-devel","gst-plugins-base1-devel","SDL2-devel","$(vopt_if","ffmpeg","'ffmpeg-devel')"],
+    "depends": ["libXi","libXinerama","libXcomposite","libXcursor","desktop-file-utils","hicolor-icon-theme","liberation-fonts-ttf","gnutls","SDL2","wine-pure-common>=${version}_${revision}"]
   },
   {
     "name": "wine-pure-common",
@@ -1592,7 +2038,10 @@
     "description": "Run Microsoft Windows applications",
     "homepage": "https://github.com/ventureoo/PKGBUILDs",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": ""
+    "distributor": "",
+    "hostmakedepends": ["pkg-config","flex","gettext","$(vopt_if","mingw","cross-${XBPS_TARGET_MACHINE%-musl}-w64-mingw32)"],
+    "makedepends": ["gettext-devel","glu-devel","libSM-devel","libXext-devel","libX11-devel","libXpm-devel","libXinerama-devel","libXcomposite-devel","libXmu-devel","libXxf86vm-devel","libXcursor-devel","libXrandr-devel","libXdamage-devel","libXi-devel","alsa-lib-devel","libgphoto2-devel","glib-devel","freetype-devel","pulseaudio-devel","giflib-devel","v4l-utils-devel","fontconfig-devel","gnutls-devel","dbus-devel","sane-devel","libpcap-devel","cups-devel","ocl-icd-devel","vulkan-loader-devel","gst-plugins-base1-devel","SDL2-devel","$(vopt_if","ffmpeg","'ffmpeg-devel')"],
+    "depends": ["libXi","libXinerama","libXcomposite","libXcursor","desktop-file-utils","hicolor-icon-theme","liberation-fonts-ttf","gnutls","SDL2","wine-pure-common>=${version}_${revision}"]
   },
   {
     "name": "wine-pure-devel",
@@ -1603,7 +2052,10 @@
     "description": "Run Microsoft Windows applications",
     "homepage": "https://github.com/ventureoo/PKGBUILDs",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": ""
+    "distributor": "",
+    "hostmakedepends": ["pkg-config","flex","gettext","$(vopt_if","mingw","cross-${XBPS_TARGET_MACHINE%-musl}-w64-mingw32)"],
+    "makedepends": ["gettext-devel","glu-devel","libSM-devel","libXext-devel","libX11-devel","libXpm-devel","libXinerama-devel","libXcomposite-devel","libXmu-devel","libXxf86vm-devel","libXcursor-devel","libXrandr-devel","libXdamage-devel","libXi-devel","alsa-lib-devel","libgphoto2-devel","glib-devel","freetype-devel","pulseaudio-devel","giflib-devel","v4l-utils-devel","fontconfig-devel","gnutls-devel","dbus-devel","sane-devel","libpcap-devel","cups-devel","ocl-icd-devel","vulkan-loader-devel","gst-plugins-base1-devel","SDL2-devel","$(vopt_if","ffmpeg","'ffmpeg-devel')"],
+    "depends": ["libXi","libXinerama","libXcomposite","libXcursor","desktop-file-utils","hicolor-icon-theme","liberation-fonts-ttf","gnutls","SDL2","wine-pure-common>=${version}_${revision}"]
   },
   {
     "name": "wine-pure-tools",
@@ -1614,5 +2066,8 @@
     "description": "Run Microsoft Windows applications",
     "homepage": "https://github.com/ventureoo/PKGBUILDs",
     "maintainer": "Naz <ndpm13@ch-naseem.com>",
-    "distributor": ""
+    "distributor": "",
+    "hostmakedepends": ["pkg-config","flex","gettext","$(vopt_if","mingw","cross-${XBPS_TARGET_MACHINE%-musl}-w64-mingw32)"],
+    "makedepends": ["gettext-devel","glu-devel","libSM-devel","libXext-devel","libX11-devel","libXpm-devel","libXinerama-devel","libXcomposite-devel","libXmu-devel","libXxf86vm-devel","libXcursor-devel","libXrandr-devel","libXdamage-devel","libXi-devel","alsa-lib-devel","libgphoto2-devel","glib-devel","freetype-devel","pulseaudio-devel","giflib-devel","v4l-utils-devel","fontconfig-devel","gnutls-devel","dbus-devel","sane-devel","libpcap-devel","cups-devel","ocl-icd-devel","vulkan-loader-devel","gst-plugins-base1-devel","SDL2-devel","$(vopt_if","ffmpeg","'ffmpeg-devel')"],
+    "depends": ["libXi","libXinerama","libXcomposite","libXcursor","desktop-file-utils","hicolor-icon-theme","liberation-fonts-ttf","gnutls","SDL2","wine-pure-common>=${version}_${revision}"]
   }]

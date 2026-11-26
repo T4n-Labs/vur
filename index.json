@@ -23,6 +23,8 @@
 ,
   {"name":"linux-zen","category":"core","path":"core/linux-zen"}
 ,
+  {"name":"linux6.12.6-zen","category":"core","path":"core/linux6.12.6-zen"}
+,
   {"name":"linux6.12.8-zen","category":"core","path":"core/linux6.12.8-zen"}
 ,
   {"name":"linux6.13-zen","category":"core","path":"core/linux6.13-zen"}
