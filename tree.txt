@@ -1,0 +1,65 @@
+.
+├── .github/
+|    └── workflows/
+|       ├── index.yml
+|       └── generate.sh
+├── categories.json
+├── CONTRIBUTING-ID.md
+├── CONTRIBUTING.md
+├── index.json
+├── LICENSE
+├── packages.json
+├── README-ID.md
+├── README.md
+├── search.json
+└── vdocs
+    ├── 01_pengenalan
+    │   ├── 01-apa-itu-xbps-src.md
+    │   ├── 02-fase-build.md
+    │   └── 03-penamaan-paket.md
+    ├── 02_dasar-template
+    │   ├── 01-variabel-wajib.md
+    │   ├── 02-variabel-global.md
+    │   ├── 03-fungsi-global.md
+    │   ├── 04-variabel-opsional-sumber-kode.md
+    │   ├── 05-variabel-opsional-build.md
+    │   ├── 06-variabel-opsional-metadata.md
+    │   └── 07-variabel-opsional-pembatasan-dan-pemeriksaan.md
+    ├── 03_dependensi
+    │   ├── 01-jenis-dependensi.md
+    │   └── 02-dependensi-runtime-shlibs-virtual.md
+    ├── 04_proses-build
+    │   ├── 01-build-style.md
+    │   ├── 02-build-helper.md
+    │   ├── 03-fungsi-template.md
+    │   ├── 04-patch.md
+    │   └── 05-opsi-build.md
+    ├── 05_repositori-dan-update
+    │   ├── 01-repositori.md
+    │   └── 02-cek-rilis-upstream.md
+    ├── 06_skrip-dan-layanan
+    │   ├── 01-install-remove.md
+    │   ├── 02-install-remove-msg.md
+    │   ├── 03-akun-sistem.md
+    │   └── 04-layanan-runit.md
+    ├── 07_subpackage-dan-kelas-paket
+    │   ├── 01-subpackage.md
+    │   ├── 02-paket-32bit.md
+    │   ├── 03-paket-development-data-doc.md
+    │   ├── 04-paket-python.md
+    │   ├── 05-paket-go.md
+    │   ├── 06-paket-haskell.md
+    │   └── 07-paket-font.md
+    ├── 08_pemeliharaan-paket
+    │   ├── 01-mengganti-nama-paket.md
+    │   └── 02-menghapus-paket.md
+    ├── 09_xbps-triggers
+    │   ├── 01-pengenalan-trigger.md
+    │   ├── 02-trigger-gtk-glib.md
+    │   ├── 03-trigger-sistem.md
+    │   └── 04-trigger-desktop-bahasa-font.md
+    ├── 10_praktik-dan-kontribusi
+    │   ├── 01-catatan-dan-dokumentasi-void.md
+    │   └── 02-kontribusi-via-git.md
+    ├── DaftarISI.md
+    └── kesimpulan.md
